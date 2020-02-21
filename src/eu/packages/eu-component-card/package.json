@@ -1,5 +1,5 @@
 {
-  "name": "@ecl-twig/ec-component-card",
+  "name": "@ecl-twig/eu-component-card",
   "author": "European Commission",
   "license": "EUPL-1.1",
   "version": "2.23.0",
@@ -13,9 +13,9 @@
     "@ecl-twig/ec-component-tag": "2.23.0"
   },
   "devDependencies": {
-    "@ecl/ec-component-card": "2.23.0",
+    "@ecl/eu-component-card": "2.23.0",
     "@ecl/ec-resources-icons": "2.23.0",
-    "@ecl/ec-specs-card": "2.23.0"
+    "@ecl/eu-specs-card": "2.23.0"
   },
   "repository": {
     "type": "git",

@@ -4,8 +4,8 @@ import dataCardEvent from './demo/data--card-event';
 import dataCardTag from './demo/data--card-tag';
 import dataTile from './demo/data--tile';
 
-describe('EC - Card', () => {
-  const template = '@ecl-twig/ec-component-card/ecl-card.html.twig';
+describe('EU - Card', () => {
+  const template = '@ecl-twig/eu-component-card/ecl-card.html.twig';
   const render = params => renderTwigFileAsNode(template, params);
 
   describe('Default', () => {

@@ -2459,6 +2459,61 @@
   dependencies:
     "@ecl/ec-base" "^2.23.0"
 
+"@ecl/eu-base@^2.23.0", "@ecl/eu-base@^2.24.0":
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-base/-/eu-base-2.24.0.tgz#172012caf2689fb429df4d0e42275e33a0b62098"
+  integrity sha512-aMY+qLL8A4wfSbX4bZNCF727OtDyW01/IyLljZEQUb6eFO3vHglETp4rarMezOfeqYmf6JLY1gfV1J8zBbvLQQ==
+
+"@ecl/eu-component-card@2.23.0":
+  version "2.23.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-component-card/-/eu-component-card-2.23.0.tgz#4ad4f9ee6e122ba2de3ab4370e9c6d2d2fbad8f6"
+  integrity sha512-ZyRvYsM2GtYEUzVagMoF3w/AMO8z97xx6bKR7TYv1HgW8ORlxkYXAfj/9dWdTZhispjz8pNvJvqA7rP+O2/nkg==
+  dependencies:
+    "@ecl/eu-base" "^2.23.0"
+    "@ecl/eu-component-icon" "^2.23.0"
+    "@ecl/eu-component-link" "^2.23.0"
+    "@ecl/eu-component-tag" "^2.23.0"
+
+"@ecl/eu-component-icon@^2.23.0", "@ecl/eu-component-icon@^2.24.0":
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-component-icon/-/eu-component-icon-2.24.0.tgz#8b495764a93b040431ffee628e14bd617454dc15"
+  integrity sha512-2apmi34da6PWRdQwU0+hNUs0plhend8fTFCfO0p5EKKvpnJ/I7ZHfM4LlfKRM6XeinmobiJndAGX/hBX+QpzSA==
+  dependencies:
+    "@ecl/eu-base" "^2.24.0"
+
+"@ecl/eu-component-link@^2.23.0":
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-component-link/-/eu-component-link-2.24.0.tgz#6ca996229144f2bc773ce287d32d418b4b1fa2fa"
+  integrity sha512-lEPq+UaeA8pz7pQMGnU/bL/yFebISr9G93PY0LLlZoLY5suHllNF5iyd3HEIYKn9vOQ+RDgFRCyDZFLU7XWgQw==
+  dependencies:
+    "@ecl/eu-base" "^2.24.0"
+    "@ecl/eu-component-icon" "^2.24.0"
+
+"@ecl/eu-component-skip-link@2.23.0":
+  version "2.23.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-component-skip-link/-/eu-component-skip-link-2.23.0.tgz#560fa5e5d7ef70d667d3d996d60ae83e5f483b02"
+  integrity sha512-mgNvoRV1B/Dcw7xAQhs5dn0TCz/UKcae9aUFWgZ1OFGlaQP35oR7UjPSP6OSmhxS5qW6fhjmyv04ggieuARHzQ==
+  dependencies:
+    "@ecl/eu-base" "^2.23.0"
+
+"@ecl/eu-component-tag@^2.23.0":
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-component-tag/-/eu-component-tag-2.24.0.tgz#d8e7a72254f961bccc29be34e557cde281ce139b"
+  integrity sha512-t6vPHtum6UCfrsUEat3HMx6mXKULtsPgAfY8olW0ddTQnpSKN53xXzjEHYX4+Yu24iuvQLJLkgPqaFqBChmdaA==
+  dependencies:
+    "@ecl/eu-base" "^2.24.0"
+    "@ecl/eu-component-icon" "^2.24.0"
+
+"@ecl/eu-specs-card@2.23.0":
+  version "2.23.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-card/-/eu-specs-card-2.23.0.tgz#20bb17730d21cd4a5ad0135dbe5c416cfcd13939"
+  integrity sha512-Qfzax9rhjqiOUzfuK6MCw4Ub+OBudJRMrh1EGZhpV/DSjmBqc07POEHG8Zy6T8oQTP1MuYTmgKd8DAvopsBfQQ==
+
+"@ecl/eu-specs-skip-link@2.23.0":
+  version "2.23.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-skip-link/-/eu-specs-skip-link-2.23.0.tgz#fe2416b5844d5c27861ad54917669be1e9cb4e66"
+  integrity sha512-xV1YNN8e/91t/DTqVbsbjlOrrDFU1qKkMHldfEFomRuM8Nct4Zdijzz+reigudAXLIAGazMNcaew56DwAtUx+A==
+
 "@emotion/cache@^10.0.27", "@emotion/cache@^10.0.9":
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.27.tgz#7895db204e2c1a991ae33d51262a3a44f6737303"

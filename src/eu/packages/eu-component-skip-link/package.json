@@ -1,9 +1,9 @@
 {
-  "name": "@ecl-twig/ec-component-skip-link",
+  "name": "@ecl-twig/eu-component-skip-link",
   "author": "European Commission",
   "license": "EUPL-1.1",
   "version": "2.23.0",
-  "description": "ECL Twig - EC Link Block",
+  "description": "ECL Twig - EU Link Block",
   "publishConfig": {
     "access": "public"
   },
@@ -11,9 +11,9 @@
     "@ecl-twig/ec-component-icon": "2.23.0"
   },
   "devDependencies": {
-    "@ecl/ec-component-skip-link": "2.23.0",
+    "@ecl/eu-component-skip-link": "2.23.0",
     "@ecl/ec-resources-icons": "2.23.0",
-    "@ecl/ec-specs-skip-link": "2.23.0"
+    "@ecl/eu-specs-skip-link": "2.23.0"
   },
   "repository": {
     "type": "git",
