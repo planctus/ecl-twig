@@ -43,7 +43,7 @@ pipeline:
       - npm install -g n && n stable
       - yarn install
       - rm -rf netlify.toml
-      - yarn php:setup
+      - yarn php:install
       - yarn php:dist
       - yarn diff
     environment:
