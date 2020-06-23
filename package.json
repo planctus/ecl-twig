@@ -15,7 +15,7 @@
     "php:copy": "./node_modules/@ecl-twig/php-storybook/resources/get-assets.js",
     "php:clean": "rimraf build php/packages php/dist",
     "php:deploy": "gh-pages -d php/dist",
-    "php:dist": "npm-run-all render-php-js storybook:build:php:*",
+    "php:dist": "npm-run-all render-php-js storybook:build:php:ec",
     "php:dist-fix": "node_modules/@ecl-twig/php-storybook/resources/fix-build.js",
     "php:html-fix": "prettier --write \"php/packages/**/*.html\"",
     "php:install": "cd node_modules/@ecl-twig/php-storybook && composer install",
