@@ -25,7 +25,7 @@
     "php:clean": "rimraf build php/packages php/dist",
     "php:dist-fix": "node_modules/@ecl-twig/php-storybook/resources/fix-build.js",
     "php:html-fix": "prettier --write \"php/packages/**/*.html\"",
-    "php:install": "lerna --scope \"@ecl-twig/php-storybook\" run install",
+    "php:install": "cd node_modules/@ecl-twig/php-storybook && composer install",
     "php:pretty": "yarn php:html-fix && yarn php:story-fix",
     "php:story-fix": "prettier --write \"php/**/*.story.js\"",
     "postinstall": "lerna run postinstall && lerna run prepublish && patch-package",
