@@ -4,23 +4,6 @@ pipeline:
     commands:
       - ./scripts/check-lockfile.sh
 
-  lint:
-    group: tests
-    image: node:dubnium
-    commands:
-      - yarn lint && yarn pretty:check
-
-  jest:
-    group: tests
-    image: node:dubnium
-    commands:
-      - yarn jest
-
-  check-build:
-    image: node:dubnium
-    secrets: [gh_token]
-    commands: node scripts/failcheck.js
-
   deploy-twigjs-preview:
     group: previews
     image: node:dubnium
@@ -31,6 +14,7 @@ pipeline:
       event:
         - push
         - pull_request
+      status: [success, failure]
       branch:
         exclude:
           - master
@@ -44,7 +28,7 @@ pipeline:
       - yarn install
       - rm -rf netlify.toml
       - yarn php:install
-      - yarn php:dist
+      - yarn dist:php
       - yarn diff
     environment:
       - DEPLOY_CONTEXT=preview/twig-php
