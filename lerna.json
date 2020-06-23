@@ -1,9 +1,14 @@
 {
-  "version": "2.28.1",
+  "version": "2.29.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "loglevel": "success",
-  "packages": ["src/ec/packages/*", "src/eu/packages/*"],
+  "packages": [
+    "src/ec/packages/*",
+    "src/eu/packages/*",
+    "utils/*",
+    "php/php_storybook/"
+  ],
   "changelog": {
     "repo": "ec-europa/ecl-twig",
     "labels": {

@@ -21,7 +21,7 @@ pipeline:
     secrets: [gh_token]
     commands: node scripts/failcheck.js
     when:
-      status: [ success, failure ]
+      status: [success, failure]
 
   deploy-twigjs-preview:
     group: previews
