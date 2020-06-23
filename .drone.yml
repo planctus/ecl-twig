@@ -28,7 +28,9 @@ pipeline:
     commands:
       - yarn dist
     when:
-      event: push
+      event:
+        - push
+        - pull_request
       branch:
         exclude:
           - master
@@ -47,7 +49,10 @@ pipeline:
     environment:
       - DEPLOY_CONTEXT=preview/twig-php
     when:
-      event: push
+      event:
+        - push
+        - pull_request
+      status: [success, failure]
       branch:
         exclude:
           - master
