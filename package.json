@@ -26,7 +26,7 @@
     "pretty:fix": "prettier --write \"src/**/*.{md,mdx,html,json,yml,js}\"",
     "publish": "scripts/publish.sh",
     "render:dataGen": "babel-node ./node_modules/@ecl-twig/php-storybook/scripts/generate-data-files.js",
-    "render:php": "cd node_modules/@ecl-twig/php-storybook && yarn render:php",
+    "render:php": "cd ./node_modules/@ecl-twig/php-storybook && composer render",
     "render:js": "node_modules/@ecl-twig/php-storybook/scripts/render.js",
     "render-php-js": "run-s php:clean \"render:* {1} \" php:pretty --",
     "start:ec": "yarn storybook:start:twing-ec",
