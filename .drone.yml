@@ -20,35 +20,23 @@ pipeline:
     image: node:dubnium
     secrets: [gh_token]
     commands: node scripts/failcheck.js
-    when:
-      status: [success, failure]
 
   deploy-twigjs-preview:
     group: previews
     image: node:dubnium
-    secrets: [gh_token, netlify_auth_token, netlify_site_id]
+    secrets: [gh_token]
     commands:
       - yarn dist
     when:
       event: push
-      status: [success, failure]
       branch:
         exclude:
           - master
 
-  deploy-prod:
-    image: node:dubnium
-    secrets: [gh_token, netlify_auth_token, netlify_site_id]
-    commands:
-      - yarn dist
-    when:
-      branch: master
-      event: push
-
   deploy-twigphp-preview:
     group: previews
     image: roelofr/php-node
-    secrets: [gh_token, netlify_auth_token, netlify_site_id]
+    secrets: [gh_token]
     commands:
       - npm install -g n && n stable
       - yarn install
@@ -60,7 +48,6 @@ pipeline:
       - DEPLOY_CONTEXT=preview/twig-php
     when:
       event: push
-      status: [success, failure]
       branch:
         exclude:
           - master
