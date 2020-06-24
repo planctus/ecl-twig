@@ -7,8 +7,8 @@
   "private": true,
   "scripts": {
     "setup": "composer run setup",
-    "setupPhp": "composer install",
-    "render:php": "composer run render"
+    "install": "composer install",
+    "render": "composer run render"
   },
   "repository": {
     "type": "git",
