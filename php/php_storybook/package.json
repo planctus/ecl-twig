@@ -6,8 +6,7 @@
   "description": "ECL Twig - Package to build a storybook instance on the fly for both js and php rendered components",
   "private": true,
   "scripts": {
-    "setup": "composer run setup",
-    "install": "composer install",
+    "setup": "composer install",
     "render": "composer run render"
   },
   "repository": {
