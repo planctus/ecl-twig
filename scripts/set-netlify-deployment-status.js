@@ -109,10 +109,8 @@ const run = async () => {
     {
       method: 'POST',
       headers: {
-        Accept: 'application/json',
-        'Accept-Charset': 'utf-8',
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${GH_TOKEN}`,
+        Accept: 'application/vnd.github.v3+json',
+        Authorization: `token ${GH_TOKEN}`,
       },
       body: JSON.stringify(payload),
     }
