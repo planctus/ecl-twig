@@ -99,7 +99,10 @@ const run = async () => {
       context,
     };
   }
-
+  console.log(
+    `https://api.github.com/repos/${DRONE_REPO}/statuses/${DRONE_COMMIT_SHA}`
+  );
+  console.log(payload);
   // @see https://developer.github.com/v3/repos/statuses
   await fetch(
     `https://api.github.com/repos/${DRONE_REPO}/statuses/${DRONE_COMMIT_SHA}`,
