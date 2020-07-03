@@ -14,7 +14,8 @@ const run = async () => {
     DRONE_BUILD_LINK,
     DRONE_BUILD_NUMBER,
     DEPLOY_CONTEXT,
-    NETLIFY_SITE_ID,
+    ECL_TWIG_PHP_SITE_ID,
+    ECL_TWIG_JS_SITE_ID,
     NETLIFY_AUTH_TOKEN,
   } = process.env;
 
@@ -35,7 +36,10 @@ const run = async () => {
     return;
   }
 
-  const context = DEPLOY_CONTEXT;
+  const NETLIFY_SITE_ID =
+    DEPLOY_CONTEXT === 'preview/twig-js'
+      ? ECL_TWIG_JS_SITE_ID
+      : ECL_TWIG_PHP_SITE_ID;
   let payload = {};
 
   try {
@@ -78,14 +82,14 @@ const run = async () => {
         state: 'success',
         target_url: siteDeployment.deploy_ssl_url,
         description: 'Production deployment completed!',
-        context,
+        DEPLOY_CONTEXT,
       };
     } else {
       payload = {
         state: 'success',
         target_url: siteDeployment.deploy_ssl_url,
         description: 'Preview ready!',
-        context,
+        DEPLOY_CONTEXT,
       };
     }
   } catch (error) {
@@ -93,7 +97,7 @@ const run = async () => {
       state: 'error',
       target_url: DRONE_BUILD_LINK,
       description: 'Could not get data about Netlify deployment.',
-      context,
+      DEPLOY_CONTEXT,
     };
   }
 
