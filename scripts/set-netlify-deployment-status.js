@@ -36,10 +36,9 @@ const run = async () => {
     return;
   }
 
+  const context = DEPLOY_CONTEXT;
   const NETLIFY_SITE_ID =
-    DEPLOY_CONTEXT === 'preview/twig-js'
-      ? ECL_TWIG_JS_SITE_ID
-      : ECL_TWIG_PHP_SITE_ID;
+    context === 'preview/twig-js' ? ECL_TWIG_JS_SITE_ID : ECL_TWIG_PHP_SITE_ID;
   let payload = {};
 
   try {
@@ -82,14 +81,14 @@ const run = async () => {
         state: 'success',
         target_url: siteDeployment.deploy_ssl_url,
         description: 'Production deployment completed!',
-        DEPLOY_CONTEXT,
+        context,
       };
     } else {
       payload = {
         state: 'success',
         target_url: siteDeployment.deploy_ssl_url,
         description: 'Preview ready!',
-        DEPLOY_CONTEXT,
+        context,
       };
     }
   } catch (error) {
@@ -97,24 +96,27 @@ const run = async () => {
       state: 'error',
       target_url: DRONE_BUILD_LINK,
       description: 'Could not get data about Netlify deployment.',
-      DEPLOY_CONTEXT,
+      context,
     };
   }
-
+  console.log(
+    `https://api.github.com/repos/${DRONE_REPO}/statuses/${DRONE_COMMIT_SHA}`
+  );
+  console.log(payload);
   // @see https://developer.github.com/v3/repos/statuses
   await fetch(
     `https://api.github.com/repos/${DRONE_REPO}/statuses/${DRONE_COMMIT_SHA}`,
     {
       method: 'POST',
       headers: {
-        Accept: 'application/json',
-        'Accept-Charset': 'utf-8',
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${GH_TOKEN}`,
+        Accept: 'application/vnd.github.v3+json',
+        Authorization: `token ${GH_TOKEN}`,
       },
       body: JSON.stringify(payload),
     }
-  );
+  )
+    .then(res => res.json())
+    .then(json => console.log(json));
 
   console.log('Status on pull request successfully updated!');
 };
