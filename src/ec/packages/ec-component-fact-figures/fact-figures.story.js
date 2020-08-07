@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-import { storiesOf } from '@storybook/html';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import {
   withKnobs,
@@ -24,7 +22,7 @@ import factFigures from './ecl-fact-figures.html.twig';
 import notes from './README.md';
 
 const iconsList = [];
-generalIcons.forEach(icon => {
+generalIcons.forEach((icon) => {
   iconsList.push(icon);
 });
 
@@ -88,7 +86,7 @@ const formatItem = (item, index) => {
   return item;
 };
 // prepare the knobs for the stories.
-const prepareFactFigures = data => {
+const prepareFactFigures = (data) => {
   data.column = text('column', data.column, tabLabels.required);
   data.display_icons = boolean('display_icons', true, tabLabels.optional);
   data.view_all = data.view_all.link
@@ -108,7 +106,7 @@ const prepareFactFigures = data => {
       }
     : false;
 
-  data.items = data.items.map(formatItem);
+  data.items = data.items.map((item) => formatItem(item));
 
   getExtraKnobs(data);
   getComplianceKnob(data);
@@ -116,31 +114,33 @@ const prepareFactFigures = data => {
   return data;
 };
 
-storiesOf('Components/Fact figures', module)
-  .addDecorator(withNotes)
-  .addDecorator(withKnobs)
-  .addDecorator(withCode)
-  .add(
-    '3 Columns',
-    () => {
-      button('With or without view_links', viewAll3Toggler, tabLabels.cases);
-      button('With or without description', desc3Toggler, tabLabels.cases);
+export default {
+  title: 'Components/Fact figures',
+  decorators: [withNotes, withKnobs, withCode],
+};
 
-      return factFigures(prepareFactFigures(data3));
-    },
-    {
-      notes: { markdown: notes, json: data3 },
-    }
-  )
-  .add(
-    '4 Columns',
-    () => {
-      button('With or without view_links', viewAll4Toggler, tabLabels.cases);
-      button('With or without description', desc4Toggler, tabLabels.cases);
+export const Columns3 = () => {
+  button('With or without view_links', viewAll3Toggler, tabLabels.cases);
+  button('With or without description', desc3Toggler, tabLabels.cases);
 
-      return factFigures(prepareFactFigures(data4));
-    },
-    {
-      notes: { markdown: notes, json: data4 },
-    }
-  );
+  return factFigures(prepareFactFigures(data3));
+};
+
+Columns3.story = {
+  parameters: {
+    notes: { markdown: notes, json: data3 },
+  },
+};
+
+export const Columns4 = () => {
+  button('With or without view_links', viewAll4Toggler, tabLabels.cases);
+  button('With or without description', desc4Toggler, tabLabels.cases);
+
+  return factFigures(prepareFactFigures(data4));
+};
+
+Columns4.story = {
+  parameters: {
+    notes: { markdown: notes, json: data4 },
+  },
+};

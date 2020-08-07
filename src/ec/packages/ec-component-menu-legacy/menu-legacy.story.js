@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import { withKnobs, text, optionsKnob } from '@storybook/addon-knobs';
 import withCode from '@ecl-twig/storybook-addon-code';
@@ -14,7 +13,7 @@ import demoData from './demo/data';
 import menuLegacy from './ecl-menu-legacy.html.twig';
 import notes from './README.md';
 
-const prepareMenuLegacy = data => {
+const prepareMenuLegacy = (data) => {
   data.label = text('label', data.label, tabLabels.required);
   data.icon_path = optionsKnob(
     'icon_path',
@@ -53,10 +52,17 @@ const prepareMenuLegacy = data => {
   return data;
 };
 
-storiesOf('Components/Navigation/Menu Legacy', module)
-  .addDecorator(withNotes)
-  .addDecorator(withCode)
-  .addDecorator(withKnobs)
-  .add('default', () => menuLegacy(prepareMenuLegacy(demoData)), {
+export default {
+  title: 'Components/Navigation/Menu Legacy',
+  decorators: [withNotes, withCode, withKnobs],
+};
+
+export const Default = () => menuLegacy(prepareMenuLegacy(demoData));
+
+Default.story = {
+  name: 'default',
+
+  parameters: {
     notes: { markdown: notes, json: demoData },
-  });
+  },
+};

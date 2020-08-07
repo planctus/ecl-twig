@@ -14,8 +14,8 @@ const run = async () => {
     DRONE_BUILD_LINK,
     DRONE_BUILD_NUMBER,
     DEPLOY_CONTEXT,
-    ECL_TWIG_PHP_SITE_ID,
-    ECL_TWIG_JS_SITE_ID,
+    NETLIFY_PHP_SITE_ID,
+    NETLIFY_JS_SITE_ID,
     NETLIFY_AUTH_TOKEN,
   } = process.env;
 
@@ -36,10 +36,9 @@ const run = async () => {
     return;
   }
 
+  const context = DEPLOY_CONTEXT;
   const NETLIFY_SITE_ID =
-    DEPLOY_CONTEXT === 'preview/twig-js'
-      ? ECL_TWIG_JS_SITE_ID
-      : ECL_TWIG_PHP_SITE_ID;
+    context === 'preview/twig-js' ? NETLIFY_JS_SITE_ID : NETLIFY_PHP_SITE_ID;
   let payload = {};
 
   try {
@@ -59,7 +58,7 @@ const run = async () => {
     const deployments = await deploymentsResponse.json();
 
     const currentDeployment = deployments.find(
-      deployment => deployment.title === `Drone build: ${DRONE_BUILD_NUMBER}`
+      (deployment) => deployment.title === `Drone build: ${DRONE_BUILD_NUMBER}`
     );
 
     const siteDeploymentResponse = await fetch(
@@ -82,35 +81,32 @@ const run = async () => {
         state: 'success',
         target_url: siteDeployment.deploy_ssl_url,
         description: 'Production deployment completed!',
-        DEPLOY_CONTEXT,
+        context,
       };
     } else {
       payload = {
         state: 'success',
         target_url: siteDeployment.deploy_ssl_url,
         description: 'Preview ready!',
-        DEPLOY_CONTEXT,
+        context,
       };
     }
-  } catch (error) {
+  } catch {
     payload = {
       state: 'error',
       target_url: DRONE_BUILD_LINK,
       description: 'Could not get data about Netlify deployment.',
-      DEPLOY_CONTEXT,
+      context,
     };
   }
-
   // @see https://developer.github.com/v3/repos/statuses
   await fetch(
     `https://api.github.com/repos/${DRONE_REPO}/statuses/${DRONE_COMMIT_SHA}`,
     {
       method: 'POST',
       headers: {
-        Accept: 'application/json',
-        'Accept-Charset': 'utf-8',
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${GH_TOKEN}`,
+        Accept: 'application/vnd.github.v3+json',
+        Authorization: `token ${GH_TOKEN}`,
       },
       body: JSON.stringify(payload),
     }

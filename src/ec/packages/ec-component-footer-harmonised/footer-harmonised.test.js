@@ -3,11 +3,12 @@ import { merge, renderTwigFileAsNode } from '@ecl-twig/test-utils';
 import dataGroup1 from './demo/data--group1';
 import dataGroup2 from './demo/data--group2';
 import dataGroup3 from './demo/data--group3';
+import dataEu from './demo/eu-data';
 
 describe('EC - Footer Harmonised', () => {
   const template =
     '@ecl-twig/ec-component-footer-harmonised/ecl-footer-harmonised.html.twig';
-  const render = params => renderTwigFileAsNode(template, params);
+  const render = (params) => renderTwigFileAsNode(template, params);
 
   describe('Group 1', () => {
     test('renders correctly', () => {
@@ -128,6 +129,14 @@ describe('EC - Footer Harmonised', () => {
       dataCompliance.sections[0].title.link.label = '';
 
       return expect(render(dataCompliance)).resolves.toMatchSnapshot();
+    });
+  });
+
+  describe('EU version', () => {
+    test('renders correctly', () => {
+      expect.assertions(1);
+
+      return expect(render(dataEu)).resolves.toMatchSnapshot();
     });
   });
 });

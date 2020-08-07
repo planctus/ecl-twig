@@ -8,7 +8,7 @@ describe('EC - Language List', () => {
   describe('Splash', () => {
     const template =
       '@ecl-twig/ec-component-language-list/ecl-language-list.html.twig';
-    const render = params => renderTwigFileAsNode(template, params);
+    const render = (params) => renderTwigFileAsNode(template, params);
 
     test('renders correctly', () => {
       expect.assertions(1);
@@ -54,7 +54,7 @@ describe('EC - Language List', () => {
   describe('Overlay', () => {
     const template =
       '@ecl-twig/ec-component-language-list/ecl-language-list.html.twig';
-    const render = params => renderTwigFileAsNode(template, params);
+    const render = (params) => renderTwigFileAsNode(template, params);
 
     test('renders correctly', () => {
       expect.assertions(1);
@@ -93,6 +93,7 @@ describe('EC - Language List', () => {
       dataCompliance.items[2].lang = '';
       dataCompliance.close_label = '';
       dataCompliance.title = '';
+      dataCompliance.non_eu_category = '';
 
       return expect(render(dataCompliance)).resolves.toMatchSnapshot();
     });

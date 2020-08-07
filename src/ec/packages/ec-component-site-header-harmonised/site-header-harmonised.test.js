@@ -7,7 +7,7 @@ import dataGroup3 from './demo/data--group3';
 describe('EC - Site Header Harmonised', () => {
   const template =
     '@ecl-twig/ec-component-site-header-harmonised/ecl-site-header-harmonised.html.twig';
-  const render = params => renderTwigFileAsNode(template, params);
+  const render = (params) => renderTwigFileAsNode(template, params);
 
   describe('Group 1', () => {
     test('renders correctly', () => {
@@ -94,7 +94,7 @@ describe('EC - Site Header Harmonised', () => {
       expect.assertions(1);
 
       const dataCompliance = { ...dataGroup2, _compliance_: true };
-      dataCompliance.logo.src = '';
+      dataCompliance.logo.src_desktop = '';
 
       return expect(render(dataCompliance)).resolves.toMatchSnapshot();
     });

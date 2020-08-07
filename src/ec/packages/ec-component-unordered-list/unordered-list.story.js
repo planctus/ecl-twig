@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import { withKnobs, select, text } from '@storybook/addon-knobs';
 import {
@@ -17,7 +16,7 @@ import dataLinkNoBullet from '@ecl/ec-specs-list/demo/data--link-no-bullet';
 import unorderedList from './ecl-unordered-list.html.twig';
 import notes from './README.md';
 
-const prepareUnorderedList = data => {
+const prepareUnorderedList = (data) => {
   if (data.variant) {
     data.variant = select(
       'variant',
@@ -46,27 +45,49 @@ const prepareUnorderedList = data => {
   return data;
 };
 
-storiesOf('Components/List/Unordered list', module)
-  .addDecorator(withNotes)
-  .addDecorator(withCode)
-  .addDecorator(withKnobs)
-  .add('default', () => unorderedList(prepareUnorderedList(dataDefault)), {
+export default {
+  title: 'Components/List/Unordered list',
+  decorators: [withNotes, withCode, withKnobs],
+};
+
+export const Default = () => unorderedList(prepareUnorderedList(dataDefault));
+
+Default.story = {
+  name: 'default',
+
+  parameters: {
     notes: { markdown: notes, json: dataDefault },
-  })
-  .add(
-    'with divider',
-    () => unorderedList(prepareUnorderedList(dataLinkDivider)),
-    {
-      notes: { markdown: notes, json: dataLinkDivider },
-    }
-  )
-  .add('with links', () => unorderedList(prepareUnorderedList(dataLink)), {
+  },
+};
+
+export const Divider = () =>
+  unorderedList(prepareUnorderedList(dataLinkDivider));
+
+Divider.story = {
+  name: 'with divider',
+
+  parameters: {
+    notes: { markdown: notes, json: dataLinkDivider },
+  },
+};
+
+export const Links = () => unorderedList(prepareUnorderedList(dataLink));
+
+Links.story = {
+  name: 'with links',
+
+  parameters: {
     notes: { markdown: notes },
-  })
-  .add(
-    'no bullet',
-    () => unorderedList(prepareUnorderedList(dataLinkNoBullet)),
-    {
-      notes: { markdown: notes },
-    }
-  );
+  },
+};
+
+export const NoBullet = () =>
+  unorderedList(prepareUnorderedList(dataLinkNoBullet));
+
+NoBullet.story = {
+  name: 'no bullet',
+
+  parameters: {
+    notes: { markdown: notes },
+  },
+};

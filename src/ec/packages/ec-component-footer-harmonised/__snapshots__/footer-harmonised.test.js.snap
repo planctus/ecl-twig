@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
+exports[`EC - Footer Harmonised EU version renders correctly 1`] = `
 <test>
   <footer
     class="ecl-footer-harmonised ecl-footer-harmonised--group1"
@@ -12,6 +12,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section1"
       >
         <a
+          aria-label="Link to Site name"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="/example"
         >
@@ -20,11 +21,18 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
         <div
           class="ecl-footer-harmonised__description"
         >
-          This site is managed by the Directorate-General for "DG identification"
+          This site is managed by 
+          <a
+            class="ecl-link ecl-link--standalone"
+            href="/example"
+          >
+            site owner name
+          </a>
+           and is an official website of the European Union
         </div>
       </section>
-      <div
-        class="ecl-footer-harmonised__section2"
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section2"
       >
         <section
           class="ecl-footer-harmonised__section"
@@ -32,7 +40,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
           <div
             class="ecl-footer-harmonised__title ecl-footer-harmonised__title--separator"
           >
-            Contact us
+            Contact site name
           </div>
           <ul
             class="ecl-footer-harmonised__list"
@@ -41,10 +49,11 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Link example"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
-                Contact information of the DG
+                Link
               </a>
             </li>
           </ul>
@@ -55,15 +64,16 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
           <div
             class="ecl-footer-harmonised__title ecl-footer-harmonised__title--separator"
           >
-            Follow us on
+            Follow us
           </div>
           <ul
-            class="ecl-footer-harmonised__list ecl-footer-harmonised__list--inline"
+            class="ecl-footer-harmonised__list"
           >
             <li
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Facebook"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -88,6 +98,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Twitter"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -112,6 +123,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Linkedin"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -134,9 +146,589 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             </li>
           </ul>
         </section>
-      </div>
-      <div
-        class="ecl-footer-harmonised__section3"
+      </section>
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section3"
+      >
+        <div
+          class="ecl-footer-harmonised__title ecl-footer-harmonised__title--separator"
+        >
+          Optional links
+        </div>
+        <ul
+          class="ecl-footer-harmonised__list"
+        >
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to link 1"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              Link 1
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to link 2"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              Link 2
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to link 3"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              Link 3
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to link 4"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              Link 4
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section6"
+      />
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section7"
+      >
+        <a
+          aria-label="European Union"
+          class="ecl-link ecl-link--standalone ecl-footer-harmonised__logo-link"
+          href="/example"
+        >
+          <img
+            alt="European Union logo"
+            class="ecl-footer-harmonised__logo-image-mobile"
+            src="/eu-logo-mobile-en.svg"
+            title="European Union"
+          />
+          <img
+            alt="European Union logo"
+            class="ecl-footer-harmonised__logo-image-desktop"
+            src="/eu-en-desktop.svg"
+            title="European Union"
+          />
+        </a>
+        <div
+          class="ecl-footer-harmonised__description"
+        >
+          Discover more on 
+          <a
+            class="ecl-link ecl-link--standalone"
+            href="/example"
+          >
+            europa.eu
+          </a>
+        </div>
+      </section>
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section8"
+      >
+        <section
+          class="ecl-footer-harmonised__section"
+        >
+          <div
+            class="ecl-footer-harmonised__title ecl-footer-harmonised__title--separator"
+          >
+            Contact the EU
+          </div>
+          <ul
+            class="ecl-footer-harmonised__list"
+          >
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Call us"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Call us 00 800 6 7 8 9 10 11
+              </a>
+            </li>
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to other telephone options"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Use other telephone options
+              </a>
+            </li>
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to writing us via contact form"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Write us via our contact form
+              </a>
+            </li>
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Meet us at a local EU office"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Meet us at a local EU office
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section
+          class="ecl-footer-harmonised__section"
+        >
+          <div
+            class="ecl-footer-harmonised__title ecl-footer-harmonised__title--separator"
+          >
+            Social media
+          </div>
+          <ul
+            class="ecl-footer-harmonised__list"
+          >
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Search for EU social media channels"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Search for EU social media channels
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section
+          class="ecl-footer-harmonised__section"
+        >
+          <div
+            class="ecl-footer-harmonised__title ecl-footer-harmonised__title--separator"
+          >
+            Legal
+          </div>
+          <ul
+            class="ecl-footer-harmonised__list"
+          >
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to language policy"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Language policy
+              </a>
+            </li>
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Privacy policy"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Privacy policy
+              </a>
+            </li>
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Legal notice"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Legal notice
+              </a>
+            </li>
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Brexit content disclaimer"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Brexit content disclaimer
+              </a>
+            </li>
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Cookies"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Cookies
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section9"
+      >
+        <div
+          class="ecl-footer-harmonised__title ecl-footer-harmonised__title--separator"
+        >
+          EU institutions
+        </div>
+        <ul
+          class="ecl-footer-harmonised__list"
+        >
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Parliament"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Parliament
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Council"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Council
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to Council of the European Union"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              Council of the European Union
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Commission"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Commission
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to Court of Justice of the European Commission"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              Court of Justice of the European Commission
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Central Bank"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Central Bank
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Court of Auditors"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Court of Auditors
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European External Action Service"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European External Action Service
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Economic and Social Committee"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Economic and Social Committee
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Investment Bank"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Investment Bank
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Ombudsman"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Ombudsman
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Data Protection Supervisor"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Data Protection Supervisor
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Data Protection Board"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Data Protection Board
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to European Personnel Selection Office"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              European Personnel Selection Office
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to Publications office of the European Union"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              Publications Office of the European Union
+            </a>
+          </li>
+          <li
+            class="ecl-footer-harmonised__list-item"
+          >
+            <a
+              aria-label="Link to Agencies"
+              class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+              href="/example"
+            >
+              Agencies
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+</test>
+`;
+
+exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
+<test>
+  <footer
+    class="ecl-footer-harmonised ecl-footer-harmonised--group1"
+  >
+    <div
+      class="ecl-container ecl-footer-harmonised__container"
+    >
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section1"
+      >
+        <a
+          aria-label="Link to example"
+          class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
+          href="/example"
+        >
+          Site name
+        </a>
+        <div
+          class="ecl-footer-harmonised__description"
+        >
+          This site is managed by the Directorate-General for "DG identification"
+        </div>
+      </section>
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section2"
+      >
+        <section
+          class="ecl-footer-harmonised__section"
+        >
+          <div
+            class="ecl-footer-harmonised__title ecl-footer-harmonised__title--separator"
+          >
+            Contact us
+          </div>
+          <ul
+            class="ecl-footer-harmonised__list"
+          >
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Contact information of the DG"
+                class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
+                href="/example"
+              >
+                Contact information of the DG
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section
+          class="ecl-footer-harmonised__section"
+        >
+          <div
+            class="ecl-footer-harmonised__title ecl-footer-harmonised__title--separator"
+          >
+            Follow us on
+          </div>
+          <ul
+            class="ecl-footer-harmonised__list ecl-footer-harmonised__list--inline"
+          >
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Facebook"
+                class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
+                href="/example"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="ecl-icon ecl-icon--xs ecl-link__icon"
+                  focusable="false"
+                >
+                  <use
+                    xlink:href="/icons.svg#branded--facebook"
+                  />
+                </svg>
+                 
+                <span
+                  class="ecl-link__label"
+                >
+                  Facebook
+                </span>
+              </a>
+            </li>
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Twitter"
+                class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
+                href="/example"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="ecl-icon ecl-icon--xs ecl-link__icon"
+                  focusable="false"
+                >
+                  <use
+                    xlink:href="/icons.svg#branded--twitter"
+                  />
+                </svg>
+                 
+                <span
+                  class="ecl-link__label"
+                >
+                  Twitter
+                </span>
+              </a>
+            </li>
+            <li
+              class="ecl-footer-harmonised__list-item"
+            >
+              <a
+                aria-label="Link to Linkedin"
+                class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
+                href="/example"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="ecl-icon ecl-icon--xs ecl-link__icon"
+                  focusable="false"
+                >
+                  <use
+                    xlink:href="/icons.svg#branded--linkedin"
+                  />
+                </svg>
+                 
+                <span
+                  class="ecl-link__label"
+                >
+                  Linkedin
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section3"
       >
         <section
           class="ecl-footer-harmonised__section"
@@ -153,6 +745,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Information about the DG"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -176,6 +769,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 1"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -186,6 +780,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 2"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -196,6 +791,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 3"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -206,6 +802,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 4"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -216,6 +813,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 5"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -224,7 +822,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             </li>
           </ul>
         </section>
-      </div>
+      </section>
       <section
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section6"
       >
@@ -240,6 +838,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Class name 1"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -250,6 +849,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Class name 2"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -262,6 +862,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section7"
       >
         <a
+          aria-label="Aria label default"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="https://ec.europa.eu/info/index_en"
         >
@@ -278,6 +879,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Contact the European Commission"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -288,6 +890,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Follow the European Commission"
               class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after ecl-footer-harmonised__link"
               href="/example"
             >
@@ -312,6 +915,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Resources for partners"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -330,6 +934,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Language policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -340,6 +945,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Cookies"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -350,6 +956,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Privacy policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -360,6 +967,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Legal notice"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -370,6 +978,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Brexit content disclaimer"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -397,6 +1006,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section1"
       >
         <a
+          aria-label="Link to example"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="/example"
         >
@@ -408,8 +1018,8 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
           This site is managed by the Directorate-General for "DG identification"
         </div>
       </section>
-      <div
-        class="ecl-footer-harmonised__section2"
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section2"
       >
         <section
           class="ecl-footer-harmonised__section"
@@ -426,6 +1036,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Contact information of the DG"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -449,6 +1060,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Facebook"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -473,6 +1085,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Twitter"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -497,6 +1110,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Linkedin"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -519,9 +1133,9 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             </li>
           </ul>
         </section>
-      </div>
-      <div
-        class="ecl-footer-harmonised__section3"
+      </section>
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section3"
       >
         <section
           class="ecl-footer-harmonised__section"
@@ -538,6 +1152,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Information about the DG"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -561,6 +1176,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 1"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -571,6 +1187,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 2"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -581,6 +1198,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 3"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -591,6 +1209,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 4"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -601,6 +1220,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 5"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -609,7 +1229,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             </li>
           </ul>
         </section>
-      </div>
+      </section>
       <section
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section6"
       >
@@ -625,6 +1245,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Class name 1"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -635,6 +1256,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Class name 2"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -647,6 +1269,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section7"
       >
         <a
+          aria-label="Aria label default"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="https://ec.europa.eu/info/index_en"
         >
@@ -663,6 +1286,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Contact the European Commission"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -673,6 +1297,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Follow the European Commission"
               class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after ecl-footer-harmonised__link"
               href="/example"
             >
@@ -697,6 +1322,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Resources for partners"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -715,6 +1341,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Language policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -725,6 +1352,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Cookies"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -735,6 +1363,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Privacy policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -745,6 +1374,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Legal notice"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -755,6 +1385,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Brexit content disclaimer"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -780,6 +1411,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section1"
       >
         <a
+          aria-label="Link to example"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="/example"
         >
@@ -791,8 +1423,8 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
           This site is managed by the Directorate-General for "DG identification"
         </div>
       </section>
-      <div
-        class="ecl-footer-harmonised__section2"
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section2"
       >
         <section
           class="ecl-footer-harmonised__section"
@@ -809,6 +1441,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Contact information of the DG"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -832,6 +1465,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Facebook"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -856,6 +1490,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Twitter"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -880,6 +1515,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Linkedin"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -902,9 +1538,9 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             </li>
           </ul>
         </section>
-      </div>
-      <div
-        class="ecl-footer-harmonised__section3"
+      </section>
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section3"
       >
         <section
           class="ecl-footer-harmonised__section"
@@ -921,6 +1557,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Information about the DG"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -944,6 +1581,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 1"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -954,6 +1592,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 2"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -964,6 +1603,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 3"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -974,6 +1614,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 4"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -984,6 +1625,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 5"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -992,7 +1634,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             </li>
           </ul>
         </section>
-      </div>
+      </section>
       <section
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section6"
       >
@@ -1008,6 +1650,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Class name 1"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1018,6 +1661,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Class name 2"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1030,6 +1674,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section7"
       >
         <a
+          aria-label="Aria label default"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="https://ec.europa.eu/info/index_en"
         >
@@ -1046,6 +1691,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Contact the European Commission"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1056,6 +1702,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Follow the European Commission"
               class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1080,6 +1727,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Resources for partners"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1098,6 +1746,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Language policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1108,6 +1757,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Cookies"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1118,6 +1768,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Privacy policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1128,6 +1779,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Legal notice"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1138,6 +1790,7 @@ exports[`EC - Footer Harmonised Group 1 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Brexit content disclaimer"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1163,6 +1816,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section1"
       >
         <a
+          aria-label="Link to example"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="/example"
         />
@@ -1177,8 +1831,8 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
           </p>
         </div>
       </section>
-      <div
-        class="ecl-footer-harmonised__section2"
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section2"
       >
         <section
           class="ecl-footer-harmonised__section"
@@ -1195,6 +1849,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Contact information of the DG"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -1228,6 +1883,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Facebook"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -1280,6 +1936,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Twitter"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -1332,6 +1989,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Linkedin"
                 class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -1382,9 +2040,9 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
             </li>
           </ul>
         </section>
-      </div>
-      <div
-        class="ecl-footer-harmonised__section3"
+      </section>
+      <section
+        class="ecl-footer-harmonised__section ecl-footer-harmonised__section3"
       >
         <section
           class="ecl-footer-harmonised__section"
@@ -1401,6 +2059,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Information about the DG"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -1434,6 +2093,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 1"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -1454,6 +2114,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 2"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -1474,6 +2135,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 3"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -1494,6 +2156,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 4"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -1514,6 +2177,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
               class="ecl-footer-harmonised__list-item"
             >
               <a
+                aria-label="Link to Related link 5"
                 class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
                 href="/example"
               >
@@ -1532,7 +2196,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
             </li>
           </ul>
         </section>
-      </div>
+      </section>
       <section
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section6"
       >
@@ -1548,6 +2212,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Class name 1"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1568,6 +2233,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Class name 2"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1590,6 +2256,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section7"
       >
         <a
+          aria-label="Aria label default"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="https://ec.europa.eu/info/index_en"
         />
@@ -1614,6 +2281,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Contact the European Commission"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1634,6 +2302,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Follow the European Commission"
               class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1686,6 +2355,7 @@ exports[`EC - Footer Harmonised Group 1 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Resources for partners"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1734,6 +2404,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly 1`] = `
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section1"
       >
         <a
+          aria-label="Link to European Commission"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="https://ec.europa.eu/info/index_en"
         >
@@ -1750,6 +2421,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Contact the European Commission"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1760,6 +2432,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Follow the European Commission on social media"
               class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1784,6 +2457,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Resources for partners"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1802,6 +2476,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Language policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1812,6 +2487,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Cookies"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1822,6 +2498,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Privacy policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1832,6 +2509,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Legal notice"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1842,6 +2520,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly 1`] = `
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Brexit content disclaimer"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1869,6 +2548,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra attributes 
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section1"
       >
         <a
+          aria-label="Link to European Commission"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="https://ec.europa.eu/info/index_en"
         >
@@ -1885,6 +2565,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Contact the European Commission"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1895,6 +2576,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Follow the European Commission on social media"
               class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1919,6 +2601,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Resources for partners"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1937,6 +2620,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Language policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1947,6 +2631,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Cookies"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1957,6 +2642,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Privacy policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1967,6 +2653,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Legal notice"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -1977,6 +2664,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra attributes 
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Brexit content disclaimer"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2002,6 +2690,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra class names
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section1"
       >
         <a
+          aria-label="Link to European Commission"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="https://ec.europa.eu/info/index_en"
         >
@@ -2018,6 +2707,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Contact the European Commission"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2028,6 +2718,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Follow the European Commission on social media"
               class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2052,6 +2743,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Resources for partners"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2070,6 +2762,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Language policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2080,6 +2773,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Cookies"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2090,6 +2784,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Privacy policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2100,6 +2795,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Legal notice"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2110,6 +2806,7 @@ exports[`EC - Footer Harmonised Group 2 renders correctly with extra class names
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Brexit content disclaimer"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2135,6 +2832,7 @@ exports[`EC - Footer Harmonised Group 2 with missing input data and debug enable
         class="ecl-footer-harmonised__section ecl-footer-harmonised__section1"
       >
         <a
+          aria-label="Link to European Commission"
           class="ecl-link ecl-link--standalone ecl-footer-harmonised__title"
           href="https://ec.europa.eu/info/index_en"
         />
@@ -2159,6 +2857,7 @@ exports[`EC - Footer Harmonised Group 2 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Contact the European Commission"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2179,6 +2878,7 @@ exports[`EC - Footer Harmonised Group 2 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Follow the European Commission on social media"
               class="ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2231,6 +2931,7 @@ exports[`EC - Footer Harmonised Group 2 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Resources for partners"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2259,6 +2960,7 @@ exports[`EC - Footer Harmonised Group 2 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Language policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2279,6 +2981,7 @@ exports[`EC - Footer Harmonised Group 2 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Cookies"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2299,6 +3002,7 @@ exports[`EC - Footer Harmonised Group 2 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Privacy policy"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2319,6 +3023,7 @@ exports[`EC - Footer Harmonised Group 2 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Legal notice"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >
@@ -2339,6 +3044,7 @@ exports[`EC - Footer Harmonised Group 2 with missing input data and debug enable
             class="ecl-footer-harmonised__list-item"
           >
             <a
+              aria-label="Link to Brexit content disclaimer"
               class="ecl-link ecl-link--standalone ecl-footer-harmonised__link"
               href="/example"
             >

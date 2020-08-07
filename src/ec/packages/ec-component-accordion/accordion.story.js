@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import { withKnobs, text, select, optionsKnob } from '@storybook/addon-knobs';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import {
@@ -13,7 +12,7 @@ import demoData from './demo/data';
 import accordion from './ecl-accordion.html.twig';
 import notes from './README.md';
 
-const prepareAccordion = data => {
+const prepareAccordion = (data) => {
   data.items.forEach((item, index) => {
     const { id, level, toggle, content } = item;
     item.id = text(`items[${index}].id`, id, tabLabels.required);
@@ -46,10 +45,17 @@ const prepareAccordion = data => {
   return data;
 };
 
-storiesOf('Components/deprecated/Accordion', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withCode)
-  .addDecorator(withNotes)
-  .add('ECL < 2.6.0 - default', () => accordion(prepareAccordion(demoData)), {
+export default {
+  title: 'Components/deprecated/Accordion',
+  decorators: [withKnobs, withCode, withNotes],
+};
+
+export const Default = () => accordion(prepareAccordion(demoData));
+
+Default.story = {
+  name: 'ECL < 2.6.0 - default',
+
+  parameters: {
     notes: { markdown: notes, json: demoData },
-  });
+  },
+};

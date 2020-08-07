@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import {
   getExtraKnobs,
@@ -8,8 +7,9 @@ import {
 import withCode from '@ecl-twig/storybook-addon-code';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
-import dataDefault from '@ecl/ec-specs-table/demo/data--default';
-import dataMulti from '@ecl/ec-specs-table/demo/data--multi';
+import dataDefault from './demo/data--default';
+import dataMulti from './demo/data--multi';
+import dataSortable from './demo/data--sort-table';
 import table from './ecl-table.html.twig';
 import notes from './README.md';
 
@@ -21,7 +21,9 @@ const prepareTable = (data, attr) => {
   if (attr) {
     defaultAttr = 'data-test data-test-another';
   }
+
   data.zebra = boolean('zebra', data.zebra, tabLabels.cases);
+  data.sortable = boolean('sortable', data.sortable, tabLabels.cases);
   data.headers.forEach((headers, i) => {
     headers.forEach((header, ind) => {
       header.label = text(
@@ -78,23 +80,53 @@ const prepareTable = (data, attr) => {
   return data;
 };
 
-storiesOf('Components/Table', module)
-  .addDecorator(withNotes)
-  .addDecorator(withCode)
-  .addDecorator(withKnobs)
-  .add('default', () => table(prepareTable(dataDefault)), {
+export default {
+  title: 'Components/Table',
+  decorators: [withNotes, withCode, withKnobs],
+};
+
+export const Default = () => table(prepareTable(dataDefault));
+
+Default.story = {
+  name: 'default',
+
+  parameters: {
     notes: { markdown: notes, json: dataDefault },
-  })
-  .add(
-    'default with row extra attributes',
-    () => table(prepareTable(dataDefault, true)),
-    {
-      notes: { markdown: notes, json: dataDefault },
-    }
-  )
-  .add('Zebra', () => table(prepareTable(dataZebra)), {
+  },
+};
+
+export const WithRowExtraAttributes = () =>
+  table(prepareTable(dataDefault, true));
+
+WithRowExtraAttributes.story = {
+  name: 'default with row extra attributes',
+
+  parameters: {
+    notes: { markdown: notes, json: dataDefault },
+  },
+};
+
+export const Zebra = () => table(prepareTable(dataZebra));
+
+Zebra.story = {
+  parameters: {
     notes: { markdown: notes, json: dataZebra },
-  })
-  .add('Multi', () => table(prepareTable(dataMulti)), {
+  },
+};
+
+export const Multi = () => table(prepareTable(dataMulti));
+
+Multi.story = {
+  parameters: {
     notes: { markdown: notes, json: dataMulti },
-  });
+  },
+};
+
+export const Sortable = () => table(prepareTable(dataSortable));
+
+Sortable.story = {
+  name: 'sort table',
+  parameters: {
+    notes: { markdown: notes, json: dataSortable },
+  },
+};

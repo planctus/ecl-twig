@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import {
   withKnobs,
   text,
@@ -15,13 +14,20 @@ import {
 } from '@ecl-twig/story-utils';
 
 import logoPath from '@ecl/ec-resources-logo/logo--mute.svg';
+import euLogoPath from '@ecl/eu-resources-logo/logo--mute.svg';
 import defaultSprite from '@ecl/ec-resources-icons/dist/sprites/icons.svg';
 import dataSplash from './demo/data--splash';
 import dataOverlay from './demo/data--overlay';
 import languageList from './ecl-language-list.html.twig';
 import notes from './README.md';
 
-const prepareLanguageList = data => {
+// Handle the EU demo.
+const system = process.env.STORYBOOK_SYSTEM
+  ? process.env.STORYBOOK_SYSTEM
+  : false;
+
+const prepareLanguageList = (data) => {
+  let logoImg = logoPath;
   data.icon_path = optionsKnob(
     'icon_path',
     { current: defaultSprite, 'no path': '' },
@@ -29,11 +35,14 @@ const prepareLanguageList = data => {
     { display: 'inline-radio' },
     tabLabels.required
   );
+  if (system) {
+    logoImg = euLogoPath;
+  }
   if (data.logo) {
     data.logo.path = optionsKnob(
       'logo.path',
-      { current: logoPath, 'no path': '' },
-      logoPath,
+      { current: logoImg, 'no path': '' },
+      logoImg,
       { display: 'inline-radio' },
       tabLabels.required
     );
@@ -64,7 +73,12 @@ const prepareLanguageList = data => {
   if (data.title) {
     data.title = text('title', data.title, tabLabels.required);
   }
-
+  data.eu_category = text('eu_category', data.eu_category, tabLabels.optional);
+  data.non_eu_category = text(
+    'non_eu_category',
+    data.non_eu_category,
+    tabLabels.optional
+  );
   data.items.forEach((item, i) => {
     if (item.label && item.path) {
       item.label = select(
@@ -94,19 +108,62 @@ const prepareLanguageList = data => {
     }
   });
 
+  data.non_eu_items.forEach((item, i) => {
+    if (item.label && item.path) {
+      item.label = select(
+        `non_eu_items[${i}].label`,
+        ['none', item.label],
+        item.label,
+        tabLabels.optional
+      );
+      item.path = text(`items[${i}].path`, item.path, tabLabels.optional);
+      item.lang = select(
+        `non_eu_items[${i}].lang`,
+        [item.lang],
+        item.lang,
+        tabLabels.optional
+      );
+    }
+    if (item.active) {
+      item.active = boolean(
+        `non_eu_items[${i}].active`,
+        item.active,
+        tabLabels.optional
+      );
+    }
+    if (item.label === 'none') {
+      item.label = '';
+      item.path = '';
+    }
+  });
+
   getExtraKnobs(data);
   getComplianceKnob(data);
 
   return data;
 };
 
-storiesOf('Components/Language list', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withCode)
-  .addDecorator(withNotes)
-  .add('splash', () => languageList(prepareLanguageList(dataSplash)), {
+export default {
+  title: 'Components/Language list',
+  decorators: [withKnobs, withCode, withNotes],
+};
+
+export const Splash = () => languageList(prepareLanguageList(dataSplash));
+
+Splash.story = {
+  name: 'splash',
+
+  parameters: {
     notes: { markdown: notes, json: dataSplash },
-  })
-  .add('overlay', () => languageList(prepareLanguageList(dataOverlay)), {
+  },
+};
+
+export const Overlay = () => languageList(prepareLanguageList(dataOverlay));
+
+Overlay.story = {
+  name: 'overlay',
+
+  parameters: {
     notes: { markdown: notes, json: dataOverlay },
-  });
+  },
+};

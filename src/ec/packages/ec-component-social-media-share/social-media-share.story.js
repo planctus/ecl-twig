@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import { withKnobs, text, select, optionsKnob } from '@storybook/addon-knobs';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import {
@@ -15,7 +14,7 @@ import demoData from './demo/data';
 import SocialMediaShare from './ecl-social-media-share.html.twig';
 import notes from './README.md';
 
-const prepareSocialMediaShare = data => {
+const prepareSocialMediaShare = (data) => {
   data.description = text('description', data.description, tabLabels.required);
 
   data.links.forEach((link, i) => {
@@ -130,10 +129,18 @@ const prepareSocialMediaShare = data => {
   return data;
 };
 
-storiesOf('Components/Social Media Share', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withCode)
-  .addDecorator(withNotes)
-  .add('default', () => SocialMediaShare(prepareSocialMediaShare(demoData)), {
+export default {
+  title: 'Components/Social Media Share',
+  decorators: [withKnobs, withCode, withNotes],
+};
+
+export const Default = () =>
+  SocialMediaShare(prepareSocialMediaShare(demoData));
+
+Default.story = {
+  name: 'default',
+
+  parameters: {
     notes: { markdown: notes, json: demoData },
-  });
+  },
+};

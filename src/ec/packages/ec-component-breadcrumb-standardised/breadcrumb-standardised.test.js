@@ -2,11 +2,13 @@ import { merge, renderTwigFileAsNode } from '@ecl-twig/test-utils';
 
 import dataSimple from './demo/data--simple';
 import dataLong from './demo/data';
+import dataSimpleEu from './demo/eu-data--simple';
+import dataLongEu from './demo/eu-data';
 
 describe('EC - Breadcrumb Standardised', () => {
   const template =
     '@ecl-twig/ec-component-breadcrumb-standardised/ecl-breadcrumb-standardised.html.twig';
-  const render = params => renderTwigFileAsNode(template, params);
+  const render = (params) => renderTwigFileAsNode(template, params);
 
   describe('Simple', () => {
     const data = merge(dataSimple, {
@@ -16,6 +18,12 @@ describe('EC - Breadcrumb Standardised', () => {
     test(`renders correctly`, () => {
       expect.assertions(1);
       return expect(render(data)).resolves.toMatchSnapshot();
+    });
+
+    test(`renders correctly with EU content`, () => {
+      expect.assertions(1);
+
+      return expect(render(dataSimpleEu)).resolves.toMatchSnapshot();
     });
 
     test('renders correctly with extra class names', () => {
@@ -53,6 +61,12 @@ describe('EC - Breadcrumb Standardised', () => {
     test(`renders correctly`, () => {
       expect.assertions(1);
       return expect(render(data)).resolves.toMatchSnapshot();
+    });
+
+    test(`renders correctly with EU content`, () => {
+      expect.assertions(1);
+
+      return expect(render(dataLongEu)).resolves.toMatchSnapshot();
     });
 
     test('renders correctly with extra class names', () => {

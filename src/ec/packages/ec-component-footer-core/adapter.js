@@ -1,13 +1,17 @@
-/* eslint-disable import/no-extraneous-dependencies, no-param-reassign, default-case */
+/* eslint-disable default-case */
 import { formatLink } from '@ecl-twig/data-utils';
 
-const formatSection = section => {
+const formatSection = (section) => {
   const sections = [];
+  let innerSections = false;
+  let innerSectionsArray = [];
   if (!Array.isArray(section)) {
     section = [section];
+  } else {
+    innerSections = true;
   }
 
-  section.forEach(s => {
+  section.forEach((s) => {
     if (s.listClassName) {
       s.list_class_name = s.listClassName;
       delete s.listClassName;
@@ -32,27 +36,46 @@ const formatSection = section => {
       }
     }
     if (s.links && Array.isArray(s.links)) {
-      s.links = s.links.map(formatLink);
-      s.links.forEach(l => {
-        if (l.icon) {
-          l.icon.path = '/icons.svg';
+      s.links.forEach((l, i) => {
+        if (!l.link) {
+          s.links[i] = formatLink(l);
+          if (l.icon) {
+            l.icon.path = '/icons.svg';
+          }
         }
       });
     }
-    sections.push(s);
+    if (innerSections) {
+      innerSectionsArray.push(s);
+    } else {
+      innerSectionsArray = s;
+    }
   });
 
+  sections.push(innerSectionsArray);
   return sections;
 };
 
-const adapter = initialData => {
+const adapter = (initialData) => {
   const adaptedData = {};
   adaptedData.sections = [];
-  Object.keys(initialData.sections).forEach(section => {
+  if (initialData.logo) {
+    adaptedData.sections.push({ logo: initialData.logo });
+    adaptedData.sections[0].logo.path = initialData.logo.href;
+    delete adaptedData.sections[0].logo.href;
+  }
+  Object.keys(initialData.sections).forEach((section) => {
     if (section === 'siteName') {
-      adaptedData.sections.push(
-        ...formatSection(initialData.sections.siteName)
-      );
+      if (adaptedData.sections[0]) {
+        adaptedData.sections[0] = {
+          description: initialData.sections.siteName.description,
+          logo: adaptedData.sections[0].logo,
+        };
+      } else {
+        adaptedData.sections.push(
+          ...formatSection(initialData.sections.siteName)
+        );
+      }
     }
     if (section === 'classes') {
       adaptedData.sections.push(...formatSection(initialData.sections.classes));

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EC - Page Header Core meta-title - renders correctly 1`] = `
+exports[`Page Header Core EC - meta-title - renders correctly 1`] = `
 <test>
   <div
     class="ecl-page-header-core"
@@ -22,6 +22,7 @@ exports[`EC - Page Header Core meta-title - renders correctly 1`] = `
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -66,6 +67,7 @@ exports[`EC - Page Header Core meta-title - renders correctly 1`] = `
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -87,6 +89,7 @@ exports[`EC - Page Header Core meta-title - renders correctly 1`] = `
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -108,6 +111,7 @@ exports[`EC - Page Header Core meta-title - renders correctly 1`] = `
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -152,7 +156,7 @@ exports[`EC - Page Header Core meta-title - renders correctly 1`] = `
 </test>
 `;
 
-exports[`EC - Page Header Core meta-title renders correctly with extra attributes 1`] = `
+exports[`Page Header Core EC - meta-title renders correctly with extra attributes 1`] = `
 <test>
   <div
     class="ecl-page-header-core"
@@ -176,6 +180,7 @@ exports[`EC - Page Header Core meta-title renders correctly with extra attribute
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -220,6 +225,7 @@ exports[`EC - Page Header Core meta-title renders correctly with extra attribute
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -241,6 +247,7 @@ exports[`EC - Page Header Core meta-title renders correctly with extra attribute
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -262,6 +269,7 @@ exports[`EC - Page Header Core meta-title renders correctly with extra attribute
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -306,7 +314,7 @@ exports[`EC - Page Header Core meta-title renders correctly with extra attribute
 </test>
 `;
 
-exports[`EC - Page Header Core meta-title renders correctly with extra class names 1`] = `
+exports[`Page Header Core EC - meta-title renders correctly with extra class names 1`] = `
 <test>
   <div
     class="ecl-page-header-core custom-class custom-class--test"
@@ -328,6 +336,7 @@ exports[`EC - Page Header Core meta-title renders correctly with extra class nam
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -372,6 +381,7 @@ exports[`EC - Page Header Core meta-title renders correctly with extra class nam
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -393,6 +403,7 @@ exports[`EC - Page Header Core meta-title renders correctly with extra class nam
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -414,6 +425,7 @@ exports[`EC - Page Header Core meta-title renders correctly with extra class nam
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -458,7 +470,7 @@ exports[`EC - Page Header Core meta-title renders correctly with extra class nam
 </test>
 `;
 
-exports[`EC - Page Header Core meta-title-description - renders correctly 1`] = `
+exports[`Page Header Core EC - meta-title-description - renders correctly 1`] = `
 <test>
   <div
     class="ecl-page-header-core"
@@ -480,6 +492,7 @@ exports[`EC - Page Header Core meta-title-description - renders correctly 1`] = 
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -524,6 +537,7 @@ exports[`EC - Page Header Core meta-title-description - renders correctly 1`] = 
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -545,6 +559,7 @@ exports[`EC - Page Header Core meta-title-description - renders correctly 1`] = 
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -566,6 +581,7 @@ exports[`EC - Page Header Core meta-title-description - renders correctly 1`] = 
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -615,7 +631,7 @@ exports[`EC - Page Header Core meta-title-description - renders correctly 1`] = 
 </test>
 `;
 
-exports[`EC - Page Header Core meta-title-description renders correctly with extra attributes 1`] = `
+exports[`Page Header Core EC - meta-title-description renders correctly with extra attributes 1`] = `
 <test>
   <div
     class="ecl-page-header-core"
@@ -639,6 +655,7 @@ exports[`EC - Page Header Core meta-title-description renders correctly with ext
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -683,6 +700,7 @@ exports[`EC - Page Header Core meta-title-description renders correctly with ext
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -704,6 +722,7 @@ exports[`EC - Page Header Core meta-title-description renders correctly with ext
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -725,6 +744,7 @@ exports[`EC - Page Header Core meta-title-description renders correctly with ext
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -774,7 +794,7 @@ exports[`EC - Page Header Core meta-title-description renders correctly with ext
 </test>
 `;
 
-exports[`EC - Page Header Core meta-title-description renders correctly with extra class names 1`] = `
+exports[`Page Header Core EC - meta-title-description renders correctly with extra class names 1`] = `
 <test>
   <div
     class="ecl-page-header-core custom-class custom-class--test"
@@ -796,6 +816,7 @@ exports[`EC - Page Header Core meta-title-description renders correctly with ext
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -840,6 +861,7 @@ exports[`EC - Page Header Core meta-title-description renders correctly with ext
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -861,6 +883,7 @@ exports[`EC - Page Header Core meta-title-description renders correctly with ext
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -882,6 +905,7 @@ exports[`EC - Page Header Core meta-title-description renders correctly with ext
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -931,7 +955,7 @@ exports[`EC - Page Header Core meta-title-description renders correctly with ext
 </test>
 `;
 
-exports[`EC - Page Header Core title - renders correctly 1`] = `
+exports[`Page Header Core EC - title - renders correctly 1`] = `
 <test>
   <div
     class="ecl-page-header-core"
@@ -953,6 +977,7 @@ exports[`EC - Page Header Core title - renders correctly 1`] = `
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -997,6 +1022,7 @@ exports[`EC - Page Header Core title - renders correctly 1`] = `
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -1018,6 +1044,7 @@ exports[`EC - Page Header Core title - renders correctly 1`] = `
             data-ecl-breadcrumb-core-item="expandable"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -1039,6 +1066,7 @@ exports[`EC - Page Header Core title - renders correctly 1`] = `
             data-ecl-breadcrumb-core-item="static"
           >
             <a
+              aria-label="Aria label default"
               class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
               href="/example"
             >
@@ -1074,295 +1102,7 @@ exports[`EC - Page Header Core title - renders correctly 1`] = `
 </test>
 `;
 
-exports[`EC - Page Header Core title renders correctly with extra attributes 1`] = `
-<test>
-  <div
-    class="ecl-page-header-core"
-    data-test="data-test-value"
-    data-test-1="data-test-value-1"
-  >
-    <div
-      class="ecl-container"
-    >
-      <nav
-        aria-label="You are here:"
-        class="ecl-breadcrumb-core ecl-page-header-core__breadcrumb"
-        data-ecl-auto-init="BreadcrumbCore"
-        data-ecl-breadcrumb-core="true"
-      >
-        <ol
-          class="ecl-breadcrumb-core__container"
-        >
-          <li
-            class="ecl-breadcrumb-core__segment"
-            data-ecl-breadcrumb-core-item="static"
-          >
-            <a
-              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
-              href="/example"
-            >
-              Home
-            </a>
-            <svg
-              aria-hidden="true"
-              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
-              focusable="false"
-              role="presentation"
-            >
-              <use
-                xlink:href="/icons.svg#ui--corner-arrow"
-              />
-            </svg>
-          </li>
-          <li
-            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__segment--ellipsis"
-            data-ecl-breadcrumb-core-ellipsis=""
-          >
-            <button
-              aria-label="Click to expand"
-              class="ecl-breadcrumb-core__ellipsis"
-              data-ecl-breadcrumb-core-ellipsis-button=""
-              type="button"
-            >
-              …
-            </button>
-            <svg
-              aria-hidden="true"
-              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
-              focusable="false"
-              role="presentation"
-            >
-              <use
-                xlink:href="/icons.svg#ui--corner-arrow"
-              />
-            </svg>
-          </li>
-          <li
-            class="ecl-breadcrumb-core__segment"
-            data-ecl-breadcrumb-core-item="expandable"
-          >
-            <a
-              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
-              href="/example"
-            >
-              About the European Commission
-            </a>
-            <svg
-              aria-hidden="true"
-              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
-              focusable="false"
-              role="presentation"
-            >
-              <use
-                xlink:href="/icons.svg#ui--corner-arrow"
-              />
-            </svg>
-          </li>
-          <li
-            class="ecl-breadcrumb-core__segment"
-            data-ecl-breadcrumb-core-item="expandable"
-          >
-            <a
-              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
-              href="/example"
-            >
-              Organisational structure
-            </a>
-            <svg
-              aria-hidden="true"
-              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
-              focusable="false"
-              role="presentation"
-            >
-              <use
-                xlink:href="/icons.svg#ui--corner-arrow"
-              />
-            </svg>
-          </li>
-          <li
-            class="ecl-breadcrumb-core__segment"
-            data-ecl-breadcrumb-core-item="static"
-          >
-            <a
-              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
-              href="/example"
-            >
-              How the Commission is organised
-            </a>
-            <svg
-              aria-hidden="true"
-              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
-              focusable="false"
-              role="presentation"
-            >
-              <use
-                xlink:href="/icons.svg#ui--corner-arrow"
-              />
-            </svg>
-          </li>
-          <li
-            aria-current="page"
-            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__current-page"
-            data-ecl-breadcrumb-core-item="static"
-          >
-            News
-          </li>
-        </ol>
-      </nav>
-      <h1
-        class="ecl-page-header-core__title"
-      >
-        Page title
-      </h1>
-    </div>
-  </div>
-</test>
-`;
-
-exports[`EC - Page Header Core title renders correctly with extra class names 1`] = `
-<test>
-  <div
-    class="ecl-page-header-core custom-class custom-class--test"
-  >
-    <div
-      class="ecl-container"
-    >
-      <nav
-        aria-label="You are here:"
-        class="ecl-breadcrumb-core ecl-page-header-core__breadcrumb"
-        data-ecl-auto-init="BreadcrumbCore"
-        data-ecl-breadcrumb-core="true"
-      >
-        <ol
-          class="ecl-breadcrumb-core__container"
-        >
-          <li
-            class="ecl-breadcrumb-core__segment"
-            data-ecl-breadcrumb-core-item="static"
-          >
-            <a
-              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
-              href="/example"
-            >
-              Home
-            </a>
-            <svg
-              aria-hidden="true"
-              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
-              focusable="false"
-              role="presentation"
-            >
-              <use
-                xlink:href="/icons.svg#ui--corner-arrow"
-              />
-            </svg>
-          </li>
-          <li
-            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__segment--ellipsis"
-            data-ecl-breadcrumb-core-ellipsis=""
-          >
-            <button
-              aria-label="Click to expand"
-              class="ecl-breadcrumb-core__ellipsis"
-              data-ecl-breadcrumb-core-ellipsis-button=""
-              type="button"
-            >
-              …
-            </button>
-            <svg
-              aria-hidden="true"
-              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
-              focusable="false"
-              role="presentation"
-            >
-              <use
-                xlink:href="/icons.svg#ui--corner-arrow"
-              />
-            </svg>
-          </li>
-          <li
-            class="ecl-breadcrumb-core__segment"
-            data-ecl-breadcrumb-core-item="expandable"
-          >
-            <a
-              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
-              href="/example"
-            >
-              About the European Commission
-            </a>
-            <svg
-              aria-hidden="true"
-              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
-              focusable="false"
-              role="presentation"
-            >
-              <use
-                xlink:href="/icons.svg#ui--corner-arrow"
-              />
-            </svg>
-          </li>
-          <li
-            class="ecl-breadcrumb-core__segment"
-            data-ecl-breadcrumb-core-item="expandable"
-          >
-            <a
-              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
-              href="/example"
-            >
-              Organisational structure
-            </a>
-            <svg
-              aria-hidden="true"
-              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
-              focusable="false"
-              role="presentation"
-            >
-              <use
-                xlink:href="/icons.svg#ui--corner-arrow"
-              />
-            </svg>
-          </li>
-          <li
-            class="ecl-breadcrumb-core__segment"
-            data-ecl-breadcrumb-core-item="static"
-          >
-            <a
-              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
-              href="/example"
-            >
-              How the Commission is organised
-            </a>
-            <svg
-              aria-hidden="true"
-              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
-              focusable="false"
-              role="presentation"
-            >
-              <use
-                xlink:href="/icons.svg#ui--corner-arrow"
-              />
-            </svg>
-          </li>
-          <li
-            aria-current="page"
-            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__current-page"
-            data-ecl-breadcrumb-core-item="static"
-          >
-            News
-          </li>
-        </ol>
-      </nav>
-      <h1
-        class="ecl-page-header-core__title"
-      >
-        Page title
-      </h1>
-    </div>
-  </div>
-</test>
-`;
-
-exports[`EC - Page Header Core title with missing input data and debug enabled it shows the right warning messages 1`] = `
+exports[`Page Header Core EC - title EC - with missing input data and debug enabled it shows the right warning messages 1`] = `
 <test>
   <div
     class="ecl-page-header-core"
@@ -1403,6 +1143,766 @@ exports[`EC - Page Header Core title with missing input data and debug enabled i
     >
       [page-header-core] -  {{ title }} needs to set and filled in. {{ breadcrumb }} is mandatory, it should contain a breadcrumb object.
     </p>
+  </div>
+</test>
+`;
+
+exports[`Page Header Core EC - title renders correctly with extra attributes 1`] = `
+<test>
+  <div
+    class="ecl-page-header-core"
+    data-test="data-test-value"
+    data-test-1="data-test-value-1"
+  >
+    <div
+      class="ecl-container"
+    >
+      <nav
+        aria-label="You are here:"
+        class="ecl-breadcrumb-core ecl-page-header-core__breadcrumb"
+        data-ecl-auto-init="BreadcrumbCore"
+        data-ecl-breadcrumb-core="true"
+      >
+        <ol
+          class="ecl-breadcrumb-core__container"
+        >
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              Home
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__segment--ellipsis"
+            data-ecl-breadcrumb-core-ellipsis=""
+          >
+            <button
+              aria-label="Click to expand"
+              class="ecl-breadcrumb-core__ellipsis"
+              data-ecl-breadcrumb-core-ellipsis-button=""
+              type="button"
+            >
+              …
+            </button>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="expandable"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              About the European Commission
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="expandable"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              Organisational structure
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              How the Commission is organised
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            aria-current="page"
+            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__current-page"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            News
+          </li>
+        </ol>
+      </nav>
+      <h1
+        class="ecl-page-header-core__title"
+      >
+        Page title
+      </h1>
+    </div>
+  </div>
+</test>
+`;
+
+exports[`Page Header Core EC - title renders correctly with extra class names 1`] = `
+<test>
+  <div
+    class="ecl-page-header-core custom-class custom-class--test"
+  >
+    <div
+      class="ecl-container"
+    >
+      <nav
+        aria-label="You are here:"
+        class="ecl-breadcrumb-core ecl-page-header-core__breadcrumb"
+        data-ecl-auto-init="BreadcrumbCore"
+        data-ecl-breadcrumb-core="true"
+      >
+        <ol
+          class="ecl-breadcrumb-core__container"
+        >
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              Home
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__segment--ellipsis"
+            data-ecl-breadcrumb-core-ellipsis=""
+          >
+            <button
+              aria-label="Click to expand"
+              class="ecl-breadcrumb-core__ellipsis"
+              data-ecl-breadcrumb-core-ellipsis-button=""
+              type="button"
+            >
+              …
+            </button>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="expandable"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              About the European Commission
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="expandable"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              Organisational structure
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              How the Commission is organised
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            aria-current="page"
+            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__current-page"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            News
+          </li>
+        </ol>
+      </nav>
+      <h1
+        class="ecl-page-header-core__title"
+      >
+        Page title
+      </h1>
+    </div>
+  </div>
+</test>
+`;
+
+exports[`Page Header Core EU content Meta Title 1`] = `
+<test>
+  <div
+    class="ecl-page-header-core"
+  >
+    <div
+      class="ecl-container"
+    >
+      <nav
+        aria-label="You are here:"
+        class="ecl-breadcrumb-core ecl-page-header-core__breadcrumb"
+        data-ecl-auto-init="BreadcrumbCore"
+        data-ecl-breadcrumb-core="true"
+      >
+        <ol
+          class="ecl-breadcrumb-core__container"
+        >
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              Home
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__segment--ellipsis"
+            data-ecl-breadcrumb-core-ellipsis=""
+          >
+            <button
+              aria-label="Click to expand"
+              class="ecl-breadcrumb-core__ellipsis"
+              data-ecl-breadcrumb-core-ellipsis-button=""
+              type="button"
+            >
+              …
+            </button>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="expandable"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              About the European Union
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="expandable"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              Organisational structure
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              How the Union is organised
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            aria-current="page"
+            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__current-page"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            News
+          </li>
+        </ol>
+      </nav>
+      <div
+        class="ecl-page-header-core__meta"
+      >
+        <span
+          class="ecl-u-type-uppercase"
+        >
+          Meta info
+        </span>
+      </div>
+      <h1
+        class="ecl-page-header-core__title"
+      >
+        Page title
+      </h1>
+    </div>
+  </div>
+</test>
+`;
+
+exports[`Page Header Core EU content Meta Title Description 1`] = `
+<test>
+  <div
+    class="ecl-page-header-core"
+  >
+    <div
+      class="ecl-container"
+    >
+      <nav
+        aria-label="You are here:"
+        class="ecl-breadcrumb-core ecl-page-header-core__breadcrumb"
+        data-ecl-auto-init="BreadcrumbCore"
+        data-ecl-breadcrumb-core="true"
+      >
+        <ol
+          class="ecl-breadcrumb-core__container"
+        >
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              Home
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__segment--ellipsis"
+            data-ecl-breadcrumb-core-ellipsis=""
+          >
+            <button
+              aria-label="Click to expand"
+              class="ecl-breadcrumb-core__ellipsis"
+              data-ecl-breadcrumb-core-ellipsis-button=""
+              type="button"
+            >
+              …
+            </button>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="expandable"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              About the European Union
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="expandable"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              Organisational structure
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              How the Union is organised
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            aria-current="page"
+            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__current-page"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            News
+          </li>
+        </ol>
+      </nav>
+      <div
+        class="ecl-page-header-core__meta"
+      >
+        <span
+          class="ecl-u-type-uppercase"
+        >
+          Meta info
+        </span>
+      </div>
+      <h1
+        class="ecl-page-header-core__title"
+      >
+        Page title
+      </h1>
+      <p
+        class="ecl-page-header-core__description"
+      >
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+      </p>
+    </div>
+  </div>
+</test>
+`;
+
+exports[`Page Header Core EU content Title 1`] = `
+<test>
+  <div
+    class="ecl-page-header-core"
+  >
+    <div
+      class="ecl-container"
+    >
+      <nav
+        aria-label="You are here:"
+        class="ecl-breadcrumb-core ecl-page-header-core__breadcrumb"
+        data-ecl-auto-init="BreadcrumbCore"
+        data-ecl-breadcrumb-core="true"
+      >
+        <ol
+          class="ecl-breadcrumb-core__container"
+        >
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              Home
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__segment--ellipsis"
+            data-ecl-breadcrumb-core-ellipsis=""
+          >
+            <button
+              aria-label="Click to expand"
+              class="ecl-breadcrumb-core__ellipsis"
+              data-ecl-breadcrumb-core-ellipsis-button=""
+              type="button"
+            >
+              …
+            </button>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="expandable"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              About the European Union
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="expandable"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              Organisational structure
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            class="ecl-breadcrumb-core__segment"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            <a
+              aria-label="Aria label default"
+              class="ecl-link ecl-link--standalone ecl-breadcrumb-core__link"
+              href="/example"
+            >
+              How the Union is organised
+            </a>
+            <svg
+              aria-hidden="true"
+              class="ecl-icon ecl-icon--2xs ecl-icon--rotate-90 ecl-breadcrumb-core__icon"
+              focusable="false"
+              role="presentation"
+            >
+              <use
+                xlink:href="/icons.svg#ui--corner-arrow"
+              />
+            </svg>
+          </li>
+          <li
+            aria-current="page"
+            class="ecl-breadcrumb-core__segment ecl-breadcrumb-core__current-page"
+            data-ecl-breadcrumb-core-item="static"
+          >
+            News
+          </li>
+        </ol>
+      </nav>
+      <h1
+        class="ecl-page-header-core__title"
+      >
+        Page title
+      </h1>
+    </div>
   </div>
 </test>
 `;

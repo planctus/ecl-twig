@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import withCode from '@ecl-twig/storybook-addon-code';
 import { withKnobs, text, optionsKnob } from '@storybook/addon-knobs';
@@ -12,11 +11,21 @@ import {
 import defaultSprite from '@ecl/ec-resources-icons/dist/sprites/icons.svg';
 import dataSimple from './demo/data--simple';
 import dataLong from './demo/data';
+import dataSimpleEu from './demo/eu-data--simple';
+import dataLongEu from './demo/eu-data';
 
 import breadcrumb from './ecl-breadcrumb-harmonised.html.twig';
 import notes from './README.md';
 
-const prepareBreadcrumbHarmonised = data => {
+// Handle the EU demo.
+const system = process.env.STORYBOOK_SYSTEM
+  ? process.env.STORYBOOK_SYSTEM
+  : false;
+
+const simpleData = system ? dataSimpleEu : dataSimple;
+const longData = system ? dataLongEu : dataLong;
+
+const prepareBreadcrumbHarmonised = (data) => {
   data.icon_file_path = optionsKnob(
     'icon_file_path',
     { current: defaultSprite, 'no path': '' },
@@ -42,13 +51,27 @@ const prepareBreadcrumbHarmonised = data => {
   return data;
 };
 
-storiesOf('Components/Navigation/Breadcrumbs/Breadcrumb Harmonised', module)
-  .addDecorator(withNotes)
-  .addDecorator(withCode)
-  .addDecorator(withKnobs)
-  .add('simple', () => breadcrumb(prepareBreadcrumbHarmonised(dataSimple)), {
-    notes: { markdown: notes, json: dataSimple },
-  })
-  .add('long', () => breadcrumb(prepareBreadcrumbHarmonised(dataLong)), {
-    notes: { markdown: notes, json: dataLong },
-  });
+export default {
+  title: 'Components/Navigation/Breadcrumbs/Breadcrumb Harmonised',
+  decorators: [withNotes, withCode, withKnobs],
+};
+
+export const Simple = () => breadcrumb(prepareBreadcrumbHarmonised(simpleData));
+
+Simple.story = {
+  name: 'simple',
+
+  parameters: {
+    notes: { markdown: notes, json: simpleData },
+  },
+};
+
+export const Long = () => breadcrumb(prepareBreadcrumbHarmonised(longData));
+
+Long.story = {
+  name: 'long',
+
+  parameters: {
+    notes: { markdown: notes, json: longData },
+  },
+};

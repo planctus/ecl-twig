@@ -1,11 +1,9 @@
 import { formatLink } from '@ecl-twig/data-utils';
 import he from 'he';
 
-const adapter = initialData => {
+const adapter = (initialData) => {
   const adaptedData = JSON.parse(JSON.stringify(initialData));
   const defaultSprite = '/icons.svg';
-  const logo = '/logo--en.svg';
-
   adaptedData.banner_top = adaptedData.bannerTop;
   if (adaptedData.banner_top instanceof Object) {
     adaptedData.banner_top = formatLink(adaptedData.banner_top);
@@ -29,17 +27,17 @@ const adapter = initialData => {
       adaptedData.login_box.description
     );
   }
-  // Language selector.
-  adaptedData.logo.src = logo;
 
   adaptedData.language_selector = adaptedData.languageSelector;
+  adaptedData.language_selector.eu_category = 'EU official languages';
+  adaptedData.language_selector.non_eu_category = 'Non-EU languages';
   delete adaptedData.languageSelector;
 
   adaptedData.language_selector.overlay.close_label =
     adaptedData.language_selector.overlay.closeLabel;
   delete adaptedData.language_selector.overlay.closeLabel;
 
-  adaptedData.language_selector.overlay.items.forEach(item => {
+  adaptedData.language_selector.overlay.items.forEach((item) => {
     item.path = item.href;
     delete item.href;
     if (item.isActive) {

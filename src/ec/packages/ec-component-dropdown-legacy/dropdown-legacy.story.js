@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import { withKnobs, text, optionsKnob } from '@storybook/addon-knobs';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import withCode from '@ecl-twig/storybook-addon-code';
@@ -15,7 +14,7 @@ import demoData from './demo/data';
 import dropdown from './ecl-dropdown-legacy.html.twig';
 import notes from './README.md';
 
-const prepareDropdown = data => {
+const prepareDropdown = (data) => {
   data.button.label = text(
     'button.label',
     data.button.label,
@@ -40,10 +39,17 @@ const prepareDropdown = data => {
   return data;
 };
 
-storiesOf('Components/Dropdowns legacy', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withCode)
-  .addDecorator(withNotes)
-  .add('default', () => dropdown(prepareDropdown(demoData)), {
+export default {
+  title: 'Components/Dropdowns legacy',
+  decorators: [withKnobs, withCode, withNotes],
+};
+
+export const Default = () => dropdown(prepareDropdown(demoData));
+
+Default.story = {
+  name: 'default',
+
+  parameters: {
     notes: { markdown: notes, json: demoData },
-  });
+  },
+};

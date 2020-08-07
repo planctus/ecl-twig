@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import { withKnobs, select, text } from '@storybook/addon-knobs';
 import {
@@ -15,7 +14,7 @@ import notes from './README.md';
 
 specsHorizontal.variant = 'horizontal';
 
-const prepareList = data => {
+const prepareList = (data) => {
   if (data.variant) {
     data.variant = select(
       'variant',
@@ -59,13 +58,27 @@ const prepareList = data => {
   return data;
 };
 
-storiesOf('Components/List/Description list', module)
-  .addDecorator(withNotes)
-  .addDecorator(withCode)
-  .addDecorator(withKnobs)
-  .add('vertical', () => descriptionList(prepareList(specs)), {
+export default {
+  title: 'Components/List/Description list',
+  decorators: [withNotes, withCode, withKnobs],
+};
+
+export const Vertical = () => descriptionList(prepareList(specs));
+
+Vertical.story = {
+  name: 'vertical',
+
+  parameters: {
     notes: { markdown: notes, json: specs },
-  })
-  .add('horizontal', () => descriptionList(prepareList(specsHorizontal)), {
+  },
+};
+
+export const Horizontal = () => descriptionList(prepareList(specsHorizontal));
+
+Horizontal.story = {
+  name: 'horizontal',
+
+  parameters: {
     notes: { markdown: notes, json: specsHorizontal },
-  });
+  },
+};
