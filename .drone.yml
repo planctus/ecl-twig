@@ -60,7 +60,7 @@ pipeline:
     secrets: [gh_token, netlify_auth_token, netlify_php_site_id]
     commands:
       - apt-get update
-      - apt-get install -y libnss3 libxrandr2
+      - apt-get install -y libnss3 libxrandr2 libatk1.0-0
       - npm install -g n && n stable
       - yarn install
       - rm -rf netlify.toml
@@ -80,7 +80,7 @@ pipeline:
     secrets: [gh_token, netlify_auth_token, netlify_php_site_id]
     commands:
       - apt-get update
-      - apt-get install -y libnss3 libxrandr2
+      - apt-get install -y libnss3 libxrandr2 libatk1.0-0
       - npm install -g n && n stable
       - yarn install
       - rm -rf netlify.toml
