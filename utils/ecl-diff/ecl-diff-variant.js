@@ -93,7 +93,7 @@ const eclDiffVariant = (data, system) => {
       totalVariants += 1;
       const eclFinalUrl = `${domain}/component-library/v${version}/playground/${system}/?path=/story/${eclGluePath}`;
       // Puppeteer will try to reach the requested component variant page.
-      const browser = await puppeteer.launch();
+      const browser = await puppeteer.launch({ headless: false });
       const page = await browser.newPage();
       await page.goto(eclFinalUrl);
       await page.setViewport({ width: 1900, height: 1600 });
