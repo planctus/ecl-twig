@@ -11,6 +11,7 @@ const addons = [
   '@ecl-twig/storybook-addon-code/src/register',
   '@ecl-twig/storybook-addon-jscode/src/register',
   '@ecl-twig/storybook-addon-diff/src/register',
+  '@ecl-twig/storybook-addon-ecl-diff/src/register',
 ];
 
 const managerWebpack = async (baseConfig) => {
