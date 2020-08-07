@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import { withKnobs, text, select, optionsKnob } from '@storybook/addon-knobs';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import he from 'he';
@@ -137,6 +136,23 @@ const prepareGallery = data => {
       });
     }
   });
+  data.footer.link.label = text(
+    'footer.link.label',
+    data.footer.link.label,
+    tabLabels.optional
+  );
+  data.footer.link.path = text(
+    'footer.link.path',
+    data.footer.link.path,
+    tabLabels.optional
+  );
+  data.footer.icon.path = optionsKnob(
+    'footer.icon.path',
+    { current: defaultSprite, 'no path': '' },
+    defaultSprite,
+    { display: 'inline-radio' },
+    tabLabels.optional
+  );
   data.overlay.extra_classes = text(
     'data.overlay.extra_classes',
     '',
@@ -200,8 +216,6 @@ const prepareGallery = data => {
     tabLabels.required
   );
   if (data.overlay.previous.icon.path) {
-    data.overlay.previous.icon = {};
-  } else {
     data.overlay.previous.icon.type = select(
       'overlay.previous.icon.type',
       [data.overlay.previous.icon.type],
@@ -282,10 +296,17 @@ const prepareGallery = data => {
   return data;
 };
 
-storiesOf('Components/Gallery', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withCode)
-  .addDecorator(withNotes)
-  .add('default', () => gallery(prepareGallery(dataDefault)), {
+export default {
+  title: 'Components/Gallery',
+  decorators: [withKnobs, withCode, withNotes],
+};
+
+export const Default = () => gallery(prepareGallery(dataDefault));
+
+Default.story = {
+  name: 'default',
+
+  parameters: {
     notes: { markdown: notes, json: dataDefault },
-  });
+  },
+};

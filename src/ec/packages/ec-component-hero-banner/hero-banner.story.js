@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/html';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import { withNotes } from '@ecl-twig/storybook-addon-notes';
 import {
@@ -15,17 +14,19 @@ import dataImage from './demo/data--image';
 import dataImageShade from './demo/data--image-shade';
 import dataPrimary from './demo/data--primary';
 import dataLeft from './demo/data--align-left';
-
 import heroBanner from './ecl-hero-banner.html.twig';
 import notes from './README.md';
 
-uiIcons.unshift('null');
+const icons = { none: '' };
+uiIcons.forEach(icon => {
+  icons[icon] = icon;
+});
 
 const prepareBanner = (data, variant) => {
   data.centered = boolean('centered', data.centered, tabLabels.states);
   data.type = select('type', [data.type], data.type, tabLabels.required);
-  data.title = text('title', data.title, tabLabels.required);
-  data.description = text('description', data.description, tabLabels.required);
+  data.title = text('title', data.title, tabLabels.optional);
+  data.description = text('description', data.description, tabLabels.optional);
 
   if (variant === 'img') {
     data.image = text('image', data.image, tabLabels.required);
@@ -33,20 +34,20 @@ const prepareBanner = (data, variant) => {
   data.link.link.label = text(
     'link.link.label',
     data.link.link.label,
-    tabLabels.required
+    tabLabels.optional
   );
   data.link.link.path = text(
     'link.link.path',
     data.link.link.path,
-    tabLabels.required
+    tabLabels.optional
   );
   data.link.icon.name = select(
     'link.icon.name',
-    uiIcons,
+    icons,
     data.link.icon.name,
     tabLabels.optional
   );
-  if (data.link.icon.name !== 'null') {
+  if (data.link.icon.name) {
     getIconKnobs(
       data,
       data.link.icon.name,
@@ -56,8 +57,6 @@ const prepareBanner = (data, variant) => {
       'rotate-90',
       true
     );
-  } else {
-    delete data.link.icon;
   }
 
   getExtraKnobs(data);
@@ -66,22 +65,58 @@ const prepareBanner = (data, variant) => {
   return data;
 };
 
-storiesOf('Components/Banners/Hero Banner', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withNotes)
-  .addDecorator(withCode)
-  .add('image', () => heroBanner(prepareBanner(dataImage, 'img')), {
-    notes: { markdown: notes, json: dataImage },
-  })
-  .add('image-shade', () => heroBanner(prepareBanner(dataImageShade, 'img')), {
-    notes: { markdown: notes, json: dataImageShade },
-  })
-  .add('primary', () => heroBanner(prepareBanner(dataPrimary)), {
-    notes: { markdown: notes, json: dataPrimary },
-  })
-  .add('default', () => heroBanner(prepareBanner(dataDefault)), {
+export default {
+  title: 'Components/Banners/Hero Banner',
+  decorators: [withKnobs, withNotes, withCode],
+};
+
+export const Default = () => heroBanner(prepareBanner(dataDefault));
+
+Default.story = {
+  name: 'default',
+
+  parameters: {
     notes: { markdown: notes, json: dataDefault },
-  })
-  .add('align-left', () => heroBanner(prepareBanner(dataLeft)), {
+  },
+};
+
+export const Primary = () => heroBanner(prepareBanner(dataPrimary));
+
+Primary.story = {
+  name: 'primary',
+
+  parameters: {
+    notes: { markdown: notes, json: dataPrimary },
+  },
+};
+
+export const AlignLeft = () => heroBanner(prepareBanner(dataLeft));
+
+AlignLeft.story = {
+  name: 'align-left',
+
+  parameters: {
     notes: { markdown: notes, json: dataLeft },
-  });
+  },
+};
+
+export const Image = () => heroBanner(prepareBanner(dataImage, 'img'));
+
+Image.story = {
+  name: 'image',
+
+  parameters: {
+    notes: { markdown: notes, json: dataImage },
+  },
+};
+
+export const ImageShade = () =>
+  heroBanner(prepareBanner(dataImageShade, 'img'));
+
+ImageShade.story = {
+  name: 'image-shade',
+
+  parameters: {
+    notes: { markdown: notes, json: dataImageShade },
+  },
+};

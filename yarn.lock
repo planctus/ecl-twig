@@ -336,6 +336,13 @@
   dependencies:
     "@babel/types" "^7.10.1"
 
+"@babel/helper-module-imports@^7.10.4":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/helper-module-imports/-/helper-module-imports-7.10.4.tgz#4c5c54be04bd31670a7382797d75b9fa2e5b5620"
+  integrity sha512-nEQJHqYavI217oD9+s5MUBzk6x1IlvoS9WTPfgG43CbMEeStE0v+r+TucWdx8KFGowPGvyOkDT9+7DHedIDnVw==
+  dependencies:
+    "@babel/types" "^7.10.4"
+
 "@babel/helper-module-transforms@^7.10.1":
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/helper-module-transforms/-/helper-module-transforms-7.10.1.tgz#24e2f08ee6832c60b157bb0936c86bef7210c622"
@@ -385,6 +392,11 @@
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.10.1.tgz#ec5a5cf0eec925b66c60580328b122c01230a127"
   integrity sha512-fvoGeXt0bJc7VMWZGCAEBEMo/HAjW2mP8apF5eXK0wSqwLAVHAISCWRoLMBMUs2kqeaG77jltVqu4Hn8Egl3nA==
+
+"@babel/helper-plugin-utils@^7.10.4":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.10.4.tgz#2f75a831269d4f677de49986dff59927533cf375"
+  integrity sha512-O4KCvQA6lLiMU9l2eawBPMf1xPP8xPfB3iEQw150hOVTqj/rfXz0ThTb4HEzqQfs2Bmo5Ay8BzxfzVtBrr9dVg==
 
 "@babel/helper-regex@^7.10.1":
   version "7.10.1"
@@ -476,6 +488,11 @@
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.10.1.tgz#5770b0c1a826c4f53f5ede5e153163e0318e94b5"
   integrity sha512-5vW/JXLALhczRCWP0PnFDMCJAchlBvM7f4uk/jXritBnIa6E1KmqmtrS3yn1LAnxFBypQ3eneLuXjsnfQsgILw==
+
+"@babel/helper-validator-identifier@^7.10.4":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.10.4.tgz#a78c7a7251e01f616512d31b10adcf52ada5e0d2"
+  integrity sha512-3U9y+43hz7ZM+rzG24Qe2mufW5KhvFg/NhnNph+i9mgCtdTCtMJuI1TMkrIUiK7Ix4PYlRF9I5dhqaLYA/ADXw==
 
 "@babel/helper-validator-identifier@^7.9.0":
   version "7.9.0"
@@ -1272,6 +1289,16 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
 
+"@babel/plugin-transform-runtime@7.10.5":
+  version "7.10.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.10.5.tgz#3b39b7b24830e0c2d8ff7a4489fe5cf99fbace86"
+  integrity sha512-tV4V/FjElJ9lQtyjr5xD2IFFbgY46r7EeVu5a8CpEKT5laheHKSlFeHjpkPppW3PqzGLAuv5k2qZX5LgVZIX5w==
+  dependencies:
+    "@babel/helper-module-imports" "^7.10.4"
+    "@babel/helper-plugin-utils" "^7.10.4"
+    resolve "^1.8.1"
+    semver "^5.5.1"
+
 "@babel/plugin-transform-shorthand-properties@^7.10.1":
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-shorthand-properties/-/plugin-transform-shorthand-properties-7.10.1.tgz#e8b54f238a1ccbae482c4dce946180ae7b3143f3"
@@ -1628,6 +1655,15 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@babel/types@^7.10.4":
+  version "7.10.5"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.10.5.tgz#d88ae7e2fde86bfbfe851d4d81afa70a997b5d15"
+  integrity sha512-ixV66KWfCI6GKoA/2H9v6bQdbfXEwwpOdQ8cRvb4F+eyvhlaHxWFMQB4+3d9QFJXZsiiiqVrewNV0DFEQpyT4Q==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.10.4"
+    lodash "^4.17.19"
+    to-fast-properties "^2.0.0"
+
 "@bugsnag/browser@^7.1.1":
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/@bugsnag/browser/-/browser-7.1.1.tgz#a260d7b4ec11dfb0e056f169d3ff392b81eddaef"
@@ -1684,796 +1720,937 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@ecl/ec-base@^2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-base/-/ec-base-2.29.0.tgz#cbcb43cad6b724e55893d111d93dba1ee7adad28"
-  integrity sha512-/jaeKWd49Bj7PuwZOFkmmS8sPyu8xidQ3RKoJFXI4pyQYWTqG0sZiJKLuWlruAGX7mIAedZU1zCL1sWhhJUCxQ==
+"@ecl/ec-base@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-base/-/ec-base-2.31.0.tgz#cc9aea149927869e86038e6f2eb38e3d81e135b2"
+  integrity sha512-DxcuqGjjV3xtygH9cwfIj+7GbETJGQdYIbmdgHSiLDZ/ayT1F8fT5cayAkrXaIkkT0Z6hVZIzFjWPlfbv6zNUA==
 
-"@ecl/ec-component-accordion@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-accordion/-/ec-component-accordion-2.29.0.tgz#49c1891beb56dec609bb01d144acfd34a9f81193"
-  integrity sha512-KqlLAT1hgWKrtSR9xydLJHrkcD1Td0AeuAuqBEo6Rfs5xLSxMDeJ3m3ymgF3Uex9nwrnGYYkalBN79lxgTNE4A==
+"@ecl/ec-component-accordion@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-accordion/-/ec-component-accordion-2.31.0.tgz#2bbdc116dad63444dd70c270a74848d868487212"
+  integrity sha512-nP/XQOXnbmA0uXzK5B+jx/WtsHqrfck8AJLGGnoXgclXEj1bfLuyhhc1I0e6yTapPuCgUnHlrZgRL9FHdW+7uA==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-button" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-button" "^2.31.0"
 
-"@ecl/ec-component-breadcrumb-core@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-breadcrumb-core/-/ec-component-breadcrumb-core-2.29.0.tgz#1605b661eb9d0b0804a095cb1907882ed2b803f0"
-  integrity sha512-aMbF4D5BfEQwpyqqQlfK3Wm8aaRbnx/XKjWiprZPS4Pbh8wGvuXGeffoog+ndcYYqxFeiWWPl04Petub3WAGEg==
+"@ecl/ec-component-breadcrumb-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-breadcrumb-core/-/ec-component-breadcrumb-core-2.31.0.tgz#eb956744ee74e4a35fe847aefee95d79ab1a1ea9"
+  integrity sha512-28cNy9DvVKQmrbSesAXs6Abm8oy5b7fRPTJzAhYxchQKvmFbFiwydgwKHkZuQ4huULSny18j3plMHxpZopIaLw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
 
-"@ecl/ec-component-breadcrumb-harmonised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-breadcrumb-harmonised/-/ec-component-breadcrumb-harmonised-2.29.0.tgz#837369e7a096768d27b0fae44854d9255eba4743"
-  integrity sha512-NFsOhrP35Zpi0YTsH81W+CM/Z5/zqqZp3Xqs6Mcdta9a4n/fM4HbxAoRu3GpRxFRxUtv+Zj5gmyH1XbGh5xjCA==
+"@ecl/ec-component-breadcrumb-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-breadcrumb-harmonised/-/ec-component-breadcrumb-harmonised-2.31.0.tgz#cb2b17b0c89fabafad896a19bde903df86996ed8"
+  integrity sha512-DH/TjVIh4y5lS0Urwik/zY/rpsbA3kmV6oEgFLu8klSKNJIsLHt2POy7/DFfnF8iALrwr+A89siqrzxJPhSgrA==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
 
-"@ecl/ec-component-breadcrumb-standardised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-breadcrumb-standardised/-/ec-component-breadcrumb-standardised-2.29.0.tgz#6dc7899e98c46ebc948b5620baebcdd9d52fdcf7"
-  integrity sha512-H56RPQ+SqbfHSekzfnbXZ/qztK3prbTCNMAjAiKoVi5Jp5BZ1/txJNVWQMj1ggbLYsA370KU1o8tl6wj8RblFg==
+"@ecl/ec-component-breadcrumb-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-breadcrumb-standardised/-/ec-component-breadcrumb-standardised-2.31.0.tgz#8f89d5e40488385ef9194ca042adb10cdaf0b5e4"
+  integrity sha512-yOIUB0VFogHwzODU7R2BKcnWs28laNSZQYXioiYyZMluw6fRjcfnZ+93xb4Qbcs1c7N4LGRE/yVNXY+wsUZ4cA==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
 
-"@ecl/ec-component-breadcrumb@2.29.0", "@ecl/ec-component-breadcrumb@^2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-breadcrumb/-/ec-component-breadcrumb-2.29.0.tgz#3e3e62c1ea321bb1e675473feec15466cbb35787"
-  integrity sha512-QJ6uKkRhF0CiDxnE3UwO03CdOc1rTCI8x0fKoY9toNa9wCyJBwSPUP/NGamlYjjyhzg8X+OTCjip9L8zo0P9Sw==
+"@ecl/ec-component-breadcrumb@2.31.0", "@ecl/ec-component-breadcrumb@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-breadcrumb/-/ec-component-breadcrumb-2.31.0.tgz#ea8abd70d15377e41aaf75668e1eb4dff1fd1ba7"
+  integrity sha512-/PK+1HCd1d2+78v85YK9fJ642q9CpJ2DqS0Jg/S9/MtVHAQfewaHPfmuFwhlLo8jTealzRcGHuy8z4OsS0K1wg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
 
-"@ecl/ec-component-button@^2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-button/-/ec-component-button-2.29.0.tgz#7d3589e01be67bb7f6324cc836d91476c9ff4aef"
-  integrity sha512-Lo+A7WqbBs9TArWkTl0zuOyH7/NfxTZPylOlNSNtsFJo2erI0dd+LP6PVChmSbXNnJCa5L6hQSA5KpBRfpP6Fg==
+"@ecl/ec-component-button@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-button/-/ec-component-button-2.31.0.tgz#3dcda13217b55527f37613ad0a94e803391b5220"
+  integrity sha512-ujzBMm1UNqsKNqoMEUtRpnQItkjfn3ueC4HwFet6EmNqpN5Itgqq+neB7Pr43yRh54T63VdpnfjBquI7fDNQDw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
 
-"@ecl/ec-component-card@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-card/-/ec-component-card-2.29.0.tgz#12d12cd8a1dbcfc0ebcc04ab8c5105c31ad2a939"
-  integrity sha512-hLtJGT+mZBzBIOGbN4f/IPEMzcGjoDdzELdrnRzh8kYGteEdZ8AFpAi3WutVeZGM9bf2mCgSeEliOkQvlGECRg==
+"@ecl/ec-component-card@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-card/-/ec-component-card-2.31.0.tgz#35f77fad9f459678b0b15131102ee093b805ecdc"
+  integrity sha512-16SKHL7W7ZslkSLGgS56M9XZUm8+LgEEcU3cDdSEDeo8h1E/xSX8BlSrl3Ret5y29ziIULTj+XeIEE3DUpzUNw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
-    "@ecl/ec-component-tag" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
+    "@ecl/ec-component-tag" "^2.31.0"
 
-"@ecl/ec-component-contextual-navigation@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-contextual-navigation/-/ec-component-contextual-navigation-2.29.0.tgz#2a25e2b160f0713ce5ee194a4e9f50f989904b48"
-  integrity sha512-6hFuSs+JoW0mEihrRxmN28ZAHD1GrOX0C7Ffy2Rq6o825xdvF4xZvIsrOxu20q2LEo6AgYekktFvmPXhvWl9GA==
+"@ecl/ec-component-contextual-navigation@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-contextual-navigation/-/ec-component-contextual-navigation-2.31.0.tgz#2af009a8628d9b78c7858577327c8bd741f8aeb4"
+  integrity sha512-SjB9JgKeCvki8/GyZfbwCWLgorNjs7WTyEBBqpn+9kQ0cP+e5+BFa9hb+L9K/aOzw+QWlVXU/8hoM/O/8k/T3A==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-date-block@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-date-block/-/ec-component-date-block-2.29.0.tgz#98ce767c819fa64c5bcd37d33fe960a634618bf0"
-  integrity sha512-O7BwUMzNqTEFsHiGKA/XA3rgRwkyYnU70y/trQ+cewXQgqADKnabjXwyXhWZB8booFLXYPmpHu/3vxX6B+H6Hg==
+"@ecl/ec-component-date-block@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-date-block/-/ec-component-date-block-2.31.0.tgz#453ea03312ff44fd7d4447f157ba33d4d1b497d4"
+  integrity sha512-bSbCJzXUAwrNYO7F/6BT0/sX0E0SxIvdmaBSw+MK7Kom9H+wBQrKqk2YJyAV1DL6znNBLbVL79kFVhQZg1HTVw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-description-list@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-description-list/-/ec-component-description-list-2.29.0.tgz#ddb7beb8eb799a89e7f80c01485af9ae7d1b47b6"
-  integrity sha512-w4+2wqoKwq0NGxyDxpK3TviDo/BflrgZySlYaeI135pgMgtH/IEVtkQb1W6ogpU8KLuzMBH1RTTpEuqKw0KEEQ==
+"@ecl/ec-component-description-list@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-description-list/-/ec-component-description-list-2.31.0.tgz#5eb389450f2b58eebecc7ab18daf13fa95c1ab9e"
+  integrity sha512-RIC68rFSXlHxOMhIiSVYs2QEM9Xq1jgTN8TV6smnDUjc5nPrVLz3Syb4sq9T6uYmajjDlwKiwc2qsoxqA27P2A==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-dropdown-legacy@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-dropdown-legacy/-/ec-component-dropdown-legacy-2.29.0.tgz#2930c509c01db52ed81e4e65b572ae0c028bea53"
-  integrity sha512-kMFINWV1xz+YDSq+IjEyb6L0JH2o3oV/vF8+vZoLnjPO/ZrDDbmk9/JBEWvP4ZhsjUot8QW8WoyC438bOxKrJg==
+"@ecl/ec-component-dropdown-legacy@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-dropdown-legacy/-/ec-component-dropdown-legacy-2.31.0.tgz#ab570e4eed71291b35c2fddbe50d6b59668a0c63"
+  integrity sha512-Tbb8MVcIca6XeyTS0iVXWhDN0/jlRP9cn7L3oaKjKniVJiKO1Z0kIjvKnFe3IGhZh9t6r5A6YtxlOa89TBYcOw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-expandable@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-expandable/-/ec-component-expandable-2.29.0.tgz#2e04df66af697f054cdbd5d4cbedcc73e2714a22"
-  integrity sha512-TBnHukGKe7boXhN06bNwBhRgB8I+FIITBzBlk5X3wwKIzrrd0mxtQpfr8/kbHA1NwBwNG/TOJQAM9X53MqGIZw==
+"@ecl/ec-component-expandable@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-expandable/-/ec-component-expandable-2.31.0.tgz#a51d387ec21b8cc478fa51ef88f670cc45a114ac"
+  integrity sha512-lW10iQNXW6zGkuumVXzzrB721BSEuSdKTrTC3gdbS18KkDkuvRfoNTxGlbG0OD2Yuh69eT6LSq/Zj5jHazPsVw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-fact-figures@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-fact-figures/-/ec-component-fact-figures-2.29.0.tgz#0fa7c71b007b43835a6e845b44b7fc368b46efdf"
-  integrity sha512-GPPhb85b5jtnhdKQg0mpDySkQJtQ37vA1pbEt2UT6v7IoerhoyEMYvfgQnx8V7PpzK4A4GPWrF5p9bVqh08BVw==
+"@ecl/ec-component-fact-figures@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-fact-figures/-/ec-component-fact-figures-2.31.0.tgz#4a59bcc9f7c2db219839241b4c357270f3702d77"
+  integrity sha512-jgyRz3m3JQ7NkABkKfkNVQMqLn+/WgFOICEjLl2lls34WfCqOK3zK3je7ARs59BiT0WIBdZbjEFrQr+Qh/qyNQ==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-file@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-file/-/ec-component-file-2.29.0.tgz#876e43887d9a5247ef96e2057ada53debbab61e6"
-  integrity sha512-jM9Bp2KWalJGl48yWem6G8Q12gbtuY9vBEV+n98A8MqwDY8zHwEwqDRuHQ3jXltIxxbrHKq3JnPb27doykxFyg==
+"@ecl/ec-component-file@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-file/-/ec-component-file-2.31.0.tgz#272f7d534cd51dee94da83cdc3689a549ddd453b"
+  integrity sha512-yR0hy4RdxyHsB/RLRDOygPPL5nhE7tHTvruOCFKzq3TpUd8eqgERlQYh+Ok1fOko9yIoSU2PrwjZsFh3/u4l2g==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-button" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-button" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
 
-"@ecl/ec-component-footer-core@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-footer-core/-/ec-component-footer-core-2.29.0.tgz#6054c6deb1f79ac3ee5d67a4c4a1b059e6834a3f"
-  integrity sha512-Ukm/3H7wJg7eRbEkQtcN8ZUab2y3VnP4AeZP1g584Uveen+g+oA/+G7TPCBN0pAtQQ2s9Nh6qLOduU6Z7tuYIA==
+"@ecl/ec-component-footer-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-footer-core/-/ec-component-footer-core-2.31.0.tgz#1d4c9dd4d19f74562c0be2c85e86dc60ace0998c"
+  integrity sha512-7hvzfspPO9PJVo5KoAM+HGrVVXXrAhd0pGoEouy94r9dQOBX19WIQjm7q5OokqMM/gLTGa40DTWYajiQfpmZww==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
-    "@ecl/ec-layout-grid" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
+    "@ecl/ec-layout-grid" "^2.31.0"
 
-"@ecl/ec-component-footer-harmonised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-footer-harmonised/-/ec-component-footer-harmonised-2.29.0.tgz#ee7ad482be6ac7a32b353c80264161abd169ae68"
-  integrity sha512-q0AoHdCPG6Dhp5/7M3Mw3ttS+Iw8iXlg9kGTRAApcKeS+8X/cMzTJuu/HQjg3NzlCVUb2U1rr/RUlhwe73kY5g==
+"@ecl/ec-component-footer-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-footer-harmonised/-/ec-component-footer-harmonised-2.31.0.tgz#041e9f6ec299efd2f2889565ea737ccc66874852"
+  integrity sha512-HvlBySisOn7rO+g1XcdVM3b/No+iZoRNt1sJa4LTnNLJ2jofExtoDM9sTu6qHIUAyambp0q4tGovKnqDD6Ic7Q==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
-    "@ecl/ec-layout-grid" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
+    "@ecl/ec-layout-grid" "^2.31.0"
 
-"@ecl/ec-component-footer-standardised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-footer-standardised/-/ec-component-footer-standardised-2.29.0.tgz#0b5bd048257929783709ca6e8f157780084d1c55"
-  integrity sha512-dw5HyiNz+bD8ahdp6CVXH/pW9U6MBUOqSustC7RRvoQgl5FPt+OdWAaYt5im5kr8jYI2L7uUfZ56hL5KTbVzzQ==
+"@ecl/ec-component-footer-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-footer-standardised/-/ec-component-footer-standardised-2.31.0.tgz#3a46b56ffa68b4498c6e3a77bdb8ca59f800c254"
+  integrity sha512-BSnZiKH1DAQjwAXcUK339XMHxcO4nAJX8SkHLXsmBT+5YSx5ygsMlTtBz4iSsz0k4oEGHnXx4MLSJEJV4pWrig==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
-    "@ecl/ec-layout-grid" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
+    "@ecl/ec-layout-grid" "^2.31.0"
 
-"@ecl/ec-component-footer@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-footer/-/ec-component-footer-2.29.0.tgz#962217a83b6d6141a704f0cc2ec44f330b29bd9b"
-  integrity sha512-s00YzWlNwtqgRWz3VLF4v7apnh6MNJ/CB2RDoEWYVwDjmwQRzcO5ER6e8JZZTQH7LX1pyhi7D39jHndK0mxEKg==
+"@ecl/ec-component-footer@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-footer/-/ec-component-footer-2.31.0.tgz#fadc6e02e732e28c55c1165a4b117494f8a6d6aa"
+  integrity sha512-zxm8/fR6IHN0d2YUwknwrerTkseDNivmpKy2ROfExQ9kNuswd837Z0uESPNURuTh4IEbVqBiSLPlqv6TYtvaEw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
-    "@ecl/ec-layout-grid" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
+    "@ecl/ec-layout-grid" "^2.31.0"
 
-"@ecl/ec-component-form-checkbox@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-checkbox/-/ec-component-form-checkbox-2.29.0.tgz#a576502acec154c1cd67d8e48dbfd44d809c85e7"
-  integrity sha512-NBAMhKA2JDVAuBDJx7HvG48O1TF5H/Z/xGp8pvvCNalRokKkQJXMYFIbKB0GHqIGeA9BkH9PCqj2Oq4VESjkJw==
+"@ecl/ec-component-form-checkbox@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-checkbox/-/ec-component-form-checkbox-2.31.0.tgz#1fa7e100e545e36cf44b43edca34d5a4444705fc"
+  integrity sha512-JLglq/R476F0dRn3CCTxqiZjCKRyXdzPdYXyRrTqJXWKAyzEzmPimVGnQgKbK4mS0sNyyf7kJtufTiaeCECwqg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
 
-"@ecl/ec-component-form-datepicker@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-datepicker/-/ec-component-form-datepicker-2.29.0.tgz#c7ff9cdcc05c79ec5890183897aca3acae9553cb"
-  integrity sha512-2grT2mhKpBiapukEtFOkXLHbtY9lx0k68whZb4XqV0io277ng8PyZk3cWeG7sWGzctFtN+P70Tc4zGCUS6Pv4Q==
+"@ecl/ec-component-form-datepicker@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-datepicker/-/ec-component-form-datepicker-2.31.0.tgz#3669e3c9f8df681134ff8b5b48852d4585dc7bcc"
+  integrity sha512-FvLN25yXL9PQuC89dsYr1LOkQk2KZVYvt/i0NG8kf8xS3ufCbu4TIwniD3aSIjBd2ZkDxaVnUX1DzY50coaHbw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-form-text-input" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-form-text-input" "^2.31.0"
     pikaday "1.8.0"
 
-"@ecl/ec-component-form-feedback-message@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-feedback-message/-/ec-component-form-feedback-message-2.29.0.tgz#c41cfea875f33fb5e5328d96086481e0abeecdfd"
-  integrity sha512-PEA3OdgNYmJlW+6/0RAwwxwDZu+lgGwXpiWz2pSpPVuxpqWLqivwAluYRJEHv20U7QdYuffKcRdB+NqfrWQ5sg==
+"@ecl/ec-component-form-feedback-message@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-feedback-message/-/ec-component-form-feedback-message-2.31.0.tgz#c34589f90a1ae3e65e2480e5a2213ec1fdd4029d"
+  integrity sha512-q3xVI4XER7XzfNKhUPPOQpBYePuz9ONSomL1B1laWaG+Qz0O5nIBN3c8reRewFOLTtZu47UdcaHdqOFHf5ZxAg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-form-file-upload@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-file-upload/-/ec-component-form-file-upload-2.29.0.tgz#2dba8317553847f07d3b2a8a4f44abcdb080ca8c"
-  integrity sha512-+UskHYP/4NN43grOcoPK2PTHox+slRrZ/NOsvNql1a7cYiHXd0/3ogd5z1QgBQgbGVfuGReH2kmgKEZj+RQUrg==
+"@ecl/ec-component-form-file-upload@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-file-upload/-/ec-component-form-file-upload-2.31.0.tgz#3ded8fd75e0f0c8301933fa7232b5e4df4adbabe"
+  integrity sha512-JOP0N0WA+YlzO2e7hIk8wPOqAfIIXddJb+S5ahVRnvdsXXXW+re7FAk8cd4H/dFlzu7FrrjYFqTHheyMWq6oqw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-form-form-group@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-form-group/-/ec-component-form-form-group-2.29.0.tgz#990ddb222050a4bbda64cd3fe2be1ec073099ce3"
-  integrity sha512-KxYjgpJy8tjeAx7u4WjCQBTbxBng9cteXDFBKjjeTdNhILxgvOzZipiAv5dlIKGA46G+U406Zf4gd4exTiL7Mw==
+"@ecl/ec-component-form-form-group@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-form-group/-/ec-component-form-form-group-2.31.0.tgz#b6ec1c81be2537aa1ff67291bf49491185b71edc"
+  integrity sha512-EJ7H1ns+Scu3RXV0sCbBRraUn2kVwItLYpcwB8FdjRmuKgWGlLgDlVmajGdCMXTMkI1HA/lIzsaubAXWTf6SRg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-form-help-block@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-help-block/-/ec-component-form-help-block-2.29.0.tgz#aecf6fe01ba5b49a0e0c4cda7cf907586c812d27"
-  integrity sha512-/2lwe/+3zUOv5o+4q5MScSYwSBEjqhJZ/ddfGqYWA3LHad9bG3zhhKNzJyuyOni0YQLbWHSTnGhtMVRdoBdb9A==
+"@ecl/ec-component-form-help-block@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-help-block/-/ec-component-form-help-block-2.31.0.tgz#921b088150ca5d83e228ba2ba18f92cdd71cda08"
+  integrity sha512-rEV1qQnPVBnkTUUK59OLnzIEWSkk8F20qmPHx2QauAMm5SAth8DF1nHR8zvoDruZC7kdrw3oOVZke9GX8rn5iw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-form-label@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-label/-/ec-component-form-label-2.29.0.tgz#78db4c001e34bb394944a47f869beb64b661b327"
-  integrity sha512-wtXVJXUXkv8ek2ucn5g02CHSigqE44c1o0BDGr7Wq+IyiX2qgpXsirbUrcxoISCey02ir49fgcbikeSRY70vEg==
+"@ecl/ec-component-form-label@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-label/-/ec-component-form-label-2.31.0.tgz#2056208c07252cc3f695a9ba1bf9a247fb3767e2"
+  integrity sha512-PNV2Zqsr2bCHHPBZvT7lZzHXYcXrZiI4AROPCSd0txVDWxBKK+dHduOua4KJiYYU0cnG8raZ2uXX6LEiqUdMzw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-form-radio@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-radio/-/ec-component-form-radio-2.29.0.tgz#0a865bbfdc9d18496f1dd06ed0276af9e7a48c2e"
-  integrity sha512-hFJEk9w0BvaTV9xuaYA63m7dqR7QGD1pK1D6johFv/j81aGldk/ZIEOH5eS5ef+ZDcCe01+4WPDQ07IiQwcyeg==
+"@ecl/ec-component-form-radio@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-radio/-/ec-component-form-radio-2.31.0.tgz#a7ad0595dec82ee00711019428fc2456559d24ed"
+  integrity sha512-JcqlAE5e+/cPx3lzJm2wbmYPF1feN4bjk++miFV0eNRCBZcF/SXpoy89n06PfmjDP9wEBI/pvy2DsdWGnRuDgw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-form-select@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-select/-/ec-component-form-select-2.29.0.tgz#5ed4af393d100d0ffef470c23e0f3ce537119041"
-  integrity sha512-TGqe+XMjt8JKJWaY7CxHjlyfy4vZXbEmBwvMCRa2gGYEin0AP5eHqJYTG9t54i1GsfENmXGKQlAoZpGpqb+VcQ==
+"@ecl/ec-component-form-select@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-select/-/ec-component-form-select-2.31.0.tgz#6ea4e2531e56d52924ecf8dd4f798084d1add698"
+  integrity sha512-G2dOrjffJFo7MsKEV20CQbEuQq0BP8U6e+WCGAGITsrJvf4gUiS3hrJtJMCGv/C9Pwy7c8/Uo7ti+Zh0JTUK6A==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-form-text-area@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-text-area/-/ec-component-form-text-area-2.29.0.tgz#35856a90bc3da2831f858d1c45aa76504c6ec110"
-  integrity sha512-D6JFVn2Xp8OjxOzfp9uOzI6iwp39XWHw16yz5duBv8KbUGNdMDTxAzYRpTD/HlSdJ/z6XEa6g+Z7vV5yfNsUdQ==
+"@ecl/ec-component-form-text-area@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-text-area/-/ec-component-form-text-area-2.31.0.tgz#79ca70238235a3fac848f33f1893da3d72e70f43"
+  integrity sha512-nfaQwkY3e59Ny0pdIGrGF/wcsJAwIc1e1Qj6PROlslISbqZnBkOgOurQcdu74fdZEMlxbLa6o0EHUd4wkAgPew==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-form-text-input@2.29.0", "@ecl/ec-component-form-text-input@^2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-text-input/-/ec-component-form-text-input-2.29.0.tgz#00caae6ec33cbaa16358d44bebb39038a456a8a6"
-  integrity sha512-j1B6yhUR8df17r0mZfz9z6cc2UytbnfWlDGb4+0EEx3A7ClZ86uU6MerXE/ZQTsT6LrHegRhXCxSKq0f9b8avw==
+"@ecl/ec-component-form-text-input@2.31.0", "@ecl/ec-component-form-text-input@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-form-text-input/-/ec-component-form-text-input-2.31.0.tgz#f95e523df36428e54bf7ab1c5ee1ebac0ab6ee74"
+  integrity sha512-661j7L59HMmBiXGirmqsGAARY5i528oFqiAs8cHNiZWTbHOwHeaYC/4JsZXS7c5+cq0dr3hrBDVzxMY/FOFD7A==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-gallery@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-gallery/-/ec-component-gallery-2.29.0.tgz#9d0c7b66f998cf50926a21cebb5489402ff63b7d"
-  integrity sha512-ryuvTd/ymVry6ms91OKV5uwcjkC/M5vcasAxQ5NOk2NfkGepqieC+C728oLFXe6reLOTISa5cBiWtE6Zvji0og==
+"@ecl/ec-component-gallery@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-gallery/-/ec-component-gallery-2.31.0.tgz#b8c40f2bb0f6dbef4b9dd46205aa47e32b226eb4"
+  integrity sha512-2HldToYXKaUratjRQvqifCqVN7Mb9jyit+Y4klCbhuBkEadfWbT9MThN+HuaMsAn6L6jauf8kWLGCKbkXLCzhg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
     focus-trap "5.1.0"
 
-"@ecl/ec-component-hero-banner@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-hero-banner/-/ec-component-hero-banner-2.29.0.tgz#3133c315e4a24118054643cb470b2fd6a8026e11"
-  integrity sha512-nhnX6pmJQBjMi1gBEeuiMvx20wbNCAExVdf8alcCQn/gh55042Pp8aBtPx57jssDA/gHt5fPNXXChGXMeWTrcA==
+"@ecl/ec-component-hero-banner@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-hero-banner/-/ec-component-hero-banner-2.31.0.tgz#3471b0e5ac9de58434610a7cfdf8e99c0228eb3f"
+  integrity sha512-bSEhpu6tjCBBZSmFaE4Q7ENKEDuZG3NBMkk47UNB0brTB1E44WVUuk1kVm2tfAf057j2V4sCLg/73BkwfyY9YA==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-button" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
-    "@ecl/ec-layout-grid" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-button" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
+    "@ecl/ec-layout-grid" "^2.31.0"
 
-"@ecl/ec-component-icon@^2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-icon/-/ec-component-icon-2.29.0.tgz#743259b886326b045c3c16044798725ca1fa3a39"
-  integrity sha512-XUjtpKkdLWmvYi3DXQwFObaYzLAYxY2TZdf2phUiUjKamcG7nx0+4UuLWOQkI+3AKXbFWGdE9ZcwZY3GUaipQA==
+"@ecl/ec-component-icon@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-icon/-/ec-component-icon-2.31.0.tgz#f646a652bdc46a188d83fb0d7bd4c8ea75d4431e"
+  integrity sha512-8aYEk26bAljCDHRRBAQlCPTglCctbIwrQyudkC4B9Nvp4d7Ama7HPBGeB/m9SF5PagUWv1eheBCKQKYkhcqF2A==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-inpage-navigation@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-inpage-navigation/-/ec-component-inpage-navigation-2.29.0.tgz#1c8a3a2df1aecfceb03ca5f93bee3207a8425acd"
-  integrity sha512-Qgi1MM2n8GBuinJY7sSDZRBMAueHw6U7nnJJRcc3nOKcQMyghZLqY+L+TpetfnfJnIVpME+ZH9utJVz4zD997w==
+"@ecl/ec-component-inpage-navigation@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-inpage-navigation/-/ec-component-inpage-navigation-2.31.0.tgz#49d109ad7403b2fe1acf5ed405a19efb649e0c8a"
+  integrity sha512-u5D679gSCwJ2+R5uu8L0GLhLQEMURC/k2e8/dqDJDpAVnHLTjIIEesp2cphqQpU9bd+bpQMj01bh1sRNU/aypw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
     gumshoejs "5.1.2"
     stickyfilljs "2.1.0"
 
-"@ecl/ec-component-label@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-label/-/ec-component-label-2.29.0.tgz#df4565a9360783cc9292f441e7c401de999348f1"
-  integrity sha512-AA7dza/asHJ48jf5s8WxzgVWiipI/Z306uuGEaydRdvfl1/JOJmzmjydAPvzSg8HT546hr3SSElnuRHYiEOLnw==
+"@ecl/ec-component-label@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-label/-/ec-component-label-2.31.0.tgz#acec6ee4f6ad4cf1d5eb55544fd087e4ee76242a"
+  integrity sha512-UWEJdYbYQX7euxdYLVMXDYpDmIf/XigtmEjVDUmATBeZaxsSGv9pYPeEyQmXhBLnysSiUkBO02hCjoJdmWWq1g==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-language-list@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-language-list/-/ec-component-language-list-2.29.0.tgz#1296aff9277a6888778d376f2c9e44305c616144"
-  integrity sha512-Ya/ypW4gzFsD129dv3aCHecwxrbCRpKZd03b27LUaqCeh5aEde+KEoZv6QRei4LBHuRFFlT3/oTlZrpayLbjzg==
+"@ecl/ec-component-language-list@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-language-list/-/ec-component-language-list-2.31.0.tgz#dab2245af938588ff4f095fe55442b8a80dfa45c"
+  integrity sha512-N8wNqH0KnTJytk/Vpiki9boJp0Wsep+l2pd7uvgCQ7Yd8WUluOoJbltKovtyUnKJeqo3nc5bq12xj9ia51E7bQ==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
-    "@ecl/ec-layout-grid" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
+    "@ecl/ec-layout-grid" "^2.31.0"
 
-"@ecl/ec-component-link@2.29.0", "@ecl/ec-component-link@^2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-link/-/ec-component-link-2.29.0.tgz#664f2487b43d300774af7b881beb704bb5776846"
-  integrity sha512-7s9x3qf+DRKsx+L9S7zb7Jy16Wtmci7jqWeqcCskHvIQROfZwI/g2q5w0wJOvR3Om+jodIM/tHyFcqvqkxXKaA==
+"@ecl/ec-component-link@2.31.0", "@ecl/ec-component-link@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-link/-/ec-component-link-2.31.0.tgz#ec2ef73dee8ab9cc3468a4765c1269efc407e89b"
+  integrity sha512-NRXdsPHptm3b2iOsDwtoJ6umNfYaMwEAbKUdaEeAvYAyFdGjt7WWODgAjfxyHyvzGWFxvqpQ7bTFAF8tGhERXw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
 
-"@ecl/ec-component-list@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-list/-/ec-component-list-2.29.0.tgz#8f97b252ec841e0cf84b7e1ed47f36f86a14b5d7"
-  integrity sha512-YWBzxxA+35TLSM53Yf0Bq6yW9CDapV/GTBqQnTP740z0Z2cuFvLkK5tEFqlkE4AlsxaxhiqRLl/4ShVG51pI2w==
+"@ecl/ec-component-list@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-list/-/ec-component-list-2.31.0.tgz#a857faf8e30625de0e92ce00cb9d98f92ef5b5b8"
+  integrity sha512-WHkVudTi1ZidmG1iradbpJWUyVGdo++9BEYeQY8UwyAQfwCbrgh3/ReuClknu9fgfzXlZS5vhP2UHYuAOX5XQw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-media-container@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-media-container/-/ec-component-media-container-2.29.0.tgz#5272eb8a6bcedbf728e5f2c9df2486e344ad1f3b"
-  integrity sha512-qU33awYwVbQDYsEnfdfNIOyW4VO+dEX1cTN+5JG78SayDCd2mBe9yXe/G+T70jAK3qzPN6lHXF5xJmuMBaD2Uw==
+"@ecl/ec-component-media-container@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-media-container/-/ec-component-media-container-2.31.0.tgz#910958ceecbc8841bba4481c2aa1c1eb92ccce19"
+  integrity sha512-eXhARvxqFlKeU2AsutaJ3Av9LBMwEB6YHq62G/x6K2aWD3EG/o9lUStrgYhTkgdR4PZBDo3YXeO3sWre1zGt9Q==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-menu-legacy@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-menu-legacy/-/ec-component-menu-legacy-2.29.0.tgz#11991859a6025f74a33b525e4210abd5946954bf"
-  integrity sha512-/wcXbLfgdPZo7fWknBmZbvamnsfqL2Zn6T7n2/o7Bz+FceTugH2GdH7dZRvzc09zewx1UfIUqQDZf2YHvUU7vA==
+"@ecl/ec-component-menu-legacy@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-menu-legacy/-/ec-component-menu-legacy-2.31.0.tgz#b05acc767b2f6d986bb7fafd2f0d9b3abe5ec9fb"
+  integrity sha512-aoO43kVaC4ppaPMXqitvCHtRaI1g9CrF492hGgLHxqa8WuuaDiomg2c1Dsj9kklMUDSvRTUw7jTEm5Vntj31RA==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-button" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-button" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
 
-"@ecl/ec-component-menu@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-menu/-/ec-component-menu-2.29.0.tgz#6ca2fb18e736779bda7e799fd4170a2a660278e4"
-  integrity sha512-8yvNMjQ0WoJgKunqn7Tu8RSKcjFOI3pre4TwGb4kfuS5izk/H71RW/k2G3hJDfPwCQ7J281mz1/uSbZAKyOzkw==
+"@ecl/ec-component-menu@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-menu/-/ec-component-menu-2.31.0.tgz#266b2eb41cfdf5ed868e773a956e2dc9ab02ed2a"
+  integrity sha512-qMmsAcaamm9Q0S0xxVTtIZWs8amHoqrvagvls7Re7OqzfPH+ShlP4Cg8cUEm9ezFudOOeoORtGmQ8/aufrndtg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-button" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
-    mobile-device-detect "0.3.3"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-button" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
+    mobile-device-detect "0.4.3"
     stickyfilljs "2.1.0"
-    swipe-listener "1.1.0"
+    swipe-listener "1.2.0"
 
-"@ecl/ec-component-message@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-message/-/ec-component-message-2.29.0.tgz#19c24428dc6c781128859aa962f9af2adaaa86d3"
-  integrity sha512-ZyGp8V8BbRD73QVECRk7p4FqYNRf0qqr8Z8CL6r6HIh4adNY4l+W4mrNxCx3F3fzQsevI3PuqcdA3290cCdkYQ==
+"@ecl/ec-component-message@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-message/-/ec-component-message-2.31.0.tgz#7ae7b5d44fb12c07554fd531226f1c7a0a114602"
+  integrity sha512-/2qd5sXqbw+jKtl00IifovA8m+/p11PJHqlyVw/+x4NUV7MjDKWUdiWcdmcKjaOi+gyHOz6NmmcAylSg8YSXhA==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-button" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-button" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
 
-"@ecl/ec-component-page-banner@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-page-banner/-/ec-component-page-banner-2.29.0.tgz#c55746d24aa001d42cfa9a686e7abeb3dc89699e"
-  integrity sha512-BNXmNWxQ0YWsSTZjPNFlXchdCqEpZNoeP10cqXRAUf+E4uH6OnTJ5nyykUlbFuzxYlNOcE9t7ariY07Z+Vvasg==
+"@ecl/ec-component-page-banner@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-page-banner/-/ec-component-page-banner-2.31.0.tgz#6c754f44cf3dbf146b0b1422f434b0d477046116"
+  integrity sha512-TqhLVtQ5Cha6u5BfdD1E0/VNP+TX89kfGUH4OnQb8MOaQufXB5KEy62xlbVg2ggcRK43zmfwTpkNa0yQzI5cGw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-button" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-button" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
 
-"@ecl/ec-component-page-header-core@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-page-header-core/-/ec-component-page-header-core-2.29.0.tgz#7ddcaae09ec2955e7fd5d74a9b8befc1656d6606"
-  integrity sha512-TH40e21d1j8WTLL+nKMNqRQO/AbXQkW52/h/YukvqeL2MPmrLXofHN2ROk08C5CEhIw4Ua9gBGVmYDIHYbmA2g==
+"@ecl/ec-component-page-header-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-page-header-core/-/ec-component-page-header-core-2.31.0.tgz#9bd6a2438bbd83b3132fc97a0ea6d4235cfbc634"
+  integrity sha512-wxMlnp9CUU/wBL8Bv5pXkHwG9FQ3XQ2VHFGKkGc8oo9wY2HiLyvh6kwI4ZhHJre7ngPfzSFSkK1sabAh4keHsQ==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-breadcrumb" "^2.29.0"
-    "@ecl/ec-layout-grid" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-breadcrumb" "^2.31.0"
+    "@ecl/ec-layout-grid" "^2.31.0"
 
-"@ecl/ec-component-page-header-harmonised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-page-header-harmonised/-/ec-component-page-header-harmonised-2.29.0.tgz#c2f876b6577720be7fbe3ecd4ece4ecd89b9b35d"
-  integrity sha512-KPzZhGr5rzfn8sG1NBfY63YrK8yrN54Hl8BbQiZQYED9vrS/PMyQPKDsBILhfZMTVrdnV44F3DvIo7QmfOe5mA==
+"@ecl/ec-component-page-header-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-page-header-harmonised/-/ec-component-page-header-harmonised-2.31.0.tgz#3bfae0d71d282f55dcab0f059a3e66567581c06f"
+  integrity sha512-IIbg2RseEvYukUZYD0zmPrH+Na+RAlxKJvd7Z68HZFoDHpRfK2AoN6NT7QZzWGYmIzxO51RGsLtuNPMLVjb9xg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-breadcrumb" "^2.29.0"
-    "@ecl/ec-layout-grid" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-breadcrumb" "^2.31.0"
+    "@ecl/ec-layout-grid" "^2.31.0"
 
-"@ecl/ec-component-page-header-standardised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-page-header-standardised/-/ec-component-page-header-standardised-2.29.0.tgz#ef20bce09f0b2e66c304f94ca26b1e0c67816f4f"
-  integrity sha512-NbcBnDx77LUZR32Zm192OF6KUdMNz2+0hESoaw7aeBJK6umiP+In8p3W+LNe2OTVmTBaOlTBveeubea4Q3MMHw==
+"@ecl/ec-component-page-header-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-page-header-standardised/-/ec-component-page-header-standardised-2.31.0.tgz#68e9a41aa6c7be632f5122d4c13d31634459f300"
+  integrity sha512-lYltrfxQ9IjL6we4VTXX4W0gCyy9aun70aC4/xHtxJAG/oVoH5H7v26iR+34h9UEJTLdm/1gNIX/XOLlwfa11Q==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-breadcrumb" "^2.29.0"
-    "@ecl/ec-layout-grid" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-breadcrumb" "^2.31.0"
+    "@ecl/ec-layout-grid" "^2.31.0"
 
-"@ecl/ec-component-page-header@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-page-header/-/ec-component-page-header-2.29.0.tgz#cf28b95fe1d53f6f61c03aa9f078d4838b6592b5"
-  integrity sha512-90eqt+owOE3Um2Rl5/tAQ/ISouxuO4RIPkTbu1PtAFXgNjdDloGiGmOxE8dtfrU8GkbHPUx/Vq0N3lhpM9bAZA==
+"@ecl/ec-component-page-header@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-page-header/-/ec-component-page-header-2.31.0.tgz#6650ef4742b43f05d429ff9d355f57abbfe55d54"
+  integrity sha512-o78bkK7FIP5OvCAL2Ea1tryvbO2bapmZiTlVTqGUWBd39qDigdr0lR94kteRsRsmx9FMVcTUS9KAsSf65sxYew==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-breadcrumb" "^2.29.0"
-    "@ecl/ec-layout-grid" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-breadcrumb" "^2.31.0"
+    "@ecl/ec-layout-grid" "^2.31.0"
 
-"@ecl/ec-component-pagination@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-pagination/-/ec-component-pagination-2.29.0.tgz#52d6f97beb1ca30d28d72da0332f30944d93f01c"
-  integrity sha512-q3E3eZRq4OtLWKtBO2XeM3bONSgDhcEh1s3gQc53sQZXobF9eVZVDvCkmyHkbIpq7PJmTJQma9Xgl4kl37nbvg==
+"@ecl/ec-component-pagination@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-pagination/-/ec-component-pagination-2.31.0.tgz#a0767562ebda5ff2b6ac2726c475ae1558f6201b"
+  integrity sha512-QBGpXbgheIJawu7kM9aHsBNoWUmmRUnX2IKW0GZtYLGtWW497he7QGSCTZkX6A8yCUip0/LlO9fNkLq5WVzXyQ==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
 
-"@ecl/ec-component-search-form@2.29.0", "@ecl/ec-component-search-form@^2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-search-form/-/ec-component-search-form-2.29.0.tgz#595fe85c2c6c98b6dcdc831c928140c6a7ba9eb1"
-  integrity sha512-m4mHNNWhnTfzyvVRIUh8khnVndWNeV5G/z077mifXBvDMMPsN/AiqwG5PxWkN68o3KZ5e8q97j3tZGC+i+yB8w==
+"@ecl/ec-component-search-form@2.31.0", "@ecl/ec-component-search-form@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-search-form/-/ec-component-search-form-2.31.0.tgz#48db19b0de56550d4df2a32422d32489f5f2c144"
+  integrity sha512-FkPRnFy5gEhpTn3gEinsx0n02pCwJ9HNQW5pRx55C3mTlMlv8LhaySd9m4MMkYZQSHn+dFvphOuNf40qxjQovg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-button" "^2.29.0"
-    "@ecl/ec-component-form-text-input" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-button" "^2.31.0"
+    "@ecl/ec-component-form-text-input" "^2.31.0"
 
-"@ecl/ec-component-site-header-core@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-site-header-core/-/ec-component-site-header-core-2.29.0.tgz#5792ff8af6d65da9f064f376171c1420294bfaa5"
-  integrity sha512-9AOuEgVhAtLK9THkX+Nc1tyvVp4a/aP03qCcBLjcZJkKzJLHV5D3zhuSsoZvGu9P6CB0h4Xs2el442AMS/vMMg==
+"@ecl/ec-component-site-header-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-site-header-core/-/ec-component-site-header-core-2.31.0.tgz#15c169747201b8ebf5a34c1a5b74342868a740db"
+  integrity sha512-4+YoAm5PLtzYbfXrv6nndnZI6xSStvbaPjO/+LFxcqpq576NFofxYdUCXc34b54eZt+x0bAIZLUzS8R4t3MAhA==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-search-form" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-search-form" "^2.31.0"
     focus-trap "5.1.0"
 
-"@ecl/ec-component-site-header-harmonised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-site-header-harmonised/-/ec-component-site-header-harmonised-2.29.0.tgz#1d3bb6f7936a04b65373d07063d92b32974fa07c"
-  integrity sha512-gmTFTB/zp/nHrVjvmgZK/7UQ+a+lLiVYPjSbTECqPtDw9vEgeaPExDV9XxzMlVX8p/Pegj5VNNh1mD5sFM3znA==
+"@ecl/ec-component-site-header-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-site-header-harmonised/-/ec-component-site-header-harmonised-2.31.0.tgz#b9bba7326ffb968b4fd64edc967bea03e9c7457c"
+  integrity sha512-/FK0yw4cwG6YEynMps+ettPMZz3vU+Ja4nC+8qCOzHNVi9Z1lhPTCASwXRmB3M4V6E6DVP+/8Far5b/AmhSSjQ==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-search-form" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-search-form" "^2.31.0"
     focus-trap "5.1.0"
 
-"@ecl/ec-component-site-header-standardised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-site-header-standardised/-/ec-component-site-header-standardised-2.29.0.tgz#6144d4a0add3562f71937a7b5a7ce9a5f47f8b4d"
-  integrity sha512-nxZWorrnZjal4jqE8rZMPdVYgvUkPhWJfgDz0t9tuQbyLBEC1leSjS3bLu5vsuuZ6+wSvj/3RcrkpdafY5YidA==
+"@ecl/ec-component-site-header-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-site-header-standardised/-/ec-component-site-header-standardised-2.31.0.tgz#523218725a24aeb20485e8332ac96ef686d8fe1f"
+  integrity sha512-2vfYnYA+OmqwBkz4l9FCxWQDsLdbLEXNSlj1jJwekipc0AEr7HzHsjQgNqSQ44wHrbcs60lLCzzuWEmv9GYLYg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-search-form" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-search-form" "^2.31.0"
     focus-trap "5.1.0"
 
-"@ecl/ec-component-site-header@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-site-header/-/ec-component-site-header-2.29.0.tgz#8034f4d5ebe9dea8b83a60ba7241e94aa3ff0319"
-  integrity sha512-HxhmOoTTe+izaed49dVw9uE1VibGgSZOj+RX1nsgBy1bTwhKzjqKsKhEMvO/fEQOtu0d3vO2Fv6KKfh4J2AVlw==
+"@ecl/ec-component-site-header@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-site-header/-/ec-component-site-header-2.31.0.tgz#777d044af36a7c7fb71c3957a2f17ea90296c86f"
+  integrity sha512-9yeTGRT8li9a9D3oJNX0nWOeemCHCXHu5/LMfrpeljJzZYp58XmqkUTA1Aaqb3XMytHASFsWqVPSYJgWtp2igg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
-    "@ecl/ec-component-search-form" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
+    "@ecl/ec-component-search-form" "^2.31.0"
     focus-trap "5.1.0"
 
-"@ecl/ec-component-skip-link@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-skip-link/-/ec-component-skip-link-2.29.0.tgz#15cff0a2ee9570f9e3270a7e62881c73f2a56067"
-  integrity sha512-wIhd1zoCcCDLUohHxnbsIDwVgI0dOEV1eI6oQM1pLD4d7jPkIQJAMoZ5pcLBpYYP9k/5HrNjzcyVUZHtUWWROA==
+"@ecl/ec-component-skip-link@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-skip-link/-/ec-component-skip-link-2.31.0.tgz#b4f0ce16ce253c32874fa35e969ac3d7a02438f5"
+  integrity sha512-S/E2LFEhLzlnsUGitwvMX4S6iTyiV2gYl9cyN1Kx1LhmyiLAYP5QETGz8enX2Y5wZWc5Fn+b7tNQLUeM67Ry/w==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-social-media-follow@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-social-media-follow/-/ec-component-social-media-follow-2.29.0.tgz#e86bf8393722bcd7e51adb126d5b58aeda12b563"
-  integrity sha512-TEuGOy2gu6kMFtfWfPNzNa+l5B5xlD/KGwM0yWKyhv+XgzAUoM2dVJrgN+ppCGlGIe71TdmFObj8WoB0PUS8+Q==
+"@ecl/ec-component-social-media-follow@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-social-media-follow/-/ec-component-social-media-follow-2.31.0.tgz#1e0a360a1b38371a306c7ff38ee18e32643095af"
+  integrity sha512-etqBafj3q7Yf/suSsozpiudb1PXH6Q0kZHHAaWzVd6VHJtITqWmso1zO80poWgoaAGq7D4R7jHtLn5C0wVqLCA==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
 
-"@ecl/ec-component-social-media-share@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-social-media-share/-/ec-component-social-media-share-2.29.0.tgz#84fcdec862aadc8ea42f98b8b43403addf4feed1"
-  integrity sha512-btR9j7NypmXUr2jxz7itho+pCOAx/Ho2MzGUSRCGH9pKas85UL3LxNXzNG5M/R/ZL3w1wb1NY8GfgM08ei4QTA==
+"@ecl/ec-component-social-media-share@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-social-media-share/-/ec-component-social-media-share-2.31.0.tgz#6ef20e068c5319f9c9129e820a42911c8984e77c"
+  integrity sha512-IE7n160qHrOREq0NbZYzpLetHbS1Qxxf7lvoAlZTke7v11JLQ00oyvQg//ncGj+lhzEQonpkEh5tyY90xnqJTw==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-link" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-link" "^2.31.0"
 
-"@ecl/ec-component-table@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-table/-/ec-component-table-2.29.0.tgz#62bf239591061ecdacb5e596e905505b5dc16148"
-  integrity sha512-XVo1PsbIN+RwFxV79zozKaIcT/ki/kqCumq16ZlPLimSS9sxO9FEs6l4kB4CgQDKzaXw+9SkeSk6ykuIennLCw==
+"@ecl/ec-component-table@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-table/-/ec-component-table-2.31.0.tgz#408130f7d0399c54fd4f9c56c53d3cfd7f9bf8f9"
+  integrity sha512-CvE1eJwor0sGRGeTyoUSHP85gBfPzObwkythIqFb7req+CT//LJ7oMc+CRj6IFJy0hAE7cjJ0kOZc9iQoIsQzQ==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-component-tag@^2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-tag/-/ec-component-tag-2.29.0.tgz#9db3570de055f6e77fd5a08179562c4637edd333"
-  integrity sha512-cMS2EXFKFMJ+E8JiST1iXf+P4zc2d+/AoGFhpL3gw1iTRho/ckcAWJ5wsDLiCIeMBag5LDWNRN8D9UWH5AWLRA==
+"@ecl/ec-component-tag@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-tag/-/ec-component-tag-2.31.0.tgz#2e8d8ea172a4ef2e7ab96105d0427254fae4b9b8"
+  integrity sha512-fKnbtK9vXRFz2snsX68uB8vd8eCtGw3xCBQDWRYw6mjw7kyXLjDvbNy7K+/FJoIGu7kVMPk6WQpZlt3iTd5BZg==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
-    "@ecl/ec-component-icon" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+    "@ecl/ec-component-icon" "^2.31.0"
 
-"@ecl/ec-component-timeline@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-component-timeline/-/ec-component-timeline-2.29.0.tgz#1b2bc541f01d018ce19eef3785148409ae9b56a2"
-  integrity sha512-KVFaDOPHAEuqpQY7GiJsMGLOQduzzSlKnwTayC/RzBiUqgjhYeB5f07nGhdw6g5vFyjEaBHvC0+utLur5yVMeA==
+"@ecl/ec-component-timeline@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-component-timeline/-/ec-component-timeline-2.31.0.tgz#e872886c58295a63eef7d2fe7d3c74c751fe948c"
+  integrity sha512-vlvRtRDlKfY9GqTOBddLphA92H+8E42IBAF40XulKsXQ3C/B1CwwePr1FzhMlRptUB12dvdgQI8JIon3C1e2EA==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-layout-grid@2.29.0", "@ecl/ec-layout-grid@^2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-layout-grid/-/ec-layout-grid-2.29.0.tgz#8ec97d2c94e2970fd8031d5a745fb849c347fb57"
-  integrity sha512-KlDO76MsZvT15yECA7yqcXbFuVxVTuPwmutTrFP80XJ4Vlre9btz1A3Qt/GAXioSfes20o1AL0tykfgx0IdqzA==
+"@ecl/ec-layout-grid@2.31.0", "@ecl/ec-layout-grid@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-layout-grid/-/ec-layout-grid-2.31.0.tgz#d87f273a1185feb3530568f778702b987b4174ad"
+  integrity sha512-F+fjFPG7/0nWKcF738UzdMhA0VkUOMfLriYdXP4nruqK+LXNsT2ZgIFAyG5igkTGCRXAFP1FCg+Sh6f6O1Z/3A==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
 
-"@ecl/ec-resources-icons@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-resources-icons/-/ec-resources-icons-2.29.0.tgz#a9b3792a9d5d153bafa71b0aa808d3ea01041ff4"
-  integrity sha512-qswabW3JfPdSDfkbWjE44Sok7raiHSeDITTPl+oRO3LxjOR+qWs0llm5y8WFrBQjtuZiywYQ1rE1FuR1OCkLog==
+"@ecl/ec-resources-icons@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-resources-icons/-/ec-resources-icons-2.31.0.tgz#6b8ce66d1d6802daa2daa054d0c85d69eee09f5f"
+  integrity sha512-wFzq1MDs+/Uz/MdWsO6ZH+vUd0e4XREwTsFUCY89DqDWdigQEMAHyT3CYTu4+/Qr4gtpc0sQ/Gg/+By7I67bEQ==
 
-"@ecl/ec-resources-logo@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-resources-logo/-/ec-resources-logo-2.29.0.tgz#e0562de02718f6b64778d22c798d7778c1f4e9ed"
-  integrity sha512-r1M+rEzDt+gOrpB+lvWhrGP5vpz5WFztovj2/hAL8d7WJoUfheNayGPrdXxEEX/qYO1THCSdLSQSkIiDUXBDsg==
+"@ecl/ec-resources-logo@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-resources-logo/-/ec-resources-logo-2.31.0.tgz#6c8806b2fe7fa3174d6d6b73501fb7f96a125aef"
+  integrity sha512-mNL8Y18Ptu9GqZoczXZrAMgZ7Sn9ReSd53ENFRg4lOEyqP7t4Q+lM5SXUuFV4Y2/cxbqBy4BTwnldw2aqaKyiw==
 
-"@ecl/ec-resources-social-icons@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-resources-social-icons/-/ec-resources-social-icons-2.29.0.tgz#76e3029f8b090c8bc9cafbec7feb9a7562723beb"
-  integrity sha512-wyeE2olnCqywrmjpA0dJaxqN8kqIiCmIsswDAvrK/uOLG2G/SRExPbiqxe+A0NnFCk9nVFIkYuQbbX1m2BPuGA==
+"@ecl/ec-resources-social-icons@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-resources-social-icons/-/ec-resources-social-icons-2.31.0.tgz#f2e65af29a3d1fa613813c2efa54ec7b1523783a"
+  integrity sha512-aaQpXYeDhc/SmPO6z8I5cmvA81Y9NybgZ57QD4hOwE5z/RQ/ocqgBXFnTv8bZQSuEkdTtTKTKjMYq1Rpg/cpJA==
 
-"@ecl/ec-specs-accordion@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-accordion/-/ec-specs-accordion-2.29.0.tgz#c9b9dab697c62886a7bbe6622e00ce002579908d"
-  integrity sha512-eFZhQv4U4nn/bwDkmz2oUYL4MGIfK/XS7bdJOJL1hIKkJfORTj/slobcVVyhvM6L6Fndll6K4U6JiLaJhcDk6w==
+"@ecl/ec-specs-accordion@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-accordion/-/ec-specs-accordion-2.31.0.tgz#7f155fa8618325ff2f17d23385490c5ea271f5bd"
+  integrity sha512-7of1/xEXndrkSugEmvSj5CA9OhS5N7J55Z/smndaRpS6pEP+OMJrPv1Rm9ePKrDkPE3cmiIrKlY0UmlkVzvF3g==
 
-"@ecl/ec-specs-blockquote@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-blockquote/-/ec-specs-blockquote-2.29.0.tgz#5ff49bfb04b5e32b14e823362cda054a7ee1c302"
-  integrity sha512-JIeLgE91QTjydnFpjemCvBLxO2XlRYeYLlOg2wVIAv7E2NIDteqUdorVekbx6NtEW+wrh6y7xvhHITx7xw77Sg==
+"@ecl/ec-specs-blockquote@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-blockquote/-/ec-specs-blockquote-2.31.0.tgz#ee38ecabbe906fad947e8c68b6ade3be2d057a75"
+  integrity sha512-Ly1lohrM+wsn3q4S6RJKIRMjEBAsdETvQtfDeNLonwZq9aPSNXodteyuD2Ay57POW9DKDpF54kBVL2+DDqsjsw==
 
-"@ecl/ec-specs-breadcrumb-core@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-breadcrumb-core/-/ec-specs-breadcrumb-core-2.29.0.tgz#c1ed9eb726b0c2505d07bec7ce0ddb144e114253"
-  integrity sha512-Ragyc36OEq7ksFB+6mvh3/skN1NjXWzSfXur9xEHgX79yqk3Sd+BBi5gdWPgTYNd5gF6wqPyzpF+C8hZDvteQA==
+"@ecl/ec-specs-breadcrumb-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-breadcrumb-core/-/ec-specs-breadcrumb-core-2.31.0.tgz#9b45cfef143f220fffa0005a16fe68ec99df91ea"
+  integrity sha512-o7zwrmI2nAM9EFWWuJD9tkSaGEDAop6JgtmSD/ZYsVYkAqDY5fen83e+RINtHWxZPoOeek0Z69y8c/6tGNMvUQ==
 
-"@ecl/ec-specs-breadcrumb-harmonised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-breadcrumb-harmonised/-/ec-specs-breadcrumb-harmonised-2.29.0.tgz#2c3baa376060221030b388d86b310064ecde607b"
-  integrity sha512-kBD+cdGu8C9XOldpa1WbtUP73/+j6J93NxlSRVWm9j7P8rLigjNwypnGRYajEQ5JoR9QGeU7YtDHFt9Z5C5NSg==
+"@ecl/ec-specs-breadcrumb-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-breadcrumb-harmonised/-/ec-specs-breadcrumb-harmonised-2.31.0.tgz#a39c7f15968d27ec5028093440709e23598d884a"
+  integrity sha512-PDekyoOlMLbwkia8Zx3zqRw/WN/HAOwCE4CZy/FHsNSnVvrbOyX7Ql4/35INYXWELVGSLFdJHW0adA2kWEUTIw==
 
-"@ecl/ec-specs-breadcrumb-standardised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-breadcrumb-standardised/-/ec-specs-breadcrumb-standardised-2.29.0.tgz#0d46bb59773afd2699c82fb269369edca2da7132"
-  integrity sha512-AIWFN82yA164kXa05X/VTYeCCI06w2S60tSbc94FfwPYOJNYd/9R31Wt++LA88JxDs/x6x6kPAyYjBebPoxouQ==
+"@ecl/ec-specs-breadcrumb-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-breadcrumb-standardised/-/ec-specs-breadcrumb-standardised-2.31.0.tgz#02111cc9a6a964fe7b10861ad6aa40e80451b3bc"
+  integrity sha512-rBVtxDDNolIfcV8TGN1eyVsOuWrpXmv2Z9BhUa3T5NVxIq+58oj/lEfxxYjiemJC47UFxFo21eQcIRrVETNLaA==
 
-"@ecl/ec-specs-breadcrumb@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-breadcrumb/-/ec-specs-breadcrumb-2.29.0.tgz#5d61a9ac171e1e212160512b402c6dc327723e8b"
-  integrity sha512-GWcidaWHIr2Nc8nbylpbXLMLJ0WSJqjoFyOkMKI/DqfUp9rTmHuZ49kZM1WYGLntMlxRuYhjgqUDG7NwBdLBbg==
+"@ecl/ec-specs-breadcrumb@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-breadcrumb/-/ec-specs-breadcrumb-2.31.0.tgz#8e4fd8f6ee5c25a985f2782a18e634b88c1cb083"
+  integrity sha512-nEYJrAo1k1ffbd/O3ikyDDS1MGXk1iruYBq7mofE9W7SaAdYxPDnHoYvhuuAr4ZClvKGjBA6dmQIaExELwA6Jg==
 
-"@ecl/ec-specs-button@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-button/-/ec-specs-button-2.29.0.tgz#1ffcaa7082b32c9f81b49206a279678bb80ab8fe"
-  integrity sha512-ehrBaXoDcNJT2L9/m07Z8y0j/Wjus+w5Uj3//gaqN1+wOUUYMy1rsNfNhClQe/QN8Nmmn5b3TuWfoE453BvGPA==
+"@ecl/ec-specs-button@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-button/-/ec-specs-button-2.31.0.tgz#13c34384910545a9bd6283d5ebd1920d63bf3640"
+  integrity sha512-xY29U6epupJD0/Im2HoSZTzkXMgiyTWajoGa0T2OhvD4WI8O5bC4YZkNek1YnsVZHmif8JyKRm4OWprsWBSMJA==
 
-"@ecl/ec-specs-card@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-card/-/ec-specs-card-2.29.0.tgz#da488b85cfccb7a66293757baf323e60c3dac513"
-  integrity sha512-BWz4TuM1pBzT4vCCv7WF8oJtidM6Bwy78xaTIgJJnwNUxEYKOMh5zlIWeT6aLM2ow1MZ3/heDFR2HQ9MeVaQxA==
+"@ecl/ec-specs-card@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-card/-/ec-specs-card-2.31.0.tgz#38ec0dc6683f1bdda289dfa670a12f39ddcb95e3"
+  integrity sha512-mAGOsfzC0F8wbealme1sACFWqZKz+tMkeBjTvCQ7FXCl3kVncMA4nzzEkm6eyIka1KZRny6tMDUAyySTV4SECQ==
 
-"@ecl/ec-specs-checkbox@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-checkbox/-/ec-specs-checkbox-2.29.0.tgz#7f6b91364de102502d364783e7b847fb92ea1afd"
-  integrity sha512-VVln7NuWOe/wUifOR3XdXpjjdM0KQUr4s4z0nwdU5Qwdfs4pN3DXUVTTYr7s3vPySG30JvK36Ug8XXiFa5MkBA==
+"@ecl/ec-specs-checkbox@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-checkbox/-/ec-specs-checkbox-2.31.0.tgz#6439589a71ba3ec12de785645be31415e3e60f32"
+  integrity sha512-mTHmlxUskutF+ukt2X37sjliFqAmDjoae/ostokYjJ3tEFhJna2X2yIYw/3n0bRtpypQArkJu8klCpKFI82vpg==
 
-"@ecl/ec-specs-contextual-navigation@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-contextual-navigation/-/ec-specs-contextual-navigation-2.29.0.tgz#7a660725a177a3b779a6240f5532ee374d4809d7"
-  integrity sha512-/rUNr2KuhaNaeukb9Lo5P8lr8+AYzthIuuCB7k+FOenU1DSOzfcOg/iJrfTWi9MmviDxHOyZxHKbl6K7gGRDmw==
+"@ecl/ec-specs-contextual-navigation@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-contextual-navigation/-/ec-specs-contextual-navigation-2.31.0.tgz#5f67bb0162451825261f93fcf0624009100414f2"
+  integrity sha512-4n/xR/AaEGA35sBqXYg03+0HuF1EzgSW2gN8DTPzeB+PzArHe9EnCg2D4CNoIfC8awhrWcqLe8hVCqcMuivfeA==
 
-"@ecl/ec-specs-date-block@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-date-block/-/ec-specs-date-block-2.29.0.tgz#eafafd3d0491576fb0fcd517044188af96b3e616"
-  integrity sha512-uXQRuGriWGRaDUyPJI/IzetvhlLuUv/xCqDDVDS72LWZMZDBeYKMuvZHQTCwKZkV7GjfY7h/KQGOES6+ChBbAw==
+"@ecl/ec-specs-date-block@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-date-block/-/ec-specs-date-block-2.31.0.tgz#6aff64db803ae311ff4b60648dc50cb1c0013071"
+  integrity sha512-ok7v6+HRbvvUd30e3SUHgt9YpB9UQaLR9VOUz94pcqum5+x93ki/j8YBZghngAwT5J1F0k6WNP1HKo4dHCDCfw==
 
-"@ecl/ec-specs-datepicker@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-datepicker/-/ec-specs-datepicker-2.29.0.tgz#45f7ca8564ff3aea7d8ce21b8b5ce7bfb4433e73"
-  integrity sha512-lNLmXzxnUIpEnTpyOwYUyVS+7seG2B+tkZaoOLpXN2theJ+wExUnHa8EECdT3XNdZNsQqsCdix825r+s5Jlo8Q==
+"@ecl/ec-specs-datepicker@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-datepicker/-/ec-specs-datepicker-2.31.0.tgz#5014117e4da4bd3f9c91bbdf72252cd751dd6560"
+  integrity sha512-lZNXOP8+XZMTiMHl8s7/mkBAacynxA9ab4L30e9gSK3Q9wHae41/ToLeqZMwRWdf2sVCz0j4BS0Ynbsa66MNTQ==
 
-"@ecl/ec-specs-description-list@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-description-list/-/ec-specs-description-list-2.29.0.tgz#a04034b597babfc8e6b909f279e310d3ef365cc7"
-  integrity sha512-fTz71zG7V7qzHZncANvSsf/DApNZr+1o0dUVo3BUtvCLaMjjFCPLYB+gGPl7IhZbvU48oF+r+rxWEkyhWueaPg==
+"@ecl/ec-specs-description-list@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-description-list/-/ec-specs-description-list-2.31.0.tgz#4513ec2ad8898c40c0204fdea6137fda18d7e065"
+  integrity sha512-B5wDNMfLna2/I92i6aAQWMGe0aliZgYm3ARR7k5Bj+h3+m4LN6nLSIFx+DuZSndP4s/ZHAdJQ93Rn8yy11c85Q==
 
-"@ecl/ec-specs-dropdown-legacy@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-dropdown-legacy/-/ec-specs-dropdown-legacy-2.29.0.tgz#17087dd0e259ad8f2522a14da828e2501949291b"
-  integrity sha512-swjycldcppW+hDpGNhW3/XBUlk5Jrb8CggfQwrWjad7wqi5ulc3su4mW3+H7JPHkEOxwAs7Z6GkIpwea0kG9UA==
+"@ecl/ec-specs-dropdown-legacy@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-dropdown-legacy/-/ec-specs-dropdown-legacy-2.31.0.tgz#34a56f1e5b3109f92f615a26826b144ae3de4893"
+  integrity sha512-eE1wM4qCqn9VbRh5ldjRRHt7eMb6MT6A+75R9ugPvKXHT9EvCl7TpZhOuIGUu5WhSCkEZbpN4/ep3UXivONZiQ==
 
-"@ecl/ec-specs-expandable@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-expandable/-/ec-specs-expandable-2.29.0.tgz#b715841b6ce29a9bb3c4f08fd9cb027f2a76a323"
-  integrity sha512-B8sEkR9spA+qj9A3i0WO9b2/MgXNSWnW3M12898oMY9M87Y/47zbRas620Unniaa8ucn7ByO65I3DyiaqEv8Gg==
+"@ecl/ec-specs-expandable@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-expandable/-/ec-specs-expandable-2.31.0.tgz#f4539c2a002c35ea2b1dd5824171ba897c580adf"
+  integrity sha512-CIWIwr3K4HO1A3EfOfwU6dPZiz5BUdWE8SjW0kmAUMnNxfjxd4EEzSFqHyyqYSZW0CXjhHuIIJi8Zykv2cvdFQ==
 
-"@ecl/ec-specs-fact-figures@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-fact-figures/-/ec-specs-fact-figures-2.29.0.tgz#fb0ef273a852869293bac8caf6088b846b960b68"
-  integrity sha512-3ItKOnHXfGeXUvDBUQfT4GSDkXNs2r3sKg6MiRMbX5mAebQBDUUQ4/7h7xS2Y2UB1KHo385T9rp6l8uutcPv+Q==
+"@ecl/ec-specs-fact-figures@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-fact-figures/-/ec-specs-fact-figures-2.31.0.tgz#ada2ea786aa62e3647736b299dbbb5533e68f95d"
+  integrity sha512-fUMdSllh412WWQhaquzIWRR2YLifVwm84OoPkCfjPsS6xfBCvpM0PVIYc8LCteWVlULqDffJmKOb/2017iBUxw==
 
-"@ecl/ec-specs-file-upload@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-file-upload/-/ec-specs-file-upload-2.29.0.tgz#9219a0bab316e022f5dbe44e9cb8bb566626911a"
-  integrity sha512-PcV/sW18V6yKU6MvaX6WYjPAJcLjLsh7HPgM2FU7wuJrQLS2y6+nYVR1ifnP5dpDMHyNr4m/t+9ZAxuAxi5+uA==
+"@ecl/ec-specs-file-upload@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-file-upload/-/ec-specs-file-upload-2.31.0.tgz#1464340e0352bf405c631b1a0db19a5567a87b88"
+  integrity sha512-SlUTB/P9ei4ukyRbFTE7dQgcDWn4OzNQjWi5pX13eMJD3ho/r3CbPpT3ahz1UEMqdCmKo6hc1aHTlnrVQcjdwg==
 
-"@ecl/ec-specs-file@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-file/-/ec-specs-file-2.29.0.tgz#e114d19263821c3291dfe71ae50c7fb8b53e1814"
-  integrity sha512-FPK90If4KyAgxRSlbFPgElBwicXcfWbd/raG01Abx0NMKplfK1X+smvpxHDJ2QMzJR6V9fcaTf3ikpdTALR2CA==
+"@ecl/ec-specs-file@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-file/-/ec-specs-file-2.31.0.tgz#0b626b8e5325b3fd8e155da9fbcf5790ac39158f"
+  integrity sha512-9iXlWq0dc6FgLc+qiwZpf17yhuoBMVdsQxRYwQmig02fu4H96Wn7yqq6f8YtQmh2+UIuLXxFCVCVVmx38Ug5rA==
 
-"@ecl/ec-specs-footer-core@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-footer-core/-/ec-specs-footer-core-2.29.0.tgz#46a251a96eba2fb357698c3cc8d82e6c3b914d63"
-  integrity sha512-mk1Js7uhYHSDswSYck7BWdyqwTir4SAMgUJzQVYH5s5v5mWfUv6uL7u7Vz6apTzAfmwm3Pix+vVBdw1tHA30Qg==
+"@ecl/ec-specs-footer-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-footer-core/-/ec-specs-footer-core-2.31.0.tgz#88aa77690b23ebf458d96a81c90c313da6c33135"
+  integrity sha512-/am4ZXjUg6mS6b9XhtA26zD1LS7IseFz9z+np+NoqSd7M/tbhCgkUmpqaZPLFZE1hc72G56j5f1AyQam2mY6yg==
 
-"@ecl/ec-specs-footer-harmonised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-footer-harmonised/-/ec-specs-footer-harmonised-2.29.0.tgz#ed3af1137e0f3cb63edb3144ca79111ac930bdf7"
-  integrity sha512-v/vhTz2f5YtRClLYqqlvhoHfNmz+FgIhvnvrd+6KwBGO0pjNw8co7f0Bo3w6q4yezrVURxh3l+dENs72pWS1HA==
+"@ecl/ec-specs-footer-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-footer-harmonised/-/ec-specs-footer-harmonised-2.31.0.tgz#a85ed58591a7a7537676ce28a5ecf3866ce43daf"
+  integrity sha512-jIIN0WxckPXNPfpNIHpfE9T+G9jjrHtXjC3ZPbseYx+22L8MJ4gkDKpCVuZuPFdzRT0O3BrZ++c6lNS2mBOXYg==
 
-"@ecl/ec-specs-footer-standardised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-footer-standardised/-/ec-specs-footer-standardised-2.29.0.tgz#ca9427a76eea177f072ea298343805f1ae2e14f1"
-  integrity sha512-4MHudbqiz/MSkC5c8DQmcoX7wbIdtUsuImUWuv6OD2p8Ep9BgkhWNbNLz7IHIQXSbdpGU3K3KCjs5SsYLQlJbg==
+"@ecl/ec-specs-footer-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-footer-standardised/-/ec-specs-footer-standardised-2.31.0.tgz#f9dfe378eae0fe7fd867290c1a1dbf8fb68fb260"
+  integrity sha512-MnZ0au/PtA6fTiMpj5JHYgw2aY6kXJLyNsFNvT5J/WuNvpf3BhAke7yNX+dpLFz/SnOx4F+YlsLOIxZYCmSYjg==
 
-"@ecl/ec-specs-footer@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-footer/-/ec-specs-footer-2.29.0.tgz#3f69c6012335a23b4fa01346d7e21001cfad3cb7"
-  integrity sha512-QmvvXNRhbE0jVAy70yaQFoqL1Bp18PcPzSRXDqgjZZirtdTuwDNQFnXxItk8tsr6kuyDjPQdjdz7W6OuXN6QPQ==
+"@ecl/ec-specs-footer@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-footer/-/ec-specs-footer-2.31.0.tgz#0fa895bb53165587f8ea2caeaf4a026d4d8b4e11"
+  integrity sha512-wYK/5ar0xLyn/qALEpMDjN6ZaLAJQ0mjI6AtbRk7XXqZJmSBOA/O5c/WCRaA795zMVC4yFav5EnMKTqliQZVyA==
 
-"@ecl/ec-specs-gallery@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-gallery/-/ec-specs-gallery-2.29.0.tgz#72225ea5b613f4db5397fd50df41e3b06a74e5d2"
-  integrity sha512-0ecO+2/Mh27e6OZIKi/gyVXHnk2e8QDkzIMAD+G/w2pnVZw8JSPKkJ9ZcJw/5NGJZYk13heuvXundyqtbOyF5A==
+"@ecl/ec-specs-gallery@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-gallery/-/ec-specs-gallery-2.31.0.tgz#8adc4b1986dc0e5793ebea79f8926a542783024f"
+  integrity sha512-H2DGqd2gfmHXCsUa3Gjo8iWJJDM6zbTppniVosG821BO7+rl0So/0xCjaiGQirnFoB1orN2emR9VjOLWn4AmfQ==
 
-"@ecl/ec-specs-hero-banner@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-hero-banner/-/ec-specs-hero-banner-2.29.0.tgz#f7d4bb0ea2001d14d652bca7cfc57eff9105c19c"
-  integrity sha512-0eIBAq0vtf63UcG+QHMNvGXR8t+vM8pOTZEoscu2U70DMp3HExpDMAj1gIhzVStAcU/56/M4Lv8eaX9DtsctTQ==
+"@ecl/ec-specs-hero-banner@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-hero-banner/-/ec-specs-hero-banner-2.31.0.tgz#488c0bfee49affec794ab74bed8dfe7987207dbd"
+  integrity sha512-qXkmH50SXCStJFhTCLGJz86qXuF8EJdKGeceBue9Oy9S8a5shx2dIrnRqGf8reY4mvBacfZQSxk5959iY9rjcQ==
 
-"@ecl/ec-specs-icon@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-icon/-/ec-specs-icon-2.29.0.tgz#ddb52f071663c72b933d8124687268c1d69be131"
-  integrity sha512-M/p2MYDKpi+lQZYLxlAiD+U10EjuO8l4KBAmsPaHgMmz61tmFiHgWN6DG2Hhxh890Z6DoHo3JZL9hvC8S7nDxQ==
+"@ecl/ec-specs-icon@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-icon/-/ec-specs-icon-2.31.0.tgz#457810ace96282ea5df93c36c3d17381c696ea7e"
+  integrity sha512-4EnXbK5f2y+mrbV47J32TXsG8YS3aZGeAtsyPgHffiZHBLi8c0iAM+kWJ+y6KxWLodts2KFkSHKw72r8M8beWQ==
 
-"@ecl/ec-specs-inpage-navigation@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-inpage-navigation/-/ec-specs-inpage-navigation-2.29.0.tgz#282f96fe3ccb3abfbcf9e0b39c38533439f80a90"
-  integrity sha512-N7ZmwKXfNDOx9amnqhywIuZ80ys72fC1LYjutHof2OPCyQukKJna8BDcA7G9xOR6/AyAqEJYh6y32JGF/5BhNw==
+"@ecl/ec-specs-inpage-navigation@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-inpage-navigation/-/ec-specs-inpage-navigation-2.31.0.tgz#d8be2a0f6035f495fc96d0237f29268656a70c91"
+  integrity sha512-99FsezLLD1iI6C8SbdV9+tezj+bgQgrFJkakQz/25Dvw4pfRYWNZ1LNqOQvpefchHMWK+FipjzVCVfel6SAQfA==
 
-"@ecl/ec-specs-label@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-label/-/ec-specs-label-2.29.0.tgz#02ef930083b9a5cdb5ea2e824edd79af58e411c5"
-  integrity sha512-eDYR1c3a919dU/XctNH98jkXOCRnUVDj+zNIjdBic1z0YI4scmRtRENae/q5XhbUvCLTVX6weAVSspcLGrGOjA==
+"@ecl/ec-specs-label@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-label/-/ec-specs-label-2.31.0.tgz#78010cd7db016b2c580525accce8679891c0799d"
+  integrity sha512-CDnJpx6+HEgn9t2YaXj2epSHs4hj4OalI5H1VhdWea76V/wsZuwnAEEIfBqPsipfAgrucI39o6XOmzBb936sQg==
 
-"@ecl/ec-specs-language-list@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-language-list/-/ec-specs-language-list-2.29.0.tgz#ed39b9af26f92c9f2a4bbc5df2bb511c5970d2cc"
-  integrity sha512-jk7jGXrnKLUAm2gokcTxnK2dSnCmFYgAHJbdxDx2z2A7MvsS4fBCXXccdvIDBvJGqyAiebYSLfojdC/iiHRG/g==
+"@ecl/ec-specs-language-list@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-language-list/-/ec-specs-language-list-2.31.0.tgz#15150d78b5443cff62222ef02f8b75a201447587"
+  integrity sha512-vHm0qT5jfMT60KDrhO6aBstaJjLo5JOtaauEGpH8kfgYOMwYsH0/Z4w8oO/fPSY0pQpJ/5MWnKRGxG3jGh500g==
 
-"@ecl/ec-specs-link@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-link/-/ec-specs-link-2.29.0.tgz#2e27447216e27cd85f616d00bfebe530b58c918b"
-  integrity sha512-Lb1uTvkh43aAmqXC37W6wiYkz2jAzldPwIO+yRWcUcOiqT4Z+UiZfHbWnC2Mg4Rxj+WRi3MpkAe8+DYmLZSxWQ==
+"@ecl/ec-specs-link@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-link/-/ec-specs-link-2.31.0.tgz#b90e018f9d5f990b392acb26cb49bb01861d6096"
+  integrity sha512-jb2XPRkLWToqcLVhpnmLIaZhj0IiCeBefFH4P1LhfLO0ky7mMlRz85+boRTS72ksUmPn05P2vEBPUd2GWbNQTA==
 
-"@ecl/ec-specs-list@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-list/-/ec-specs-list-2.29.0.tgz#fe68ba38d24bdea664c5fb58d29fb3661b6e8f5d"
-  integrity sha512-b1PkXC73KAU5jSls4JAJ5p4WSYzpBTPzIrdAvdGA5WiCvLVSlcSAnE5K+oJ/xeYI+/WeWS/u29+10ae5g/JN7w==
+"@ecl/ec-specs-list@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-list/-/ec-specs-list-2.31.0.tgz#27b79a97ef0abecf8b849e514b55e6034eb5eb31"
+  integrity sha512-cVM1myNLSXvatmyouNK5rL3Kwo9x7zo9La8i6q5OgyTEBAS1PwZatOvuvw9nzM0UuzgENogRGkIZ66sy5OQqjA==
 
-"@ecl/ec-specs-media-container@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-media-container/-/ec-specs-media-container-2.29.0.tgz#0993b42460be33e2a8bd777e465412702f317730"
-  integrity sha512-YdUy4FbwLe6BcmDmHS1GmISakE07is+DqsUAtiETPrh5xk4e5HUjtJF1FqOAHq0Cn6FR4DYk+Nz2YcklXuu1Zw==
+"@ecl/ec-specs-media-container@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-media-container/-/ec-specs-media-container-2.31.0.tgz#8dcd00656e9ae330ce33ea276cd3392b9ad6e6ad"
+  integrity sha512-njCBlhVMn9Zn/6XjEBKyD3R4dD7NjVFLuITxuyE0tzO/C4DNpI4tmYUSfc0G4bIil8uv6p+slCP9QCzYv65wMg==
 
-"@ecl/ec-specs-menu-legacy@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-menu-legacy/-/ec-specs-menu-legacy-2.29.0.tgz#da09d1af46fc815dd4ff9cdaed751bdfc5292ac7"
-  integrity sha512-QLtW7TCPPELxq24v725z7x29GM42OZHHmUEKFbrHXcQzg+u857w00arUlKGZ0k12jJMknoiCs5AGbx18JOGcGw==
+"@ecl/ec-specs-menu-legacy@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-menu-legacy/-/ec-specs-menu-legacy-2.31.0.tgz#02e6c27b70fcce295fe8fd791db46bdb2af97aae"
+  integrity sha512-yZbcwQXAkN/+vOFMGVIsOpLFm96BUwGkWeBi0bJK1aM0173K3Or/WPtj4GsUwDDT4Ayu7daB6jnhjFNVLjukPQ==
 
-"@ecl/ec-specs-menu@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-menu/-/ec-specs-menu-2.29.0.tgz#1a29a325e02280e7d9c5f78629b9c0687d3b8fcb"
-  integrity sha512-W+WkR7INFMgCJHoBpGuAk21IhBZAdEJLSrZfQV6eNyzmNJPsYYVSfk44CaioA95ZO+L4fR7i67/6EHxhIxrqgA==
+"@ecl/ec-specs-menu@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-menu/-/ec-specs-menu-2.31.0.tgz#0cd14e92ebc1f2244bb2594cdb6f69ca60ced778"
+  integrity sha512-fEpOPKa+Xw/o3BYRKX5J+ITu0eZFrZ5rIiJtGxmrEtR5/90e0iJt82cqbpqNDdKsFCo+Sio14Cb4ASaTO7454w==
 
-"@ecl/ec-specs-message@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-message/-/ec-specs-message-2.29.0.tgz#3f0d058c477cf67f3949fd1f6b83ce733231e60f"
-  integrity sha512-SZXK2k/TiuY68wsygcDipRNQEZMgMESFLoLnExkkbR/BQP9i8K3i+w7as4PH7z7xfmnnJZ78RT/aJ4APPIA7nA==
+"@ecl/ec-specs-message@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-message/-/ec-specs-message-2.31.0.tgz#74b23160008f4f7be35371a95766f7c6ac7f80ff"
+  integrity sha512-Y4NUVTj9rro7sXrqWRv4b0UBaB99/AxYpuOxhlsQcbmrOsZukoTd13ZztMbJal1lWcFgDjL5dygkKL0mVgZRnA==
 
-"@ecl/ec-specs-page-banner@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-page-banner/-/ec-specs-page-banner-2.29.0.tgz#ea5b7ac121af7613dbead59c8c411fe5829eff63"
-  integrity sha512-CZf948PC6ms4qb454Uj9Godw+hT7eA63sv1DZNauMv2Mqll6iem0ke+hkoahC+hGHabaj+Ikh0VlCsOjwi8y3g==
+"@ecl/ec-specs-page-banner@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-page-banner/-/ec-specs-page-banner-2.31.0.tgz#1147119c4989203890f2e8c796ab326fc76f1f0d"
+  integrity sha512-gOHXw5+9v3N5rF48WV45UgYFngf70hXO9G5Mvs/S/dw7wSoMkGbKdme2QSK41xsbFvrAwAu3xycYngIUro4I/w==
 
-"@ecl/ec-specs-page-header-core@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-page-header-core/-/ec-specs-page-header-core-2.29.0.tgz#5fd487c6742f1329b7d483fdf9d194de5873f48d"
-  integrity sha512-qm9sZOuyyovUbxHv+kS7s+oz0nuLFFHgcymyGMdO8DXkeAk5EClzdSQtmhQdsmflNqj0ga3YZ0bmsMyZ49glTA==
+"@ecl/ec-specs-page-header-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-page-header-core/-/ec-specs-page-header-core-2.31.0.tgz#67fe74193b3d809c67deccb07a49c5acfa9d8b07"
+  integrity sha512-HSf/Fi1UbBjUwlkdMACzXes3rybu+HbEVdce25e+uw+DGH7e4Cvzu07Wk6UHILyxK/NinGm7uMcSbDkWdR2YnQ==
 
-"@ecl/ec-specs-page-header-harmonised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-page-header-harmonised/-/ec-specs-page-header-harmonised-2.29.0.tgz#cf8a450093c885ff27dd5aec976e57cad77c4ab1"
-  integrity sha512-bSDvg/mvG7Z4Ahp1N+dJN9j8pCrDJiqyS8ExqdA/jpFoQC9/9TXIH8uab6WJPG74O98U0XYAusMULBGPq9fTOw==
+"@ecl/ec-specs-page-header-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-page-header-harmonised/-/ec-specs-page-header-harmonised-2.31.0.tgz#3ea40b8fb0432ff6d7b2be6af8afd061b7985486"
+  integrity sha512-vCVTL/LixBvRtv5v+eSIhadmThGAg90Ahibraxbqrwr6J2UytYFrpFqSAnr2U+wRfZQvw8Bcfeha5mhPaR0XkA==
 
-"@ecl/ec-specs-page-header-standardised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-page-header-standardised/-/ec-specs-page-header-standardised-2.29.0.tgz#b1f7841a9f8b7568f3d3081037765f695aede68c"
-  integrity sha512-XHEytYO+VjFvuVB7MYupzsk5uZx5uekC1XG5W+vBXnxOPwiL9CkbKfyWr9Ix3D2JLRuFQeAsG/YAvaSuvPnATA==
+"@ecl/ec-specs-page-header-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-page-header-standardised/-/ec-specs-page-header-standardised-2.31.0.tgz#095a4fa6481f75efcec6e735501b7b11589d827b"
+  integrity sha512-4A3fQD7TcBZCK8xq5kOBqHtijFW06yZgOhYD5NK/aQu+awNoNDi01647DO+ZgtR/kXku86Kr5SoEt0CFAkaweg==
 
-"@ecl/ec-specs-page-header@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-page-header/-/ec-specs-page-header-2.29.0.tgz#273fccabcccc32e7f793a2ce2d16d54caafd64a0"
-  integrity sha512-mut8hSsV37MKSHtLxljRkEETWea8pF5pdb1G4eLWyIjQ0Ml+GE86W1BjcGblANk+NwyLmudDomcxpqH05w7U7g==
+"@ecl/ec-specs-page-header@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-page-header/-/ec-specs-page-header-2.31.0.tgz#144a553eb8d9bf2b0ecf4b409b7d1f2a624b4d3a"
+  integrity sha512-E+fXRKhheNYMueqpfuwseV0A1kKtnCX8tE4VAtArKIpiuEULl5RfjuoT4ULbja52WjUfm2U8JkCu7UhYO43aIg==
 
-"@ecl/ec-specs-pagination@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-pagination/-/ec-specs-pagination-2.29.0.tgz#e261f8816ace6740a6975fad55362d722060b877"
-  integrity sha512-+ew3YuCtsZZNSW5iu6IqEicflTtS68MorMl87noPIedCevfGC+Uobaq56K8esOAZ/fMJ5c9Ei+W0JDrt2qHI8Q==
+"@ecl/ec-specs-pagination@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-pagination/-/ec-specs-pagination-2.31.0.tgz#aadb9b3eeace3ae57128a146c39c272a4a47071d"
+  integrity sha512-6F2X5P8DpcCovxqlv3L3Fdk0vOXY1Bv8ZGNmHjcwB6sADM8YOcH+fcj/+uZsFcpgUrpIiGP8EMc+Xef/HB5vvQ==
 
-"@ecl/ec-specs-radio@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-radio/-/ec-specs-radio-2.29.0.tgz#b2458b740ddf84e206e4e44ecb3c537ff503e102"
-  integrity sha512-sbGM2vfzRV9awVpfZ/50BFny1nPiOEmzF8kdZgwVSSWXe9B+Gb/rq4m7rn8SRPbdLQiUxgpXEFp0TPyS56NcgA==
+"@ecl/ec-specs-radio@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-radio/-/ec-specs-radio-2.31.0.tgz#a7763ab80de775977cd8c89441b493df761fdd4d"
+  integrity sha512-o/+tsaqVNO5SNI78duHKHiZmkIZkB8IPItQOjBdYAVHOJUxF5depH7MFuuaCm5mzgP9+PrQIVNf6xeGjmC7WVQ==
 
-"@ecl/ec-specs-search-form@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-search-form/-/ec-specs-search-form-2.29.0.tgz#36f166d2966b813d2c80f3352f4d29a2c2c70e24"
-  integrity sha512-WVvjYludRokRup0CbEvK8MyHoWeNNPFi/HPKdgnxhZoxcgM9xk1a7QoicvpwB5s56hjTZtB3vvlTdVeb76i67w==
+"@ecl/ec-specs-search-form@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-search-form/-/ec-specs-search-form-2.31.0.tgz#01c7ea5bcd53eb809265cb89074b5f63195d9a50"
+  integrity sha512-ha73PYgniatW/8UrrTIV0kV5dHVB858zw47s4A8RbQlr0n6Jh9E4ost0II5796btd95zWmzIb+B2hiLShYTgZg==
 
-"@ecl/ec-specs-select@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-select/-/ec-specs-select-2.29.0.tgz#0dabc96be224f0f6ec08a104418061635369f8be"
-  integrity sha512-5QEDgl0H2u9ieYYII/ipXSJnq1X+RkjzWz5gjjGnFizSAYKQ0s5OpYnvsZYL7uFrFj2gzdcr3nFvg3IYAkisQQ==
+"@ecl/ec-specs-select@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-select/-/ec-specs-select-2.31.0.tgz#08a37c0fc79475ad90b4d87d6ceb5819a7a04821"
+  integrity sha512-py09H36HUEAZmD/dqmMVtR3fBKFlh5Mj5ytSmv/VzTKHkaQxoe9X0zlCtZ5rd+CP9qEQ9vkRqQPwGUiAtuoOUw==
 
-"@ecl/ec-specs-site-header-core@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-site-header-core/-/ec-specs-site-header-core-2.29.0.tgz#6529ebe021bdc63c23f76c1f9e3c46dc914ed0dd"
-  integrity sha512-5j+iZqsnnXYWdg844HESEGAT1QMAvTF97pmGaSgaZyGY/iR6Quyz+uRCthW75CuRZEgljIQ93YPVd/Yy6fupfw==
+"@ecl/ec-specs-site-header-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-site-header-core/-/ec-specs-site-header-core-2.31.0.tgz#8ed343d20d983325373c5f7c4cdd684083c31f80"
+  integrity sha512-ch27jf7p645UET9Kcmj5LxGhMMVUeKsUL/S/kRVw8NH+vl6JcSrjDue3PoiCuCIN7jHH0WVAOeAYZ7uYIMnx7Q==
 
-"@ecl/ec-specs-site-header-harmonised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-site-header-harmonised/-/ec-specs-site-header-harmonised-2.29.0.tgz#a0aea0d3d661eaac41f6628b0e57e496a98d9b96"
-  integrity sha512-+s6ZQwy1f8XAD8EV/3+qzktLgW0FzqGkMeexcpoidoKJtTxjKCxQqzcDmr+gPtMVHPn6n/DQyBx29WCoKUkS9w==
+"@ecl/ec-specs-site-header-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-site-header-harmonised/-/ec-specs-site-header-harmonised-2.31.0.tgz#cb70b13692ca12b6e9e4dae045070dcde82e2d72"
+  integrity sha512-BBINNsOdTXEpsDua5ZYheNxogFhmQdTd1LLcS0sCQDfRUXSHYuSZ/hFLCrgI8RMerqAyMR2NZuRYKZrLu9B4aA==
 
-"@ecl/ec-specs-site-header-standardised@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-site-header-standardised/-/ec-specs-site-header-standardised-2.29.0.tgz#ee433879e416480e2857ea11e0c845aa77e8f29b"
-  integrity sha512-mf638BSSNNCVCZHeMqBM4i63Fn00yYky6zu7wQ78t1ROUXXE+CQYS2AKdiyYS6YMSoZ1TFT73sV+w4Zd7HT50Q==
+"@ecl/ec-specs-site-header-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-site-header-standardised/-/ec-specs-site-header-standardised-2.31.0.tgz#c3dfc85b49ab1cd4a0bfca33c49fac5fa6941fea"
+  integrity sha512-8XwV6ALnwRGeENkgNp/LoosdVhZMb6pR49+BA19cvolGxNUoUAa6v8IRXT4y1YskZkY7GXRFaK5+HcEF+qCZ4Q==
 
-"@ecl/ec-specs-site-header@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-site-header/-/ec-specs-site-header-2.29.0.tgz#8f6785056a7753e90f902f35b3025da1feaf3a0b"
-  integrity sha512-QTulywi2UrT0uhKSwCPu/FqF9r6G8zYGqzTrhuF0ZFgewZlCVL2kOLUSG2q3n/VJEldzNfPGA1JjjHTFLja9Qg==
+"@ecl/ec-specs-site-header@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-site-header/-/ec-specs-site-header-2.31.0.tgz#0913f3fba00a49403656e230e03f1d80ad4ede2f"
+  integrity sha512-sz7pwgtvOrMTNVUuwAax1eodbnQBim+u91Y15Xl2wwryVdUYJun/nzFqKJ6U7loOswzd0E4CzqX8EdPpGiCx0g==
 
-"@ecl/ec-specs-skip-link@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-skip-link/-/ec-specs-skip-link-2.29.0.tgz#cd3ff8883387b3bd12beedbcebad4d5466b6cf92"
-  integrity sha512-AzOKsB7Xe6M7G8dRPqq84PjlaxRhNN3y56Ilj4whpOQaCNJqN0pNXQvtbtqCtF7xJN7dR2wfe36U1tg+3ACfhA==
+"@ecl/ec-specs-skip-link@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-skip-link/-/ec-specs-skip-link-2.31.0.tgz#8abb1cdbb25bae752583c07c85a00df8878a3fa7"
+  integrity sha512-f8UvqVczniYnABcYL1hpoqZosdKnXZ8caNMJJSLcOPEAyoLt1vPgfs46NmioEnPW1dB+MFyc96btn1HdN9Dtsg==
 
-"@ecl/ec-specs-social-media-follow@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-social-media-follow/-/ec-specs-social-media-follow-2.29.0.tgz#c3b4cd1269f998dd54332561d73b52ed08723d29"
-  integrity sha512-tVpEzm2pDObUmSa1It8Wc11FB/mSJ/4U/+Da2sMwTkHnkGqiFh4/fmm8Sf6rtnRtYn+uef1+ojugZmBMUoH58A==
+"@ecl/ec-specs-social-media-follow@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-social-media-follow/-/ec-specs-social-media-follow-2.31.0.tgz#c9afdf397828fb2f8ebee74460d093387d6a5a97"
+  integrity sha512-OUbsda0sG7kDxQsq12OptL1vpCpLxzNfG/4BlQHQ9otyVZXhoP6NT9KRSFE2tQ0SDw6z77LRG93oOwScofg3eQ==
 
-"@ecl/ec-specs-social-media-share@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-social-media-share/-/ec-specs-social-media-share-2.29.0.tgz#589db0919ebefe7be0aa6f0b4cbdf609297fef24"
-  integrity sha512-OYjoleI0yMbnepdNH+W91XX2RV+Paxc2jJ1XSDqRcw6pitjb/ju2WYCaSLrfWt8wwuS65G95GGCz/VvFU0Ty3Q==
+"@ecl/ec-specs-social-media-share@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-social-media-share/-/ec-specs-social-media-share-2.31.0.tgz#cafd6ffbb83da43f68fd5e1ccfed9e2525507255"
+  integrity sha512-eUMMRlvIempO9BjUPkkngO75U/wkzT21gigCl9FWP5ZgR8YluR8yQYrvXpq350UxLHy6smBKR3yWvUjofvNXUw==
 
-"@ecl/ec-specs-table@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-table/-/ec-specs-table-2.29.0.tgz#ea0f098ea2928ef25235aaa5f06e3beef9f55002"
-  integrity sha512-xbSJbzgpq3QtXRa71iUstc+Co2GI1CqZNeHv4x/8ClaRR273Ytz1W6xQMiavna9KiXUnICkCCe4Jm0DVLGGBQg==
+"@ecl/ec-specs-table@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-table/-/ec-specs-table-2.31.0.tgz#1983cd214a5e05d35a785614dafc7f5f97a345f9"
+  integrity sha512-UhXthYVD7Skrl3v9A8lJyJbEjE77tq/Dw5t+1tzjFIh/YgEzO5+1YzVx5KiUpTrn57asuMLB3BX3piriy1J7Uw==
 
-"@ecl/ec-specs-tag@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-tag/-/ec-specs-tag-2.29.0.tgz#9aecf66ad80ceeeb7dc45ebd71822a79ea0b9fcb"
-  integrity sha512-DSd3jZYQ2UTHkUsa4CyBf5NnxEcep0IVyMEoDHxSDiaXCrhZKYdrQNBpClAbogAf3qyZwE8S1cmcqK4Wqlh3Iw==
+"@ecl/ec-specs-tag@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-tag/-/ec-specs-tag-2.31.0.tgz#9b9aac7d974120ddb40dac308f083926e6f779fd"
+  integrity sha512-mSC62aJ4tWBRmxM07PejieQdbj1Kyszwcj10wj3grlfscZzzhK8sNB0zqNZQ0Pa02pvn7WJRJ5BOIQfNdczfKQ==
 
-"@ecl/ec-specs-text-area@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-text-area/-/ec-specs-text-area-2.29.0.tgz#9c6febde1312ca8844cd15b0db5a608ab4658bb8"
-  integrity sha512-/lXLLS2GHDee5ngtajQhuH86qHA2LLTuF7H1YHvTiSgq3rsyPtRyq7yMHwJ5gDuyFM94L3vb7YE4Apx4WoPPpw==
+"@ecl/ec-specs-text-area@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-text-area/-/ec-specs-text-area-2.31.0.tgz#fa564ae48abf4d2a38ab4e4ad018e6eed153182a"
+  integrity sha512-j2gjTSD5ubvikbo58fJIs9UqcG3+5HEpIvba90QpGxKI2S3JJMtYtIE4xeQGd30tZDKF/uBP1CdB+ACXUkYGWw==
 
-"@ecl/ec-specs-text-input@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-text-input/-/ec-specs-text-input-2.29.0.tgz#9da6a1855e05887aeac8f40cda5e966476b6f5df"
-  integrity sha512-szZX8tbf/UQfm3JX/L2+/g6nQS56DLQXLoU+vXVTP0/CMHAzxAxe++1L6tWIjTkFN5AT8y87rSwsFMTmTgCT7g==
+"@ecl/ec-specs-text-input@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-text-input/-/ec-specs-text-input-2.31.0.tgz#fe3fa1f4c5a01b5d83a62e7247e90c7b60aba7e6"
+  integrity sha512-4IkdCR2AiFX2QyLIfPpuYY1a4+ZbtYYfkEInt/gFLTXQkN4jkdYc74iXgyxB7rkncVtEIId/JQzmyb44ThkY8g==
 
-"@ecl/ec-specs-timeline@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-timeline/-/ec-specs-timeline-2.29.0.tgz#ff1c4e430ef5970e06acd7f0ee884b45acf4af75"
-  integrity sha512-J/ncsatz096cSfpymTU8ciaWxK20qtdxMtd8kPPKTpOWW9K6/Q1/ZABTVUMUD/iJEi4NgtrANOTzMuiVcGjTdw==
+"@ecl/ec-specs-timeline@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-specs-timeline/-/ec-specs-timeline-2.31.0.tgz#0a3a71827c1e2c488ba2b734f2e945ea35db4ebb"
+  integrity sha512-u+Qx85hxnBisK9A4Rdyh5g5x35qgJwpd93m9iHHqwgXNNM200E+GvlK6DHg5o4mtR9WMDmUrT9jMUYw+cn4dmQ==
 
-"@ecl/ec-utility-typography@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@ecl/ec-utility-typography/-/ec-utility-typography-2.29.0.tgz#845e884187f278a4ddc505354478546a38978ec5"
-  integrity sha512-n3mF849hls8DdQiLprthk0LPyJAPD8xuZPUPrK+mV6YTDgzn2hHmxBy0AdCf2q2D5pLyt+jkrgngahLB/JgPcA==
+"@ecl/ec-utility-typography@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/ec-utility-typography/-/ec-utility-typography-2.31.0.tgz#0009b1369f11940bd5e6c96da72cd0ad021fd0e4"
+  integrity sha512-a1x0vBziPpAyxHqkFVjyxKGBp22NSOyh1CoDzHRKhY6UYevy9GOovw4xx/ZjETdIcbs5ILcGNVEAceLuUIzXww==
   dependencies:
-    "@ecl/ec-base" "^2.29.0"
+    "@ecl/ec-base" "^2.31.0"
+
+"@ecl/eu-base@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-base/-/eu-base-2.31.0.tgz#aed7f97c3667be21352fc113c1fc024f58fce1ea"
+  integrity sha512-R586vn6GEb0Y8U4oTTUVpZBoCwb0eD7Xz1HpXRFVBMgDGwnR3vOlp78Kfd9vUdyPP1rue3oLZz4/5HsEAv4pcw==
+
+"@ecl/eu-component-footer-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-component-footer-harmonised/-/eu-component-footer-harmonised-2.31.0.tgz#2b953093d149136d6ceab9f7058f22cbfb1b59cd"
+  integrity sha512-dpHKd9DdjfoS5WSOiJh68v064bjMNpggOsBL3S/+3UoKwA+/tbOsFr/NcjyzzdU5YXVUxNOCaHqEldw3ihHDcQ==
+  dependencies:
+    "@ecl/eu-base" "^2.31.0"
+    "@ecl/eu-component-link" "^2.31.0"
+    "@ecl/eu-layout-grid" "^2.31.0"
+
+"@ecl/eu-component-icon@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-component-icon/-/eu-component-icon-2.31.0.tgz#54ed2ddaf2a7d6e2e600bd10c247f2f95ec2d2e3"
+  integrity sha512-tbVBGpemwMPi9r1kTfYbt8s0fN28Ayk/VWYJKZoa/bek4rauPyfhWy8fzSXeKBT7e3jBrB6l1vX6COUwM9IJ5A==
+  dependencies:
+    "@ecl/eu-base" "^2.31.0"
+
+"@ecl/eu-component-link@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-component-link/-/eu-component-link-2.31.0.tgz#d7059d00c69429c8eb7d0bc09740942da391afc7"
+  integrity sha512-owFBXEuG4QcctQy0W9IbhgJdnG6wWAtCqyzI0dFSXoxaZXla5xmIbYTAjl30fJKnA5cm08c4TfMPB6h8+uObNw==
+  dependencies:
+    "@ecl/eu-base" "^2.31.0"
+    "@ecl/eu-component-icon" "^2.31.0"
+
+"@ecl/eu-layout-grid@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-layout-grid/-/eu-layout-grid-2.31.0.tgz#22e5a3c9c0fdbc90deee0710494989d7049149ab"
+  integrity sha512-Wn+C4S5dLWf/UtBR/Vkfr2p7P4vhaMGxbeS4BrH6E1TZFaODynWOo57qxAMFv7CYnUH73E2I8V7ycxKu10XHcA==
+  dependencies:
+    "@ecl/eu-base" "^2.31.0"
+
+"@ecl/eu-resources-icons@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-resources-icons/-/eu-resources-icons-2.31.0.tgz#f07c00a7e056ae80039dd02f6a5c8d4dbe9c8c0c"
+  integrity sha512-WwFgMHOQkedBJ0gri3U2hEQ8/msYeSpsY1CVR9kV4uADMdbEKlXfF65tKIoHs29HtTFXPj7A8FgIViI8i3/KPg==
+
+"@ecl/eu-resources-logo@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-resources-logo/-/eu-resources-logo-2.31.0.tgz#b0fe66d8e34dd853005cfc1d2f82bb74f98e886a"
+  integrity sha512-X5yvPtThlee3fi7TtdTKOpJbNVyYpC0pIXFZP3UiugJlpEFxbSNjgsmcjjKrhlvcAZfkDiGyQQSS2BQs05jDqg==
+
+"@ecl/eu-specs-breadcrumb-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-breadcrumb-core/-/eu-specs-breadcrumb-core-2.31.0.tgz#adef0c2a4bd20ae1015d07dcdb5c6bc0756e3b6c"
+  integrity sha512-+nQbkgnOkbRSmkNb48zEVUklxEIaHONHY3J+V6sSdl4ohXt6dn+5neDfYHjSwNNTIycQO9tERmjJXgXFEKP8gg==
+
+"@ecl/eu-specs-breadcrumb-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-breadcrumb-harmonised/-/eu-specs-breadcrumb-harmonised-2.31.0.tgz#c14d1a8dcdb2b28ca3e9585157bb5cc397687c8d"
+  integrity sha512-ns0OtqRbPZ+mVc6XkRKK6/kKx3CnLZ2dojKyoj9QiEt4/buqZ7OH7cY60aG5HG/EqmBjOAosKaIRICYb8/ZhaA==
+
+"@ecl/eu-specs-breadcrumb-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-breadcrumb-standardised/-/eu-specs-breadcrumb-standardised-2.31.0.tgz#968210d1a8d2547309964d349041a44af31764a7"
+  integrity sha512-YaSbVOVyst1NzLxD/7fkChWIYGnzXDr3yYObJh76/k5zbo0+VsX9AvyIZuR0ib+zfAKy5AwkBNGR2HDhinVSjw==
+
+"@ecl/eu-specs-breadcrumb@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-breadcrumb/-/eu-specs-breadcrumb-2.31.0.tgz#a309be4d1548048ffc6dc6a8c2730ea0f10eb6e7"
+  integrity sha512-fNdi4nBR0j+qgl+8NJ/4qCyeokJyxZpSJ5J/NzQvVZCBJsWTIr2w6nM/n8eLJZp2lvWP83WMkqUSIxuOid62Bg==
+
+"@ecl/eu-specs-file@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-file/-/eu-specs-file-2.31.0.tgz#ca5f25e2fc14c2e1f089668bfd0f461633e86b50"
+  integrity sha512-2Wt/A7RVRLFt0CdxzOacBEaP8qli5FI6y+fGOKMXRC2zdG9tpJQbSEMriCQpqNu9KccA4CC0sCKskgwcqw9I+g==
+
+"@ecl/eu-specs-footer-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-footer-core/-/eu-specs-footer-core-2.31.0.tgz#697b8b5c203d9c9e172cec3f4246c86122ae64c6"
+  integrity sha512-RLPceXAFdTMrmSFY3WCntBqa/+sAG42M1ptm56yMCryBcgKFtV83OaFfTwmfLNK4n3dodM42hidfnNVJm4gs7g==
+
+"@ecl/eu-specs-footer-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-footer-harmonised/-/eu-specs-footer-harmonised-2.31.0.tgz#6d6806188c7b8c71ab07864d3f0dfefc1bcc5103"
+  integrity sha512-xFd30UV94fBLzwk7CCgsGRUhOGopZLx2Fi4tSFYegRTNbVpuAfHo0t6KarhqJpxU7MCJUkbv3XDxi4rTcHSKsQ==
+
+"@ecl/eu-specs-footer-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-footer-standardised/-/eu-specs-footer-standardised-2.31.0.tgz#ee1f9257dcf9f2f9b3c86d5813f5aac7ef0b675d"
+  integrity sha512-NlPC4a3PJjBntmK9Xp0k15BnqRrE4KZCfoHt7IdmnXVYEZpaaLNOAnJ1sQOe2McLFncQBPm28e+yK2hB/cW4eg==
+
+"@ecl/eu-specs-language-list@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-language-list/-/eu-specs-language-list-2.31.0.tgz#8341281ff5fab9e138c738ef2876cdb54d671a48"
+  integrity sha512-u1yZ8YVULSDlHpPcm8YG0om3+AGvFW58KG2dYxcpNYaBrtwR4hffUls/neMs3kSxodf975U+2OhSkq59kSuAGA==
+
+"@ecl/eu-specs-menu@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-menu/-/eu-specs-menu-2.31.0.tgz#8a40292ded4d8606205149d779e88a60fac23a1c"
+  integrity sha512-9MGPx8gc5V31QjnPG1q0gdQsPbbjNlXntvsdGT/KjGve3R1+2h7XJr+UZ8Kv7RTcAuEDrkT7SC7zyKYROM37/Q==
+
+"@ecl/eu-specs-page-header-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-page-header-core/-/eu-specs-page-header-core-2.31.0.tgz#b63f01425c92848568f6752ddddc75a47d4660f7"
+  integrity sha512-cKcPGHuvBw9j8aYPawPm0AsvFvJaVyZHdCt7pcNTzkuELfvS75kZ6LsVN8yMwVKNJVreaK99KuoVMfVm5Ha8RQ==
+
+"@ecl/eu-specs-page-header-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-page-header-harmonised/-/eu-specs-page-header-harmonised-2.31.0.tgz#c155b6cd6d998adf209f03de00c20876369c866b"
+  integrity sha512-hCHRck0/VZ1Ne5UvzhqtRt5bkrY+4cSprhnpTb4NmNVTsKVk1LChV24ltNnPYuHGUjZ/mbPogOIDjmXa6mW3oQ==
+
+"@ecl/eu-specs-page-header-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-page-header-standardised/-/eu-specs-page-header-standardised-2.31.0.tgz#3b76bfb96e14b99d652975409b1de5f365fc6256"
+  integrity sha512-8WZjLRdscvIqllsdOWLPxdR2Y9xo74yJF6bSGqN45F3fPIp97GLnAzB6Ld/kCobvQuAXOVpJ9uxuDPR/3m8+qQ==
+
+"@ecl/eu-specs-page-header@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-page-header/-/eu-specs-page-header-2.31.0.tgz#1ccbd6dd8d13cec99cb5ff0b350f830dae067978"
+  integrity sha512-HC4z1fNFRfRTMCMwNGLYXgQ7wjPD+sOSkvH2RnGXGl1rjAHKP5jrATZ5h/brMPKATB6NO8FhnHak5kkN4fJfyQ==
+
+"@ecl/eu-specs-site-header-core@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-site-header-core/-/eu-specs-site-header-core-2.31.0.tgz#caac59b72be6576c70d8e413f133989b5328c5d0"
+  integrity sha512-lYxm0L+REtNez9B9CXAdSI4wLqM8MYU9VvDhlTlw2iBEtOUcXCDvADnKa28KKvUaSOFAzsUHq3/PjajatmOL2A==
+
+"@ecl/eu-specs-site-header-harmonised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-site-header-harmonised/-/eu-specs-site-header-harmonised-2.31.0.tgz#610b12bb5600ca252ef63b917e2a5d8995432c33"
+  integrity sha512-ItFpE8NXubQ0jDZbox442NVzifBBkuV1DpJtS9HonjGck7BCUtgW8A4zSrb1Ds2Mp53vH+UuMHhqtd9xRHcUig==
+
+"@ecl/eu-specs-site-header-standardised@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-site-header-standardised/-/eu-specs-site-header-standardised-2.31.0.tgz#9be663bb934128a3754f491416ae3433e29b08d4"
+  integrity sha512-ANY1aE+JjZJCezrqSHf0Gnie1yLowoWDbRgtrtT1JOwF2+HTdv8Xa4KScwZ7+24FJt1s96Ky7DNma2K4C1f5qw==
+
+"@ecl/eu-specs-site-header@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-site-header/-/eu-specs-site-header-2.31.0.tgz#1c55ffd71863e311f68895e0a98709b13ea1a979"
+  integrity sha512-1Pr8ubE/KYFbskKcEaGUUJcg0S6UFoZOsAVHh56BV7ZpF962OLY+uRo+acU3N3f3YnjdoWBknwiUU4XDR9rw5w==
+
+"@ecl/eu-specs-table@2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@ecl/eu-specs-table/-/eu-specs-table-2.31.0.tgz#3c876365baf4caa18973fe67e603daf7df2d11e4"
+  integrity sha512-EtScx3lHVm0VFUAzA4ufPepTr3t6VFeoa0wm3Lz0D1p67GQwdkI+AHxBkmamLFf97RVytyTraOehMvH5lf/AWA==
 
 "@emotion/cache@^10.0.27", "@emotion/cache@^10.0.9":
   version "10.0.29"
@@ -5858,9 +6035,9 @@ bluebird@^3.3.5, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
-  version "4.11.8"
-  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
-  integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+  version "4.11.9"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.9.tgz#26d556829458f9d1e81fc48952493d0ba3507828"
+  integrity sha512-E6QoYqCKZfgatHTdHzs1RRKP7ip4vvm+EyRUeE2RF0NblwVvb0p6jSVeNTOFxPn26QXN2o6SMfNxKp6kU8zQaw==
 
 body-parser@1.19.0, body-parser@^1.19.0:
   version "1.19.0"
@@ -6916,7 +7093,7 @@ commander@2.17.x:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
   integrity sha512-wPMUt6FnH2yzG95SA6mzjQOEKUU3aLaDEmzs1ti+1E9h+CsrZghRlqEM/EJ4KscsQVG8uNN4uVreUeT8+drlgg==
 
-commander@^2.11.0, commander@^2.17.1, commander@^2.18.0, commander@^2.19.0, commander@^2.20.0, commander@^2.3.0, commander@~2.20.3:
+commander@^2.11.0, commander@^2.17.1, commander@^2.19.0, commander@^2.20.0, commander@^2.3.0, commander@~2.20.3:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -8330,9 +8507,9 @@ elf-tools@^1.1.1:
   integrity sha512-SZSL+FS1mooDVRc3js6jUsEtzVrTaFxjqE8aQzyfmABGBW1UvhT6LQzY305vIGaxazY3bKIbxwsYsWynkYeggA==
 
 elliptic@^6.0.0:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.2.tgz#05c5678d7173c049d8ca433552224a495d0e3762"
-  integrity sha512-f4x70okzZbIQl/NSRLkI/+tteV/9WqL98zx+SQ69KbXxmVrmjwsNUPn/gYJJ0sHvEak24cZgHIPegRePAtA/xw==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.3.tgz#cb59eb2efdaf73a0bd78ccd7015a62ad6e0f93d6"
+  integrity sha512-IMqzv5wNQf+E6aHeIqATs0tOLeOTwj1QKbRcS3jBbYkl5oLAserA8yJTT7/VyHUYG91PRmPyeQDObKLPpeS4dw==
   dependencies:
     bn.js "^4.4.0"
     brorand "^1.0.1"
@@ -8341,11 +8518,6 @@ elliptic@^6.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
-
-email-addresses@^3.0.1:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/email-addresses/-/email-addresses-3.1.0.tgz#cabf7e085cbdb63008a70319a74e6136188812fb"
-  integrity sha512-k0/r7GrWVL32kZlGwfPNgB2Y/mMXVTq/decgLczm/j34whdaspNrZO8CnXPf1laaHxI6ptUlsnAxN+UAPw+fzg==
 
 emoji-regex@^7.0.1, emoji-regex@^7.0.2:
   version "7.0.3"
@@ -9353,15 +9525,7 @@ filename-reserved-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/filename-reserved-regex/-/filename-reserved-regex-2.0.0.tgz#abf73dfab735d045440abfea2d91f389ebbfa229"
   integrity sha1-q/c9+rc10EVECr/qLZHzieu/oik=
 
-filenamify-url@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/filenamify-url/-/filenamify-url-1.0.0.tgz#b32bd81319ef5863b73078bed50f46a4f7975f50"
-  integrity sha1-syvYExnvWGO3MHi+1Q9GpPeXX1A=
-  dependencies:
-    filenamify "^1.0.0"
-    humanize-url "^1.0.0"
-
-filenamify@^1.0.0, filenamify@^1.0.1:
+filenamify@^1.0.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/filenamify/-/filenamify-1.2.1.tgz#a9f2ffd11c503bed300015029272378f1f1365a5"
   integrity sha1-qfL/0RxQO+0wABUCknI3jx8TZaU=
@@ -9897,18 +10061,6 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-gh-pages@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/gh-pages/-/gh-pages-2.2.0.tgz#74ebeaca8d2b9a11279dcbd4a39ddfff3e6caa24"
-  integrity sha512-c+yPkNOPMFGNisYg9r4qvsMIjVYikJv7ImFOhPIVPt0+AcRUamZ7zkGRLHz7FKB0xrlZ+ddSOJsZv9XAFVXLmA==
-  dependencies:
-    async "^2.6.1"
-    commander "^2.18.0"
-    email-addresses "^3.0.1"
-    filenamify-url "^1.0.0"
-    fs-extra "^8.1.0"
-    globby "^6.1.0"
-
 gh-release-fetch@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/gh-release-fetch/-/gh-release-fetch-1.0.3.tgz#0740c753ac30100bff8340788e421136b9e62009"
@@ -10044,7 +10196,7 @@ glob@^5.0.3:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6:
+glob@^7.0.0, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6:
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
@@ -10148,17 +10300,6 @@ globby@^10.0.1:
     ignore "^5.1.1"
     merge2 "^1.2.3"
     slash "^3.0.0"
-
-globby@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/globby/-/globby-6.1.0.tgz#f5a6d70e8395e21c858fb0489d64df02424d506c"
-  integrity sha1-9abXDoOV4hyFj7BInWTfAkJNUGw=
-  dependencies:
-    array-union "^1.0.1"
-    glob "^7.0.3"
-    object-assign "^4.0.1"
-    pify "^2.0.0"
-    pinkie-promise "^2.0.0"
 
 globby@^9.2.0:
   version "9.2.0"
@@ -10809,14 +10950,6 @@ humanize-ms@^1.2.1:
   integrity sha1-xG4xWaKT9riW2ikxbYtv6Lt5u+0=
   dependencies:
     ms "^2.0.0"
-
-humanize-url@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/humanize-url/-/humanize-url-1.0.1.tgz#f4ab99e0d288174ca4e1e50407c55fbae464efff"
-  integrity sha1-9KuZ4NKIF0yk4eUEB8VfuuRk7/8=
-  dependencies:
-    normalize-url "^1.0.0"
-    strip-url-auth "^1.0.0"
 
 husky@4.2.5:
   version "4.2.5"
@@ -12898,10 +13031,10 @@ lodash.zip@^4.2.0:
   resolved "https://registry.yarnpkg.com/lodash.zip/-/lodash.zip-4.2.0.tgz#ec6662e4896408ed4ab6c542a3990b72cc080020"
   integrity sha1-7GZi5IlkCO1KtsVCo5kLcswIACA=
 
-lodash@^4.0.0, lodash@^4.0.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.2.1:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+lodash@^4.0.0, lodash@^4.0.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.2.1:
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-process-errors@^5.1.2:
   version "5.1.2"
@@ -13564,10 +13697,10 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@^0.5.4:
   dependencies:
     minimist "^1.2.5"
 
-mobile-device-detect@0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/mobile-device-detect/-/mobile-device-detect-0.3.3.tgz#6880f54c2e838d8dccbfc0d962d01a348db5faad"
-  integrity sha512-JOrQ2mwcBnEz/6hyvP/aXI8R03DnlwlQey7cukE6kCy9RLQbzchN5yMocEXuOw4NXdCsU6k7mEAolHwLxgPYwQ==
+mobile-device-detect@0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/mobile-device-detect/-/mobile-device-detect-0.4.3.tgz#05d73b4bde7ccb5beda1c4bd0ea0986ce30b1f3f"
+  integrity sha512-SN9EBE9SoJgkb83kuUVoIp3R9OGYE5dYEnLEz2oLooh0DzgtQ72BJmpNGqrgFvmfE4iLR2CaVJ3RjUcStheVZg==
 
 modify-values@^1.0.0:
   version "1.0.1"
@@ -14031,16 +14164,6 @@ normalize-url@2.0.1:
     prepend-http "^2.0.0"
     query-string "^5.0.1"
     sort-keys "^2.0.0"
-
-normalize-url@^1.0.0:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-1.9.1.tgz#2cc0d66b31ea23036458436e3620d85954c66c3c"
-  integrity sha1-LMDWazHqIwNkWENuNiDYWVTGbDw=
-  dependencies:
-    object-assign "^4.0.1"
-    prepend-http "^1.0.0"
-    query-string "^4.1.0"
-    sort-keys "^1.0.0"
 
 normalize-url@^3.3.0:
   version "3.3.0"
@@ -15215,7 +15338,7 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prepend-http@^1.0.0, prepend-http@^1.0.1:
+prepend-http@^1.0.1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
@@ -15530,14 +15653,6 @@ qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
-
-query-string@^4.1.0:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/query-string/-/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
-  integrity sha1-u7aTucqRXCMlFbIosaArYJBD2+s=
-  dependencies:
-    object-assign "^4.1.0"
-    strict-uri-encode "^1.0.0"
 
 query-string@^5.0.1:
   version "5.1.1"
@@ -16408,7 +16523,7 @@ resolve@^1.1.6, resolve@^1.10.0, resolve@^1.11.0, resolve@^1.12.0, resolve@^1.13
   dependencies:
     path-parse "^1.0.6"
 
-resolve@^1.17.0:
+resolve@^1.17.0, resolve@^1.8.1:
   version "1.17.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.17.0.tgz#b25941b54968231cc2d1bb76a79cb7f2c0bf8444"
   integrity sha512-ic+7JYiV8Vi2yzQGFWOkiZD5Z9z7O2Zhm9XMaTxdJExKasieFCr+yXZ/WmXsckHiKl12ar0y6XiXDx3m4RHn1w==
@@ -17534,11 +17649,6 @@ strip-outer@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.2"
 
-strip-url-auth@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/strip-url-auth/-/strip-url-auth-1.0.1.tgz#22b0fa3a41385b33be3f331551bbb837fa0cd7ae"
-  integrity sha1-IrD6OkE4WzO+PzMVUbu4N/oM164=
-
 strong-log-transformer@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/strong-log-transformer/-/strong-log-transformer-2.1.0.tgz#0f5ed78d325e0421ac6f90f7f10e691d6ae3ae10"
@@ -17607,10 +17717,10 @@ supports-hyperlinks@^1.0.1:
     has-flag "^2.0.0"
     supports-color "^5.0.0"
 
-swipe-listener@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/swipe-listener/-/swipe-listener-1.1.0.tgz#f56bbe1efad3a4d91a1f5df3d03747201fca9a03"
-  integrity sha512-89mLHgoTejI2I1/oK6x8OGov6fwK6ujcSb8is8yWHo9txBOpm4a6k06MUUr7WNFvMMHYgY50IPRMxSk7ce43TQ==
+swipe-listener@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/swipe-listener/-/swipe-listener-1.2.0.tgz#a5e3286a8818ec07fb0554ca5b60845ff0e0972c"
+  integrity sha512-h7Or+JQknxTw8hcGZ40tgWl1DQ02suGZL4tPs+CBqa6VqVdsMg8hUS/BeYSl1SGhgpJnySvpUUsE5kdtVA52Dg==
 
 symbol-observable@^1.0.3, symbol-observable@^1.1.0:
   version "1.2.0"

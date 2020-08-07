@@ -31,6 +31,9 @@ const formatLink = l => {
   if (l.hreflang) {
     link.link.hreflang = l.hreflang;
   }
+
+  link.link.aria_label = l.ariaLabel ? l.ariaLabel : 'Aria label default';
+
   return link;
 };
 
@@ -56,6 +59,8 @@ const formatLinkAlt = a => {
   if (a.hreflang) {
     link.hreflang = a.hreflang;
   }
+
+  link.aria_label = a.aria_label ? a.aria_label : 'Aria label default';
 
   return link;
 };

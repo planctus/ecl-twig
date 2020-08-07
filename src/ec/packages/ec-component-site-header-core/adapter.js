@@ -2,11 +2,7 @@ import he from 'he';
 
 const adapter = initialData => {
   const adaptedData = JSON.parse(JSON.stringify(initialData));
-
   const defaultSprite = '/icons.svg';
-  const englishBanner = '/logo--en.svg';
-  const frenchBanner = '/logo--fr.svg';
-
   if (adaptedData.loginToggle) {
     adaptedData.login_toggle = {
       label_not_logged: adaptedData.loginToggle.labelNotLogged,
@@ -25,16 +21,14 @@ const adapter = initialData => {
     );
   }
 
-  const lng = adaptedData.logo.language;
-  adaptedData.logo.src = lng === 'en' ? englishBanner : frenchBanner;
-
   adaptedData.language_selector = adaptedData.languageSelector;
   delete adaptedData.languageSelector;
 
   adaptedData.language_selector.overlay.close_label =
     adaptedData.language_selector.overlay.closeLabel;
   delete adaptedData.language_selector.overlay.closeLabel;
-
+  adaptedData.language_selector.eu_category = 'EU official languages';
+  adaptedData.language_selector.non_eu_category = 'Non-EU languages';
   adaptedData.language_selector.overlay.items.forEach(item => {
     item.path = item.href;
     delete item.href;
