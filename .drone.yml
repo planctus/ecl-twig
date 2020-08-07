@@ -59,6 +59,7 @@ pipeline:
     image: roelofr/php-node
     secrets: [gh_token, netlify_auth_token, netlify_php_site_id]
     commands:
+      - sudo apt-get install libnss3-dev
       - npm install -g n && n stable
       - yarn install
       - rm -rf netlify.toml
